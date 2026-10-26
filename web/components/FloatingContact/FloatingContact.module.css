@@ -1,0 +1,85 @@
+.dock {
+  position: fixed;
+  inset-inline-end: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgb(27 37 35 / 0.28);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 10px 24px rgb(27 37 35 / 0.34);
+}
+
+/* WhatsApp's own green; white on it only for the icon, which needs 3:1. */
+.whatsapp {
+  background: #25d366;
+}
+
+.phone {
+  background: var(--brand);
+  border: 2px solid var(--gold);
+}
+
+/* A label slides out to the left on hover (desktop only). */
+.tip {
+  position: absolute;
+  inset-inline-end: calc(100% + 0.6rem);
+  top: 50%;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(6px, -50%);
+  transition: opacity 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.btn:hover .tip,
+.btn:focus-visible .tip {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+@media (max-width: 600px) {
+  .btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .tip {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn:hover {
+    transform: none;
+  }
+}
+
+/* Never on paper. */
+@media print {
+  .dock {
+    display: none;
+  }
+}

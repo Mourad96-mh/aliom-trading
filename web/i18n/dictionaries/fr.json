@@ -64,12 +64,29 @@
     "missionEyebrow": "Notre mission",
     "mission": "Sélectionner et promouvoir les meilleurs produits et les meilleures marques du monde.",
     "valuesTitle": "Nos valeurs",
-    "values": ["Efficacité", "Réactivité", "Productivité", "Qualité"],
+    "values": [
+      "Efficacité",
+      "Réactivité",
+      "Productivité",
+      "Qualité"
+    ],
     "facts": [
-      { "value": "2021", "label": "Création à Casablanca" },
-      { "value": "9", "label": "Familles de produits" },
-      { "value": "58", "label": "Références au catalogue" },
-      { "value": "HACCP · IFS · BRC", "label": "Exigences respectées" }
+      {
+        "value": "2021",
+        "label": "Création à Casablanca"
+      },
+      {
+        "value": "9",
+        "label": "Familles de produits"
+      },
+      {
+        "value": "58",
+        "label": "Références au catalogue"
+      },
+      {
+        "value": "HACCP · IFS · BRC",
+        "label": "Exigences respectées"
+      }
     ],
     "blogTitle": "Guides et actualités",
     "blogLead": "Normes, saisons et logistique : nos notes pour les acheteurs professionnels.",
@@ -133,10 +150,22 @@
     ],
     "processTitle": "Comment nous travaillons",
     "steps": [
-      { "title": "Votre besoin", "text": "Produit, spécification, volumes, destination et calendrier." },
-      { "title": "Notre sélection", "text": "Nous consultons nos sources et vous proposons la meilleure offre." },
-      { "title": "Le contrôle", "text": "Qualité, quantité et emballage vérifiés avant le départ." },
-      { "title": "La livraison", "text": "Transport et documents suivis jusqu’à votre entrepôt." }
+      {
+        "title": "Votre besoin",
+        "text": "Produit, spécification, volumes, destination et calendrier."
+      },
+      {
+        "title": "Notre sélection",
+        "text": "Nous consultons nos sources et vous proposons la meilleure offre."
+      },
+      {
+        "title": "Le contrôle",
+        "text": "Qualité, quantité et emballage vérifiés avant le départ."
+      },
+      {
+        "title": "La livraison",
+        "text": "Transport et documents suivis jusqu’à votre entrepôt."
+      }
     ],
     "brandsTitle": "Vous êtes une marque ?",
     "brandsText": "Vous cherchez un agent pour développer vos ventes au Maroc ? Présentez-nous votre marque et vos produits : nous étudions chaque proposition.",
@@ -174,20 +203,47 @@
     ],
     "valuesTitle": "Nos valeurs",
     "values": [
-      { "title": "Efficacité", "text": "Aller à l’essentiel pour livrer le bon produit, au bon moment." },
-      { "title": "Réactivité", "text": "Répondre vite à chaque demande, chaque question, chaque imprévu." },
-      { "title": "Productivité", "text": "Des processus simples qui font gagner du temps à nos clients." },
-      { "title": "Qualité", "text": "Le critère qui guide chacune de nos sélections." }
+      {
+        "title": "Efficacité",
+        "text": "Aller à l’essentiel pour livrer le bon produit, au bon moment."
+      },
+      {
+        "title": "Réactivité",
+        "text": "Répondre vite à chaque demande, chaque question, chaque imprévu."
+      },
+      {
+        "title": "Productivité",
+        "text": "Des processus simples qui font gagner du temps à nos clients."
+      },
+      {
+        "title": "Qualité",
+        "text": "Le critère qui guide chacune de nos sélections."
+      }
     ],
     "missionTitle": "Notre mission",
     "mission": "Sélectionner et promouvoir les meilleurs produits et les meilleures marques du monde.",
     "identityTitle": "Fiche d’identité",
     "identity": [
-      { "label": "Raison sociale", "value": "ALIOM TRADING" },
-      { "label": "Forme juridique", "value": "SARL à associé unique" },
-      { "label": "Activité", "value": "Import-export, négoce et intermédiation" },
-      { "label": "Création", "value": "Mai 2021, Casablanca" },
-      { "label": "ICE", "value": "002810898000009" }
+      {
+        "label": "Raison sociale",
+        "value": "ALIOM TRADING"
+      },
+      {
+        "label": "Forme juridique",
+        "value": "SARL à associé unique"
+      },
+      {
+        "label": "Activité",
+        "value": "Import-export, négoce et intermédiation"
+      },
+      {
+        "label": "Création",
+        "value": "Mai 2021, Casablanca"
+      },
+      {
+        "label": "ICE",
+        "value": "002810898000009"
+      }
     ]
   },
   "blog": {
@@ -331,5 +387,10 @@
     "legal": "Mentions légales",
     "backToTop": "Haut de page",
     "ice": "ICE"
+  },
+  "floating": {
+    "whatsapp": "Écrire sur WhatsApp",
+    "call": "Appeler le",
+    "whatsappMessage": "Bonjour ALIOM TRADING, je souhaite des informations sur vos produits."
   }
 }

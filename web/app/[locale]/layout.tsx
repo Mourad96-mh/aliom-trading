@@ -11,6 +11,7 @@ import { QuoteProvider } from '@/components/Quote/QuoteProvider';
 import SiteHeader from '@/components/Header/SiteHeader';
 import SiteFooter from '@/components/Footer/SiteFooter';
 import JsonLd from '@/components/JsonLd/JsonLd';
+import FloatingContact from '@/components/FloatingContact/FloatingContact';
 
 /*
  * Self-hosted variable fonts (Latin subset, from Google Fonts). next/font/google broke
@@ -95,6 +96,7 @@ export default async function RootLayout({ children }: LayoutProps<'/[locale]'>)
           <SiteHeader locale={locale} />
           <main id="main">{children}</main>
           <SiteFooter locale={locale} />
+          <FloatingContact locale={locale} />
         </QuoteProvider>
       </body>
     </html>

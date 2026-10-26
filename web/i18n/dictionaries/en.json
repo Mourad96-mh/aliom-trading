@@ -64,12 +64,29 @@
     "missionEyebrow": "Our mission",
     "mission": "To select and promote the world’s best products and brands.",
     "valuesTitle": "Our values",
-    "values": ["Efficiency", "Responsiveness", "Productivity", "Quality"],
+    "values": [
+      "Efficiency",
+      "Responsiveness",
+      "Productivity",
+      "Quality"
+    ],
     "facts": [
-      { "value": "2021", "label": "Founded in Casablanca" },
-      { "value": "9", "label": "Product families" },
-      { "value": "58", "label": "Products in our range" },
-      { "value": "HACCP · IFS · BRC", "label": "Requirements we meet" }
+      {
+        "value": "2021",
+        "label": "Founded in Casablanca"
+      },
+      {
+        "value": "9",
+        "label": "Product families"
+      },
+      {
+        "value": "58",
+        "label": "Products in our range"
+      },
+      {
+        "value": "HACCP · IFS · BRC",
+        "label": "Requirements we meet"
+      }
     ],
     "blogTitle": "Guides and news",
     "blogLead": "Standards, seasons and logistics: notes for professional buyers.",
@@ -133,10 +150,22 @@
     ],
     "processTitle": "How we work",
     "steps": [
-      { "title": "Your need", "text": "Product, specification, volumes, destination and timing." },
-      { "title": "Our selection", "text": "We consult our sources and propose the best offer." },
-      { "title": "Inspection", "text": "Quality, quantity and packing checked before departure." },
-      { "title": "Delivery", "text": "Transport and documents followed through to your warehouse." }
+      {
+        "title": "Your need",
+        "text": "Product, specification, volumes, destination and timing."
+      },
+      {
+        "title": "Our selection",
+        "text": "We consult our sources and propose the best offer."
+      },
+      {
+        "title": "Inspection",
+        "text": "Quality, quantity and packing checked before departure."
+      },
+      {
+        "title": "Delivery",
+        "text": "Transport and documents followed through to your warehouse."
+      }
     ],
     "brandsTitle": "Are you a brand?",
     "brandsText": "Looking for an agent to grow your sales in Morocco? Introduce your brand and products: we review every proposal.",
@@ -174,20 +203,47 @@
     ],
     "valuesTitle": "Our values",
     "values": [
-      { "title": "Efficiency", "text": "Focus on what matters to deliver the right product at the right time." },
-      { "title": "Responsiveness", "text": "A quick answer to every request, every question, every surprise." },
-      { "title": "Productivity", "text": "Simple processes that save our customers time." },
-      { "title": "Quality", "text": "The criterion behind every choice we make." }
+      {
+        "title": "Efficiency",
+        "text": "Focus on what matters to deliver the right product at the right time."
+      },
+      {
+        "title": "Responsiveness",
+        "text": "A quick answer to every request, every question, every surprise."
+      },
+      {
+        "title": "Productivity",
+        "text": "Simple processes that save our customers time."
+      },
+      {
+        "title": "Quality",
+        "text": "The criterion behind every choice we make."
+      }
     ],
     "missionTitle": "Our mission",
     "mission": "To select and promote the world’s best products and brands.",
     "identityTitle": "Company profile",
     "identity": [
-      { "label": "Company name", "value": "ALIOM TRADING" },
-      { "label": "Legal form", "value": "Single-member SARL (limited company)" },
-      { "label": "Business", "value": "Import-export, trading and intermediation" },
-      { "label": "Founded", "value": "May 2021, Casablanca" },
-      { "label": "ICE", "value": "002810898000009" }
+      {
+        "label": "Company name",
+        "value": "ALIOM TRADING"
+      },
+      {
+        "label": "Legal form",
+        "value": "Single-member SARL (limited company)"
+      },
+      {
+        "label": "Business",
+        "value": "Import-export, trading and intermediation"
+      },
+      {
+        "label": "Founded",
+        "value": "May 2021, Casablanca"
+      },
+      {
+        "label": "ICE",
+        "value": "002810898000009"
+      }
     ]
   },
   "blog": {
@@ -331,5 +387,10 @@
     "legal": "Legal notice",
     "backToTop": "Back to top",
     "ice": "ICE"
+  },
+  "floating": {
+    "whatsapp": "Chat on WhatsApp",
+    "call": "Call",
+    "whatsappMessage": "Hello ALIOM TRADING, I would like information about your products."
   }
 }
