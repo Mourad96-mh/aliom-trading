@@ -1,0 +1,335 @@
+{
+  "site": {
+    "name": "ALIOM TRADING",
+    "tagline": "Import-export and brand agent in Casablanca",
+    "description": "Agent for international brands and import-export trader in Casablanca, Morocco: seafood, fruit and vegetables, timber, animal feed and polymers."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "breadcrumb": "Breadcrumb"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "allProducts": "All our products",
+    "services": "Services",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Quote request",
+    "quoteShort": "Quote",
+    "openMenu": "Open the menu",
+    "closeMenu": "Close the menu",
+    "language": "Language"
+  },
+  "home": {
+    "heroEyebrow": "Import · Export · Brand representation",
+    "heroTitle": "The world’s finest products, selected for you",
+    "heroText": "Seafood, fruit and vegetables, timber and industrial materials: one partner in Casablanca, from choosing the supplier to delivery.",
+    "heroPrimary": "Explore our products",
+    "heroSecondary": "Request a quote",
+    "eyebrow": "ALIOM TRADING",
+    "title": "International brand agent and import-export trader in Casablanca, Morocco",
+    "lead": "ALIOM TRADING grew out of long experience in distribution, as an agent for world-renowned brands.",
+    "paragraphs": [
+      "Our constant aim is to put our know-how at our customers’ service, with quality service and answers that meet their needs, both technical and commercial.",
+      "Our strengths: high-quality products at the best value for money, with respect for the environment."
+    ],
+    "pillarsTitle": "Five commitments to our customers",
+    "pillars": [
+      {
+        "title": "Commitment to quality",
+        "text": "Quality is the source of our success: we meet HACCP, IFS and BRC requirements."
+      },
+      {
+        "title": "Product quality",
+        "text": "A demanding, expert selection of our suppliers and sources."
+      },
+      {
+        "title": "Always available",
+        "text": "Direct contact and an ongoing dialogue with our customers, wherever they are."
+      },
+      {
+        "title": "Reliable logistics",
+        "text": "Products available when you need them, and logistics controlled from loading to delivery."
+      },
+      {
+        "title": "Technical support",
+        "text": "Support that listens and is always there to find solutions."
+      }
+    ],
+    "polesTitle": "Three divisions, nine product families",
+    "polesLead": "From Morocco’s Atlantic coast to European sawmills, we select every source for its quality and reliability.",
+    "missionEyebrow": "Our mission",
+    "mission": "To select and promote the world’s best products and brands.",
+    "valuesTitle": "Our values",
+    "values": ["Efficiency", "Responsiveness", "Productivity", "Quality"],
+    "facts": [
+      { "value": "2021", "label": "Founded in Casablanca" },
+      { "value": "9", "label": "Product families" },
+      { "value": "58", "label": "Products in our range" },
+      { "value": "HACCP · IFS · BRC", "label": "Requirements we meet" }
+    ],
+    "blogTitle": "Guides and news",
+    "blogLead": "Standards, seasons and logistics: notes for professional buyers.",
+    "blogAll": "All articles",
+    "quoteTitle": "A product to source, a brand to represent?",
+    "quoteText": "Tell us the product, volumes and destination. We’ll come back with an offer.",
+    "quoteCta": "Request a quote"
+  },
+  "products": {
+    "title": "Our products",
+    "h1": "Seafood, fruit and vegetables, timber and polymers",
+    "lead": "Nine product families in three divisions. Add products to your quote request and tell us your volumes: we reply with availability and a price.",
+    "seoDescription": "ALIOM TRADING range: frozen fish, seafood, canned fish, precooked fish, citrus and fruit, vegetables, timber, animal feed and polymers. Quotes on request."
+  },
+  "catalog": {
+    "addToQuote": "Add to quote",
+    "inQuote": "In your quote",
+    "factsTitle": "At a glance",
+    "productsTitle": "Our products",
+    "pointsTitle": "How we support you",
+    "faqTitle": "Frequently asked questions",
+    "otherTitle": "In the same division",
+    "seeRange": "See the range",
+    "count": {
+      "one": "product",
+      "other": "products"
+    },
+    "askTitle": "Need a price or a data sheet?",
+    "askText": "Add the products to your quote request, or call us directly."
+  },
+  "services": {
+    "title": "Services",
+    "h1": "Brand representation, sourcing and import-export trading",
+    "lead": "As a commercial agent and trader, ALIOM TRADING supports brands that want to grow in Morocco and buyers looking for a reliable supplier.",
+    "seoDescription": "Commercial agent in Morocco: representation of international brands, supplier sourcing, import, export, quality control and logistics from Casablanca.",
+    "items": [
+      {
+        "title": "Brand representation",
+        "text": "We represent international brands in Morocco: prospecting, presenting to distributors, following up orders and customers, and reporting market information."
+      },
+      {
+        "title": "Supplier sourcing",
+        "text": "We find and select the producers that match your specification, in Morocco and abroad, and compare the offers for you."
+      },
+      {
+        "title": "Import",
+        "text": "Timber, polymers, raw materials: we import for Moroccan manufacturers and coordinate transport, customs clearance and delivery."
+      },
+      {
+        "title": "Export",
+        "text": "Seafood, citrus, fruit and vegetables: we supply foreign importers with Moroccan products, by the container or in lots."
+      },
+      {
+        "title": "Quality control",
+        "text": "Plants selected against HACCP, IFS and BRC requirements, pre-loading checks and independent inspection on request."
+      },
+      {
+        "title": "Logistics and documents",
+        "text": "Cold chain, containers, health and origin certificates, shipping documents: we prepare the file with you."
+      }
+    ],
+    "processTitle": "How we work",
+    "steps": [
+      { "title": "Your need", "text": "Product, specification, volumes, destination and timing." },
+      { "title": "Our selection", "text": "We consult our sources and propose the best offer." },
+      { "title": "Inspection", "text": "Quality, quantity and packing checked before departure." },
+      { "title": "Delivery", "text": "Transport and documents followed through to your warehouse." }
+    ],
+    "brandsTitle": "Are you a brand?",
+    "brandsText": "Looking for an agent to grow your sales in Morocco? Introduce your brand and products: we review every proposal.",
+    "brandsCta": "Introduce a brand"
+  },
+  "about": {
+    "title": "About",
+    "h1": "ALIOM TRADING: high standards in our customers’ service",
+    "lead": "An agent for international brands, based at 2-4 rue Abou Dhabi, Oasis, Casablanca.",
+    "seoDescription": "ALIOM TRADING, founded in Casablanca in 2021 by Habiba Ouliass: agent for international brands and import-export trader. Commitment, values and mission.",
+    "story": [
+      "ALIOM TRADING grew out of long experience in distribution, as an agent for world-renowned brands.",
+      "Its founder, Mrs Habiba Ouliass, owns and manages the company, registered with the Casablanca trade register in 2021."
+    ],
+    "founderRole": "Founder and managing director",
+    "engagementTitle": "Our commitment",
+    "engagement": "Quality is the source of our success: we meet HACCP, IFS and BRC requirements. This quality has been built over decades of expertise and through the full commitment and dedication of our team.",
+    "blocks": [
+      {
+        "title": "Our strengths",
+        "text": "High-quality products at the best value for money, with respect for the environment. Our constant aim is to put our know-how at our customers’ service and give answers that fit their needs, technical and commercial alike."
+      },
+      {
+        "title": "Always available",
+        "text": "We keep direct contact and an ongoing dialogue with our customers, wherever they are."
+      },
+      {
+        "title": "Product quality",
+        "text": "We are always looking for the best products, through a demanding, expert selection of our suppliers and sources. We guarantee our customers product availability and reliable logistics."
+      },
+      {
+        "title": "Technical support",
+        "text": "We provide effective technical support that listens and is always available to find solutions."
+      }
+    ],
+    "valuesTitle": "Our values",
+    "values": [
+      { "title": "Efficiency", "text": "Focus on what matters to deliver the right product at the right time." },
+      { "title": "Responsiveness", "text": "A quick answer to every request, every question, every surprise." },
+      { "title": "Productivity", "text": "Simple processes that save our customers time." },
+      { "title": "Quality", "text": "The criterion behind every choice we make." }
+    ],
+    "missionTitle": "Our mission",
+    "mission": "To select and promote the world’s best products and brands.",
+    "identityTitle": "Company profile",
+    "identity": [
+      { "label": "Company name", "value": "ALIOM TRADING" },
+      { "label": "Legal form", "value": "Single-member SARL (limited company)" },
+      { "label": "Business", "value": "Import-export, trading and intermediation" },
+      { "label": "Founded", "value": "May 2021, Casablanca" },
+      { "label": "ICE", "value": "002810898000009" }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "h1": "Guides for professional buyers",
+    "lead": "Quality standards, seasons, logistics: our notes to help you buy and import with confidence.",
+    "readMore": "Read the article",
+    "related": "Related products",
+    "back": "All articles"
+  },
+  "contact": {
+    "title": "Contact",
+    "h1": "Contact ALIOM TRADING",
+    "lead": "A question about a product, an offer or a partnership? Write or call us, we answer quickly.",
+    "seoDescription": "Contact ALIOM TRADING in Casablanca, Morocco: 2-4 rue Abou Dhabi, Oasis. Phone and WhatsApp +212 6 60 16 11 57, e-mail info@aliomtrading.com.",
+    "addressTitle": "Address",
+    "phoneTitle": "Phone",
+    "emailTitle": "E-mail",
+    "map": "Open in Maps",
+    "formTitle": "Send us a message",
+    "subject": "Subject",
+    "subjects": [
+      "Seafood products",
+      "Fruit and vegetables",
+      "Timber, animal feed, polymers",
+      "Brand representation",
+      "Other"
+    ],
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company",
+    "email": "E-mail",
+    "phone": "Phone",
+    "country": "Country",
+    "message": "Message",
+    "required": "Required fields",
+    "submit": "Send the message",
+    "sending": "Sending…",
+    "success": "Thank you, your message has been sent. We’ll reply within one working day.",
+    "error": "Your message could not be sent. Please write to us directly at",
+    "orWhatsapp": "or on WhatsApp",
+    "consent": "We only use your details to answer your request. See our legal notice.",
+    "whatsapp": "WhatsApp",
+    "emailUs": "E-mail us",
+    "callUs": "Call us"
+  },
+  "quote": {
+    "title": "Quote request",
+    "intro": "Collect products as you browse, set your volumes, and send us one request. We reply with availability and prices.",
+    "basket": "Your selection",
+    "empty": "Your quote request is empty.",
+    "emptyCta": "Browse our products",
+    "remove": "Remove",
+    "clear": "Clear all",
+    "quantity": "Quantity",
+    "unit": "Unit",
+    "units": {
+      "containers": "containers",
+      "tonnes": "tonnes",
+      "pallets": "pallets",
+      "kg": "kg"
+    },
+    "items": "products selected",
+    "formTitle": "Your details",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company",
+    "email": "E-mail",
+    "phone": "Phone",
+    "country": "Country",
+    "destination": "Delivery country",
+    "period": "Desired period",
+    "periodHint": "e.g. monthly from January, or a one-off shipment in March",
+    "message": "Message",
+    "messageHint": "Size, cut, packing, Incoterm…",
+    "required": "Required fields",
+    "submit": "Send my quote request",
+    "sending": "Sending…",
+    "success": "Thank you, your quote request has been sent. We’ll come back to you with availability and prices.",
+    "error": "Your request could not be sent. Please write to us directly at",
+    "whatsappSend": "Send on WhatsApp",
+    "whatsappHint": "Opens WhatsApp with your selection and details, ready to send.",
+    "whatsappGreeting": "Hello ALIOM TRADING, I would like a quote for:",
+    "destinationPick": "Choose a country",
+    "destinationOther": "Other (tell us in the message)",
+    "destinations": [
+      "Morocco",
+      "France",
+      "Spain",
+      "Portugal",
+      "Italy",
+      "Mauritania",
+      "Senegal",
+      "Côte d’Ivoire"
+    ]
+  },
+  "legal": {
+    "title": "Legal notice",
+    "h1": "Legal notice and privacy",
+    "lead": "Information about the publisher of this website and about how we handle the personal data you send us.",
+    "sections": [
+      {
+        "h": "Publisher",
+        "p": "ALIOM TRADING, single-member SARL with a share capital of MAD 500,000. Registered office: 2-4 rue Abou Dhabi, Oasis, Casablanca, Morocco. Casablanca trade register no. 502559. ICE: 002810898000009. Managing director and publication director: Mrs Habiba Ouliass. Contact: info@aliomtrading.com, +212 6 60 16 11 57."
+      },
+      {
+        "h": "Hosting",
+        "p": "The website is hosted by the company’s hosting provider, whose details are available on request."
+      },
+      {
+        "h": "Intellectual property",
+        "p": "The texts, the ALIOM TRADING name and logo belong to the company. Illustrative photographs come from royalty-free image libraries. Reproduction without permission is prohibited."
+      },
+      {
+        "h": "Data we collect",
+        "p": "Only what you type into the contact and quote forms: name, company, e-mail address, phone number, country, the products you selected and your message."
+      },
+      {
+        "h": "Purpose and retention",
+        "p": "We use this data to answer your request and, if you become a customer, to prepare and follow up offers and orders. Enquiries that do not lead to business are deleted after 24 months."
+      },
+      {
+        "h": "Sharing",
+        "p": "We do not sell your data. Form messages pass through our e-mail provider; logistics partners only receive what is needed for a delivery."
+      },
+      {
+        "h": "Cookies",
+        "p": "This website sets no tracking cookies. Your quote selection is stored in your own browser (local storage) and only sent to us when you submit the form."
+      },
+      {
+        "h": "Your rights",
+        "p": "Under Moroccan Law 09-08 on the protection of individuals with regard to the processing of personal data, you have the right to access, correct and object to the use of your data. Write to info@aliomtrading.com."
+      }
+    ]
+  },
+  "footer": {
+    "navTitle": "Navigation",
+    "productsTitle": "Our products",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved.",
+    "legal": "Legal notice",
+    "backToTop": "Back to top",
+    "ice": "ICE"
+  }
+}

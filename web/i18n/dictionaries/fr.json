@@ -1,0 +1,335 @@
+{
+  "site": {
+    "name": "ALIOM TRADING",
+    "tagline": "Import-export et agent de marques à Casablanca",
+    "description": "Agent de marques internationales et négociant import-export à Casablanca : produits de la mer, fruits et légumes, bois, alimentation animale, polymères."
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "mainNav": "Navigation principale",
+    "breadcrumb": "Fil d’Ariane"
+  },
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "allProducts": "Tous nos produits",
+    "services": "Services",
+    "about": "À propos",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Demande de devis",
+    "quoteShort": "Devis",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue"
+  },
+  "home": {
+    "heroEyebrow": "Import · Export · Représentation de marques",
+    "heroTitle": "Les meilleurs produits du monde, sélectionnés pour vous",
+    "heroText": "Produits de la mer, fruits et légumes, bois et matières industrielles : un seul interlocuteur à Casablanca, de la sélection du fournisseur à la livraison.",
+    "heroPrimary": "Découvrir nos produits",
+    "heroSecondary": "Demander un devis",
+    "eyebrow": "ALIOM TRADING",
+    "title": "Agent de marques internationales et négociant import-export à Casablanca",
+    "lead": "ALIOM TRADING est le fruit d’une riche expérience de la distribution, en tant qu’agent représentant de marques mondialement renommées.",
+    "paragraphs": [
+      "Notre volonté constante est de mettre notre savoir-faire au service de nos clients, d’apporter une qualité de services et des réponses adaptées pour satisfaire au mieux leurs besoins, tant sur le plan technique que commercial.",
+      "Nos atouts : des produits de haute qualité au meilleur rapport qualité-prix, dans le respect de l’environnement."
+    ],
+    "pillarsTitle": "Cinq engagements envers nos clients",
+    "pillars": [
+      {
+        "title": "Engagement qualité",
+        "text": "La qualité est la source de notre succès : nous respectons les exigences HACCP, IFS et BRC."
+      },
+      {
+        "title": "Qualité des produits",
+        "text": "Une sélection exigeante et experte de nos fournisseurs et de nos sources d’approvisionnement."
+      },
+      {
+        "title": "Disponibilité permanente",
+        "text": "Un contact direct et un dialogue permanent avec nos clients, quelle que soit leur implantation."
+      },
+      {
+        "title": "Logistique performante",
+        "text": "La disponibilité de nos produits et une logistique maîtrisée, du chargement à la livraison."
+      },
+      {
+        "title": "Assistance technique",
+        "text": "Une assistance à l’écoute et toujours disponible pour trouver des solutions."
+      }
+    ],
+    "polesTitle": "Trois pôles, neuf familles de produits",
+    "polesLead": "De l’Atlantique marocain aux scieries européennes, nous sélectionnons chaque source pour sa qualité et sa régularité.",
+    "missionEyebrow": "Notre mission",
+    "mission": "Sélectionner et promouvoir les meilleurs produits et les meilleures marques du monde.",
+    "valuesTitle": "Nos valeurs",
+    "values": ["Efficacité", "Réactivité", "Productivité", "Qualité"],
+    "facts": [
+      { "value": "2021", "label": "Création à Casablanca" },
+      { "value": "9", "label": "Familles de produits" },
+      { "value": "58", "label": "Références au catalogue" },
+      { "value": "HACCP · IFS · BRC", "label": "Exigences respectées" }
+    ],
+    "blogTitle": "Guides et actualités",
+    "blogLead": "Normes, saisons et logistique : nos notes pour les acheteurs professionnels.",
+    "blogAll": "Tous les articles",
+    "quoteTitle": "Un produit à sourcer, une marque à représenter ?",
+    "quoteText": "Dites-nous le produit, les volumes et la destination. Nous revenons vers vous avec une offre.",
+    "quoteCta": "Demander un devis"
+  },
+  "products": {
+    "title": "Nos produits",
+    "h1": "Produits de la mer, fruits et légumes, bois et polymères",
+    "lead": "Neuf familles de produits réparties en trois pôles. Ajoutez des références à votre demande de devis et précisez vos volumes : nous revenons vers vous avec la disponibilité et un prix.",
+    "seoDescription": "Poisson congelé, fruits de mer, conserves, poisson pané, agrumes et fruits, légumes, bois, alimentation animale et polymères. Devis sur demande."
+  },
+  "catalog": {
+    "addToQuote": "Ajouter au devis",
+    "inQuote": "Dans votre devis",
+    "factsTitle": "En bref",
+    "productsTitle": "Nos références",
+    "pointsTitle": "Notre accompagnement",
+    "faqTitle": "Questions fréquentes",
+    "otherTitle": "Dans le même pôle",
+    "seeRange": "Voir la gamme",
+    "count": {
+      "one": "référence",
+      "other": "références"
+    },
+    "askTitle": "Besoin d’un prix ou d’une fiche technique ?",
+    "askText": "Ajoutez les produits à votre demande de devis, ou appelez-nous directement."
+  },
+  "services": {
+    "title": "Services",
+    "h1": "Représentation de marques, sourcing et négoce import-export",
+    "lead": "Agent commercial et négociant, ALIOM TRADING accompagne les marques qui veulent se développer au Maroc et les acheteurs qui cherchent un fournisseur fiable.",
+    "seoDescription": "Agent commercial au Maroc : représentation de marques internationales, sourcing de fournisseurs, import, export, contrôle qualité et logistique depuis Casablanca.",
+    "items": [
+      {
+        "title": "Représentation de marques",
+        "text": "Nous représentons des marques internationales au Maroc : prospection, présentation aux distributeurs, suivi des commandes et des clients, remontée des informations du marché."
+      },
+      {
+        "title": "Sourcing de fournisseurs",
+        "text": "Nous identifions et sélectionnons les producteurs adaptés à votre cahier des charges, au Maroc comme à l’étranger, et comparons les offres pour vous."
+      },
+      {
+        "title": "Importation",
+        "text": "Bois, polymères, matières premières : nous importons pour les industriels marocains et coordonnons transport, dédouanement et livraison."
+      },
+      {
+        "title": "Exportation",
+        "text": "Produits de la mer, agrumes, fruits et légumes : nous fournissons les importateurs étrangers en produits marocains, au conteneur ou par lots."
+      },
+      {
+        "title": "Contrôle qualité",
+        "text": "Sélection des usines selon les exigences HACCP, IFS et BRC, vérification avant chargement et expertise indépendante sur demande."
+      },
+      {
+        "title": "Logistique et documents",
+        "text": "Chaîne du froid, conteneurs, certificats sanitaires et d’origine, documents de transport : nous préparons le dossier avec vous."
+      }
+    ],
+    "processTitle": "Comment nous travaillons",
+    "steps": [
+      { "title": "Votre besoin", "text": "Produit, spécification, volumes, destination et calendrier." },
+      { "title": "Notre sélection", "text": "Nous consultons nos sources et vous proposons la meilleure offre." },
+      { "title": "Le contrôle", "text": "Qualité, quantité et emballage vérifiés avant le départ." },
+      { "title": "La livraison", "text": "Transport et documents suivis jusqu’à votre entrepôt." }
+    ],
+    "brandsTitle": "Vous êtes une marque ?",
+    "brandsText": "Vous cherchez un agent pour développer vos ventes au Maroc ? Présentez-nous votre marque et vos produits : nous étudions chaque proposition.",
+    "brandsCta": "Proposer une marque"
+  },
+  "about": {
+    "title": "À propos",
+    "h1": "ALIOM TRADING, l’exigence au service de nos clients",
+    "lead": "Agent représentant de marques internationales, situé au 2-4, rue Abou Dhabi, Oasis, à Casablanca.",
+    "seoDescription": "ALIOM TRADING, SARL créée en 2021 à Casablanca par Mme Habiba Ouliass : agent de marques internationales et négociant import-export. Engagement, valeurs et mission.",
+    "story": [
+      "ALIOM TRADING est le fruit d’une riche expérience dans le domaine de la distribution, en tant qu’agent représentant de marques mondialement renommées.",
+      "Sa fondatrice, Madame Habiba Ouliass, est propriétaire et gérante de la société, immatriculée au registre du commerce de Casablanca en 2021."
+    ],
+    "founderRole": "Fondatrice et gérante",
+    "engagementTitle": "Notre engagement",
+    "engagement": "La qualité est la source de notre succès : nous respectons les exigences HACCP, IFS et BRC. Cette qualité s’est construite au fil de plusieurs décennies d’expertise, ainsi que par le plein engagement et le dévouement de nos collaborateurs.",
+    "blocks": [
+      {
+        "title": "Nos atouts",
+        "text": "Des produits de haute qualité au meilleur rapport qualité-prix, dans le respect de l’environnement. Notre volonté constante est de mettre notre savoir-faire au service de nos clients et d’apporter des réponses adaptées à leurs besoins, techniques comme commerciaux."
+      },
+      {
+        "title": "Disponibilité permanente",
+        "text": "Nous assurons un contact direct et un dialogue permanent avec nos clients, quelle que soit leur implantation."
+      },
+      {
+        "title": "Qualité des produits",
+        "text": "Nous sommes en quête permanente des meilleurs produits, en assurant une sélection exigeante et experte de nos fournisseurs et de nos sources d’approvisionnement. Nous garantissons à notre clientèle la disponibilité de nos produits et une logistique performante."
+      },
+      {
+        "title": "Assistance technique",
+        "text": "Nous assurons une assistance technique performante, à l’écoute, et toujours disponible pour trouver des solutions."
+      }
+    ],
+    "valuesTitle": "Nos valeurs",
+    "values": [
+      { "title": "Efficacité", "text": "Aller à l’essentiel pour livrer le bon produit, au bon moment." },
+      { "title": "Réactivité", "text": "Répondre vite à chaque demande, chaque question, chaque imprévu." },
+      { "title": "Productivité", "text": "Des processus simples qui font gagner du temps à nos clients." },
+      { "title": "Qualité", "text": "Le critère qui guide chacune de nos sélections." }
+    ],
+    "missionTitle": "Notre mission",
+    "mission": "Sélectionner et promouvoir les meilleurs produits et les meilleures marques du monde.",
+    "identityTitle": "Fiche d’identité",
+    "identity": [
+      { "label": "Raison sociale", "value": "ALIOM TRADING" },
+      { "label": "Forme juridique", "value": "SARL à associé unique" },
+      { "label": "Activité", "value": "Import-export, négoce et intermédiation" },
+      { "label": "Création", "value": "Mai 2021, Casablanca" },
+      { "label": "ICE", "value": "002810898000009" }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "h1": "Guides pour les acheteurs professionnels",
+    "lead": "Normes de qualité, saisons, logistique : nos notes pour acheter et importer en toute sérénité.",
+    "readMore": "Lire l’article",
+    "related": "Produits liés",
+    "back": "Tous les articles"
+  },
+  "contact": {
+    "title": "Contact",
+    "h1": "Contactez ALIOM TRADING",
+    "lead": "Une question sur un produit, une offre ou une collaboration ? Écrivez-nous ou appelez-nous, nous vous répondons rapidement.",
+    "seoDescription": "Contactez ALIOM TRADING à Casablanca : 2-4, rue Abou Dhabi, Oasis. Téléphone et WhatsApp +212 6 60 16 11 57, e-mail info@aliomtrading.com.",
+    "addressTitle": "Adresse",
+    "phoneTitle": "Téléphone",
+    "emailTitle": "E-mail",
+    "map": "Ouvrir dans Maps",
+    "formTitle": "Envoyez-nous un message",
+    "subject": "Objet",
+    "subjects": [
+      "Produits de la mer",
+      "Fruits et légumes",
+      "Bois, alimentation animale, polymères",
+      "Représentation de marque",
+      "Autre"
+    ],
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "company": "Société",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "message": "Message",
+    "required": "Champs obligatoires",
+    "submit": "Envoyer le message",
+    "sending": "Envoi…",
+    "success": "Merci, votre message a bien été envoyé. Nous vous répondons sous un jour ouvré.",
+    "error": "Votre message n’a pas pu être envoyé. Écrivez-nous directement à",
+    "orWhatsapp": "ou sur WhatsApp",
+    "consent": "Vos données servent uniquement à répondre à votre demande. Voir nos mentions légales.",
+    "whatsapp": "WhatsApp",
+    "emailUs": "Nous écrire",
+    "callUs": "Nous appeler"
+  },
+  "quote": {
+    "title": "Demande de devis",
+    "intro": "Ajoutez des produits au fil de votre visite, indiquez vos volumes et envoyez-nous une seule demande. Nous revenons vers vous avec la disponibilité et les prix.",
+    "basket": "Votre sélection",
+    "empty": "Votre demande de devis est vide.",
+    "emptyCta": "Parcourir nos produits",
+    "remove": "Retirer",
+    "clear": "Tout effacer",
+    "quantity": "Quantité",
+    "unit": "Unité",
+    "units": {
+      "containers": "conteneurs",
+      "tonnes": "tonnes",
+      "pallets": "palettes",
+      "kg": "kg"
+    },
+    "items": "produits sélectionnés",
+    "formTitle": "Vos coordonnées",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "company": "Société",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "destination": "Pays de livraison",
+    "period": "Période souhaitée",
+    "periodHint": "ex. livraison mensuelle dès janvier, ou un envoi unique en mars",
+    "message": "Message",
+    "messageHint": "Calibre, présentation, conditionnement, Incoterm…",
+    "required": "Champs obligatoires",
+    "submit": "Envoyer ma demande",
+    "sending": "Envoi…",
+    "success": "Merci, votre demande de devis a bien été envoyée. Nous revenons vers vous avec la disponibilité et les prix.",
+    "error": "Votre demande n’a pas pu être envoyée. Écrivez-nous directement à",
+    "whatsappSend": "Envoyer sur WhatsApp",
+    "whatsappHint": "Ouvre WhatsApp avec votre sélection et vos coordonnées, prêtes à envoyer.",
+    "whatsappGreeting": "Bonjour ALIOM TRADING, je souhaite un devis pour :",
+    "destinationPick": "Choisir un pays",
+    "destinationOther": "Autre (précisez dans le message)",
+    "destinations": [
+      "Maroc",
+      "France",
+      "Espagne",
+      "Portugal",
+      "Italie",
+      "Mauritanie",
+      "Sénégal",
+      "Côte d’Ivoire"
+    ]
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "h1": "Mentions légales et confidentialité",
+    "lead": "Informations sur l’éditeur du site et sur le traitement des données personnelles que vous nous transmettez.",
+    "sections": [
+      {
+        "h": "Éditeur du site",
+        "p": "ALIOM TRADING, SARL à associé unique au capital de 500 000 MAD. Siège social : 2-4, rue Abou Dhabi, Oasis, Casablanca, Maroc. Registre du commerce de Casablanca n° 502559. ICE : 002810898000009. Gérante et directrice de la publication : Mme Habiba Ouliass. Contact : info@aliomtrading.com, +212 6 60 16 11 57."
+      },
+      {
+        "h": "Hébergement",
+        "p": "Le site est hébergé par le prestataire d’hébergement de la société. Ses coordonnées sont communiquées sur simple demande."
+      },
+      {
+        "h": "Propriété intellectuelle",
+        "p": "Les textes, la marque et le logo ALIOM TRADING appartiennent à la société. Les photographies d’illustration proviennent de banques d’images libres de droits. Toute reproduction sans autorisation est interdite."
+      },
+      {
+        "h": "Données collectées",
+        "p": "Uniquement ce que vous saisissez dans les formulaires de contact et de devis : nom, société, adresse e-mail, téléphone, pays, produits sélectionnés et message."
+      },
+      {
+        "h": "Finalité et durée",
+        "p": "Ces données servent à répondre à votre demande et, si vous devenez client, à établir et suivre les offres et les commandes. Les demandes sans suite sont supprimées après 24 mois."
+      },
+      {
+        "h": "Partage",
+        "p": "Nous ne vendons pas vos données. Les messages des formulaires transitent par notre fournisseur de messagerie ; nos partenaires logistiques ne reçoivent que ce qui est nécessaire à une livraison."
+      },
+      {
+        "h": "Cookies",
+        "p": "Ce site ne dépose aucun cookie de suivi. Votre sélection de devis est conservée dans votre propre navigateur (stockage local) et ne nous est transmise qu’à l’envoi du formulaire."
+      },
+      {
+        "h": "Vos droits",
+        "p": "Conformément à la loi n° 09-08 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel, vous disposez d’un droit d’accès, de rectification et d’opposition, que vous pouvez exercer en écrivant à info@aliomtrading.com."
+      }
+    ]
+  },
+  "footer": {
+    "navTitle": "Navigation",
+    "productsTitle": "Nos produits",
+    "contactTitle": "Contact",
+    "rights": "Tous droits réservés.",
+    "legal": "Mentions légales",
+    "backToTop": "Haut de page",
+    "ice": "ICE"
+  }
+}

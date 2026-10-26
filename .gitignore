@@ -1,0 +1,12 @@
+# Client's trade-register scan: shows the founder's national ID number (CIN). Never publish.
+/WhatsApp Image *.jpeg
+
+node_modules/
+.next/
+web/out/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+.vercel
+# form mailer secrets
+web/public/api/mail-config.php

@@ -1,0 +1,9 @@
+{
+  "products": { "fr": "produits", "en": "products" },
+  "services": { "fr": "services", "en": "services" },
+  "about": { "fr": "a-propos", "en": "about" },
+  "blog": { "fr": "blog", "en": "blog" },
+  "contact": { "fr": "contact", "en": "contact" },
+  "quote": { "fr": "devis", "en": "quote" },
+  "legal": { "fr": "mentions-legales", "en": "legal-notice" }
+}

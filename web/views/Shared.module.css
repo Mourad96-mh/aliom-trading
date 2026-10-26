@@ -1,0 +1,141 @@
+/* Blocks shared by the catalogue and brand pages. */
+
+/* Numbered points — "how we support you", "how we work". */
+.points {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.points4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.point {
+  display: flex;
+}
+
+.pointInner {
+  width: 100%;
+  padding: 1.4rem 1.35rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+:global(.section:not(.section--tint)) .pointInner {
+  background: var(--paper-2);
+}
+
+.pointNumber {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: var(--step-3);
+  line-height: 1;
+  color: var(--gold-dark);
+  font-variant-numeric: tabular-nums;
+}
+
+.pointTitle {
+  margin: 0 0 0.35rem;
+  font-size: var(--step-1);
+}
+
+.pointText {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+@media (max-width: 1000px) {
+  .points4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .points,
+  .points4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Long text at reading width. */
+.prose {
+  max-width: 70ch;
+  color: var(--ink-2);
+}
+
+.prose h2 {
+  margin: 2rem 0 0.6rem;
+  font-size: var(--step-2);
+  color: var(--ink);
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+/* The contact card — address, phone, e-mail. */
+.contactCard {
+  display: grid;
+  gap: 1.1rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: var(--radius-lg);
+  font-style: normal;
+}
+
+.contactRow {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+.contactIcon {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+}
+
+.contactLabel {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.contactValue {
+  display: block;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.contactValue a {
+  text-decoration: none;
+}
+
+.contactValue a:hover {
+  text-decoration: underline;
+}
+
+.contactMap {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--brand);
+}
