@@ -1,0 +1,11 @@
+# Only web/ is built. Keep everything else off Vercel, above all the client's documents
+# at the root (the trade-register scan shows the founder's ID number).
+/*.jpg
+/*.jpeg
+/*.png
+/*.txt
+/brand
+/docs
+web/node_modules
+web/.next
+web/out
