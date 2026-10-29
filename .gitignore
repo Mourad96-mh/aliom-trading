@@ -10,3 +10,6 @@ next-env.d.ts
 .vercel
 # form mailer secrets
 web/public/api/mail-config.php
+# admin password, and the live catalogue the admin writes on the server
+web/public/api/admin-config.php
+web/public/api/data/

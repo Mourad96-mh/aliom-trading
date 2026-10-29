@@ -11,6 +11,7 @@ export function Field({
   placeholder,
   hint,
   options,
+  defaultValue,
 }: {
   name: string;
   label: string;
@@ -21,6 +22,8 @@ export function Field({
   placeholder?: string;
   hint?: string;
   options?: string[];
+  /** A select's starting choice, when it is not the first option or the placeholder. */
+  defaultValue?: string;
 }) {
   return (
     <label className={s.field}>
@@ -35,7 +38,7 @@ export function Field({
         {hint && <span className={s.hint}> — {hint}</span>}
       </span>
       {options ? (
-        <select name={name} required={required} defaultValue={placeholder === undefined ? options[0] : ''}>
+        <select name={name} required={required} defaultValue={defaultValue ?? (placeholder === undefined ? options[0] : '')}>
           {placeholder !== undefined && <option value="">{placeholder}</option>}
           {options.map((o) => (
             <option key={o}>{o}</option>

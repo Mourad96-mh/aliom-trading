@@ -5,17 +5,13 @@ import Link from 'next/link';
 import { useRef, useState, type FormEvent } from 'react';
 
 import type { Locale } from '@/i18n/config';
+import type { Product } from '@/data/catalog';
+import { local, useLiveProducts } from '@/components/Catalog/liveProducts';
 import { UNITS, useQuote, type Unit } from './QuoteProvider';
 import { requiredFieldsFilled } from '@/components/forms/requiredFields';
 import { sendForm } from '@/components/forms/sendForm';
 import { Field, FormFailure } from '@/components/forms/Field';
 import s from '@/components/forms/Form.module.css';
-
-interface CatalogueEntry {
-  slug: string;
-  name: string;
-  image: string;
-}
 
 export type QuoteLabels = {
   basket: string;
@@ -60,10 +56,14 @@ export type QuoteLabels = {
  * so and offers the e-mail address and WhatsApp instead of pretending to have sent.
  * The WhatsApp button is the other road: it writes the same request as a message and
  * opens WhatsApp with it, so the buyer only has to press send.
+ *
+ * Names come from the live catalogue, so a product the admin added after the build still
+ * shows by name; `images` is each family's photo, the thumbnail of its products.
  */
 export default function QuoteForm({
   locale,
-  catalogue,
+  products,
+  images,
   productsHref,
   privacyHref,
   email,
@@ -71,7 +71,8 @@ export default function QuoteForm({
   labels,
 }: {
   locale: Locale;
-  catalogue: CatalogueEntry[];
+  products: Product[];
+  images: Record<string, string>;
   productsHref: string;
   privacyHref: string;
   email: string;
@@ -82,7 +83,8 @@ export default function QuoteForm({
   const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'failed'>('idle');
   const formRef = useRef<HTMLFormElement>(null);
 
-  const bySlug = new Map(catalogue.map((c) => [c.slug, c]));
+  const live = useLiveProducts(products);
+  const bySlug = new Map(live.map((p) => [p.id, { name: local(p.name, locale), image: images[p.category] }]));
   const selection = lines.map((l) => ({ ...l, product: bySlug.get(l.slug) }));
 
   /** The basket, then whichever details are filled in; nothing is required here. */
@@ -182,7 +184,7 @@ export default function QuoteForm({
             <ul className={s.lines}>
               {selection.map((line) => (
                 <li key={line.slug} className={s.line}>
-                  {line.product && <Image src={line.product.image} alt="" width={56} height={56} className={s.thumb} />}
+                  {line.product?.image && <Image src={line.product.image} alt="" width={56} height={56} className={s.thumb} />}
 
                   <div className={s.lineBody}>
                     <p className={s.lineName}>{line.product?.name ?? line.slug}</p>

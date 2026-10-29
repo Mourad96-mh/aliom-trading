@@ -3,7 +3,7 @@
  *
  * Brand: the slate green of the ALIOM logo, deepened for contrast, with a brass gold as
  * the single accent (trade, quality, the "premium brands" the company represents). Each
- * of the three divisions gets its own colour so a family page is recognisable at a glance.
+ * family gets a division colour so its page is recognisable at a glance.
  * Nothing else in the code hard-codes a brand colour.
  */
 
@@ -15,10 +15,10 @@
   --gold-light: #e3c57f;
   --gold-dark: #8a6a1f;
 
-  /* Division identity: sea blue, orchard green, timber brown. */
+  /* Family identity: sea blue and orchard green for exports, brass brown for imports. */
   --cat-sea: #2b6a87;
   --cat-land: #4f7a35;
-  --cat-industry: #8a5a34;
+  --cat-import: #8a5a34;
 
   /* Ink and paper (warm, sand-tinted whites) */
   --ink: #1b2523;

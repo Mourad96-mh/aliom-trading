@@ -6,11 +6,12 @@ import { breadcrumbs, itemList } from '@/data/schema';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import CategoryCard from '@/components/CategoryCard/CategoryCard';
 import QuoteBand from '@/components/QuoteBand/QuoteBand';
+import MissingProduct from '@/components/MissingProduct/MissingProduct';
 import Reveal from '@/components/Reveal/Reveal';
 import JsonLd from '@/components/JsonLd/JsonLd';
 import s from './Catalog.module.css';
 
-/** The products hub: the three divisions, each with its family cards. */
+/** The products hub: export and import, each with its family cards, then the way to ask for anything else. */
 export default function ProductsView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   const crumbs = [{ label: t.nav.home, href: href(locale, 'home') }, { label: t.products.title }];
@@ -54,6 +55,7 @@ export default function ProductsView({ locale }: { locale: Locale }) {
                 </li>
               ))}
             </ul>
+            {i === GROUPS.length - 1 && <MissingProduct locale={locale} />}
           </div>
         </section>
       ))}

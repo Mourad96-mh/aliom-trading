@@ -11,17 +11,17 @@
     "licence": "CC0",
     "author": "Alex Knight agkdesign"
   },
-  "categories/canned-fish.webp": {
-    "title": "File:1732Foods Fruits Baliuag Bulacan Mega Sardines 27.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:1732Foods_Fruits_Baliuag_Bulacan_Mega_Sardines_27.jpg",
-    "licence": "CC0",
-    "author": "Judgefloro"
+  "categories/canned-food.webp": {
+    "title": "Conserves.jpg",
+    "source": "supplied by the client (2026-10-29)",
+    "licence": "",
+    "author": ""
   },
   "categories/precooked-fish.webp": {
-    "title": "File:Fish Fingers - RYBKA 2024-01-25.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Fish_Fingers_-_RYBKA_2024-01-25.jpg",
-    "licence": "CC0",
-    "author": "Andy Li"
+    "title": "File:Fishfinger classic frozen 1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fishfinger_classic_frozen_1.jpg",
+    "licence": "CC BY-SA 4.0",
+    "author": "Superbass"
   },
   "categories/fruits.webp": {
     "title": "File:Orange Fruit (Unsplash).jpg",
@@ -35,23 +35,11 @@
     "licence": "CC0",
     "author": "Sven Scheuermeier sveninho"
   },
-  "categories/wood.webp": {
-    "title": "File:Wood (Unsplash).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Wood_(Unsplash).jpg",
-    "licence": "CC0",
-    "author": "kindfolk kindfolk"
-  },
   "categories/animal-feed.webp": {
     "title": "File:Shad fishing.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Shad_fishing.jpg",
     "licence": "Public domain",
     "author": "Bob Williams"
-  },
-  "categories/polymers.webp": {
-    "title": "File:Pellets di masterbatch carbonato per plastica 2.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Pellets_di_masterbatch_carbonato_per_plastica_2.jpg",
-    "licence": "CC0",
-    "author": "Gabriele85"
   },
   "scenes/sea.webp": {
     "title": "File:Fishing boats, morning, Beach, Rincon de la Victoria, Andalusia, Spain.jpg",
@@ -70,18 +58,6 @@
     "source": "https://commons.wikimedia.org/wiki/File:Frozen_squid_head.jpg",
     "licence": "CC0",
     "author": "Fumikas Sagisavas"
-  },
-  "scenes/industry.webp": {
-    "title": "File:Wooden-pallets stacked 8.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Wooden-pallets_stacked_8.jpg",
-    "licence": "CC0",
-    "author": "W.carter"
-  },
-  "blog/euro-pallet.webp": {
-    "title": "File:Wooden-pallets stacked 4.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Wooden-pallets_stacked_4.jpg",
-    "licence": "CC0",
-    "author": "W.carter"
   },
   "scenes/services.webp": {
     "title": "File:Large cargo port (Unsplash).jpg",
@@ -118,5 +94,29 @@
     "source": "https://commons.wikimedia.org/wiki/File:Plants_in_beakers_(Unsplash).jpg",
     "licence": "CC0",
     "author": "chuttersnap chuttersnap"
+  },
+  "categories/vegetable-oils.webp": {
+    "title": "File:Fresh Salad (Unsplash).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fresh_Salad_(Unsplash).jpg",
+    "licence": "CC0",
+    "author": "fireskystudios.com asthetik"
+  },
+  "categories/metal-packaging.webp": {
+    "title": "File:Canned salmon, photo from The Encyclopedia of Food by Artemas Ward.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Canned_salmon,_photo_from_The_Encyclopedia_of_Food_by_Artemas_Ward.jpg",
+    "licence": "Public domain",
+    "author": "Artemas Ward"
+  },
+  "categories/imported-oils.webp": {
+    "title": "File:Impressive sunflowers (Unsplash).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Impressive_sunflowers_(Unsplash).jpg",
+    "licence": "CC0",
+    "author": "Angelika Levshakova levshakova_a"
+  },
+  "categories/imported-canned.webp": {
+    "title": "File:Canned Beans on Grocery Shelf.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Canned_Beans_on_Grocery_Shelf.jpg",
+    "licence": "CC0",
+    "author": "Born to Barnacle"
   }
 }

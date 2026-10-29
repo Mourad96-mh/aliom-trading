@@ -11,13 +11,17 @@ Everything below is on the site now. Each item is either an assumption or a plac
 - [ ] **Logo**: redrawn from a low-resolution capture. We need the original vector file.
 - [ ] **Hosting / mailbox**: the domain is at ADK Media. We need FTP/cPanel access and the SMTP settings of info@aliomtrading.com for the forms.
 
-## Products (taken from univela-morocco.com, at the user's request)
+## Products (export / import structure, client's brief of 2026-10-29)
 
-- [ ] Does ALIOM really trade **all nine families**? Remove any that don't apply (one line each in `web/data/catalog.ts`).
+Two poles modelled on ABS GLOBAL TRADING: export from Morocco (8 families) and import into
+Morocco (3 families). Timber and polymers were removed. The client now adds or edits
+products at /admin/; families still live in `web/data/catalog.ts`.
+
+- [ ] **New export products**: canned tuna, green and black olives, capers; olive oil (extra virgin, virgin), culinary and cosmetic argan oil, prickly pear seed oil.
+- [ ] **New import families**: metal cans (3-piece, 1/4 club drawn, easy-open ends, tinplate, aluminium), imported oils (soybean, sunflower, palm, rapeseed), imported canned food (tuna, sweet corn, tomato paste, mushrooms, vegetables, fruit in syrup). Our own selection: confirm or adjust.
+- [ ] Claims in the new family copy: "Morocco among the major exporters of table olives and capers", "the only country where the argan tree grows in the wild", "Morocco imports most of the vegetable oil it consumes", Arabic + French labelling and ONSSA inspection on imports.
 - [ ] **Frozen sardines**: Morocco announced a halt to frozen-sardine exports from 1 Feb 2026. Is the product for the local market, imports, or should it be removed?
 - [ ] The **"Formats", "Conditionnement" and "Transport"** lines on each family page are standard trade practice, not ALIOM commitments. Confirm or correct them.
-- [ ] **Wood**: origin "Europe, selon arrivages"; the "bois rouge = pin sylvestre" explanation; 9–22 mm OSB; new or refurbished pallets.
-- [ ] **Polymers**: which materials exactly (PE, PP, PVC, SBR…)?
 - [ ] **Avocado** "Hass et variétés vertes du Gharb"; **Nour clementine** described as a late, seedless variety.
 - [ ] **Brands represented**: the site never names a brand. If ALIOM can list the brands it represents (with their permission), add a "Nos marques" section. It is the strongest proof for an agent.
 
@@ -25,11 +29,11 @@ Everything below is on the site now. Each item is either an assumption or a plac
 
 - [ ] "Nous respectons les exigences HACCP, IFS et BRC" is the client's own sentence. The site never says "certified". Are there certificates (of ALIOM or of its suppliers) we can show?
 - [ ] "Expertise indépendante par lot" (fruit and vegetables) comes from the reference site. Does ALIOM offer it?
-- [ ] Home facts band: 2021 / 9 families / 58 products / HACCP · IFS · BRC. These are all from the documents. Add real figures if the client has them (countries served, tonnes per year).
+- [ ] Home facts band: 2021 / 11 families (counted from the code) / 2 poles / HACCP · IFS · BRC. These are all from the documents. Add real figures if the client has them (countries served, tonnes per year).
 
 ## Blog
 
-- [ ] Three starter guides (HACCP-IFS-BRC, cephalopods, euro pallet), written by us from general public facts. The client should read them.
+- [ ] Two starter guides (HACCP-IFS-BRC, cephalopods), written by us from general public facts. The client should read them. (The euro-pallet guide was removed with timber; an article on canned food or olive oil would fit the new range.)
 
 ## Photos
 

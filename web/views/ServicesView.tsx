@@ -13,25 +13,25 @@ import s from './ServicesView.module.css';
 
 /* One pictogram per service, in the dictionary's order. */
 const ICONS = [
-  /* Brand representation — a handshake-like pair of hands as two linked rings. */
-  <svg key="brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 3.5 14.4 8l5 .7-3.6 3.5.9 5L12 14.9l-4.7 2.3.9-5L4.6 8.7l5-.7Z" />
-    <path d="M7 21h10" />
-  </svg>,
-  /* Sourcing — a magnifier over a box. */
-  <svg key="sourcing" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="10.5" cy="10.5" r="6.5" />
-    <path d="m15.5 15.5 5 5" />
+  /* Export — an arrow out of a box. */
+  <svg key="export" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 13v6.5h16V13" />
+    <path d="M12 14V3M7.5 7.5 12 3l4.5 4.5" />
   </svg>,
   /* Import — an arrow into a box. */
   <svg key="import" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
     <path d="M4 13v6.5h16V13" />
     <path d="M12 3v11M7.5 9.5 12 14l4.5-4.5" />
   </svg>,
-  /* Export — an arrow out of a box. */
-  <svg key="export" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 13v6.5h16V13" />
-    <path d="M12 14V3M7.5 7.5 12 3l4.5 4.5" />
+  /* Sourcing — a magnifier over a box. */
+  <svg key="sourcing" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="10.5" cy="10.5" r="6.5" />
+    <path d="m15.5 15.5 5 5" />
+  </svg>,
+  /* Brand representation — a handshake-like pair of hands as two linked rings. */
+  <svg key="brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 3.5 14.4 8l5 .7-3.6 3.5.9 5L12 14.9l-4.7 2.3.9-5L4.6 8.7l5-.7Z" />
+    <path d="M7 21h10" />
   </svg>,
   /* Quality control — a clipboard with a tick. */
   <svg key="qc" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">

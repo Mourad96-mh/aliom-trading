@@ -1,25 +1,30 @@
 import type { Locale } from '@/i18n/config';
+import productData from './products.json';
 
 /**
- * The catalogue — the nine product families of the client's reference site
- * (univela-morocco.com, chosen by the client on 2026-10-26), grouped in three poles.
+ * The catalogue, in two poles as on the client's brief of 2026-10-29 (modelled on ABS
+ * GLOBAL TRADING): Moroccan products exported abroad, and foreign products imported into
+ * Morocco. Timber and polymers were dropped on that brief.
  *
- * No individual product pages: the reference publishes no specification per product, so 58
- * product pages would be 58 thin pages. Each family gets one rich page instead, and every
- * product is an anchored card on it (/fr/produits/fruits-de-mer/#poulpe) that can go in the
- * quote basket. Words live here next to the structure, French first.
+ * No individual product pages: no specification is published per product, so each family
+ * gets one rich page instead, and every product is an anchored card on it
+ * (/fr/produits/fruits-de-mer/#poulpe) that can go in the quote basket. The families and
+ * their words live here, French first; the products themselves live in products.json,
+ * which the admin at /admin/ edits on the server (see public/api/catalog-store.php).
  */
-export type GroupKey = 'sea' | 'land' | 'industry';
+export type GroupKey = 'export' | 'import';
 export type CategoryKey =
   | 'frozen-fish'
-  | 'canned-fish'
-  | 'precooked-fish'
   | 'seafood'
+  | 'canned-food'
+  | 'precooked-fish'
+  | 'vegetable-oils'
   | 'fruits'
   | 'vegetables'
-  | 'wood'
   | 'animal-feed'
-  | 'polymers';
+  | 'metal-packaging'
+  | 'imported-oils'
+  | 'imported-canned';
 
 type L = Record<Locale, string>;
 const t = (fr: string, en: string): L => ({ fr, en });
@@ -34,34 +39,33 @@ export interface Group {
 
 export const GROUPS: Group[] = [
   {
-    key: 'sea',
-    name: t('Produits de la mer', 'Seafood products'),
+    key: 'export',
+    name: t('Export du Maroc vers l’étranger', 'Exports from Morocco'),
     text: t(
-      'Poissons pélagiques et blancs congelés, céphalopodes, conserves et produits élaborés.',
-      'Frozen pelagic and white fish, cephalopods, canned fish and value-added products.'
+      'Produits de la mer, conserves, huiles, fruits et légumes du Maroc, pour les importateurs et distributeurs du monde entier.',
+      'Seafood, canned food, oils, fruit and vegetables from Morocco, for importers and distributors worldwide.'
     ),
     accent: 'var(--cat-sea)',
-    categories: ['frozen-fish', 'seafood', 'canned-fish', 'precooked-fish'],
+    categories: [
+      'frozen-fish',
+      'seafood',
+      'canned-food',
+      'precooked-fish',
+      'vegetable-oils',
+      'fruits',
+      'vegetables',
+      'animal-feed',
+    ],
   },
   {
-    key: 'land',
-    name: t('Fruits & légumes', 'Fruit & vegetables'),
+    key: 'import',
+    name: t('Import vers le Maroc', 'Imports into Morocco'),
     text: t(
-      'Agrumes, fruits frais et surgelés, légumes de plein champ et de serre.',
-      'Citrus, fresh and frozen fruit, field and greenhouse vegetables.'
+      'Boîtes métalliques, huiles végétales et conserves de fabricants étrangers, pour les industriels et les distributeurs marocains.',
+      'Metal cans, vegetable oils and canned food from foreign manufacturers, for Moroccan manufacturers and distributors.'
     ),
-    accent: 'var(--cat-land)',
-    categories: ['fruits', 'vegetables'],
-  },
-  {
-    key: 'industry',
-    name: t('Matières & industrie', 'Materials & industry'),
-    text: t(
-      'Bois de construction, palettes et OSB, ingrédients pour l’alimentation animale, polymères.',
-      'Construction timber, pallets and OSB, animal-feed ingredients, polymers.'
-    ),
-    accent: 'var(--cat-industry)',
-    categories: ['wood', 'animal-feed', 'polymers'],
+    accent: 'var(--cat-import)',
+    categories: ['metal-packaging', 'imported-oils', 'imported-canned'],
   },
 ];
 
@@ -76,7 +80,6 @@ export interface CategoryCopy {
   lead: string;
   intro: string[];
   facts: { label: string; value: string }[];
-  points: { title: string; text: string }[];
   faq: { q: string; a: string }[];
 }
 
@@ -96,7 +99,6 @@ export interface Product {
   sub?: L;
   name: L;
   text: L;
-  featured?: boolean;
 }
 
 const img = (key: CategoryKey) => `/media/categories/${key}.webp`;
@@ -104,7 +106,7 @@ const img = (key: CategoryKey) => `/media/categories/${key}.webp`;
 export const CATEGORIES: Category[] = [
   {
     key: 'frozen-fish',
-    group: 'sea',
+    group: 'export',
     slugs: t('poisson-congele', 'frozen-fish'),
     accent: 'var(--cat-sea)',
     image: img('frozen-fish'),
@@ -125,11 +127,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Formats', value: 'Entier, IQF, blocs, selon espèce' },
           { label: 'Conditionnement', value: 'Cartons ou blocs, marque blanche possible' },
           { label: 'Transport', value: 'Conteneur frigorifique à −18 °C' },
-        ],
-        points: [
-          { title: 'Calibre maîtrisé', text: 'Chaque lot est trié et calibré selon votre spécification avant la mise en carton.' },
-          { title: 'Chaîne du froid', text: 'Stockage et chargement à −18 °C, contrôle de température jusqu’au port.' },
-          { title: 'Documents export', text: 'Certificats sanitaires, d’origine et documents de transport préparés avec vous.' },
         ],
         faq: [
           {
@@ -163,11 +160,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Packing', value: 'Cartons or blocks, private label available' },
           { label: 'Shipping', value: 'Reefer container at −18 °C' },
         ],
-        points: [
-          { title: 'Controlled sizing', text: 'Every lot is graded and sized to your specification before packing.' },
-          { title: 'Cold chain', text: 'Storage and loading at −18 °C, temperature monitored all the way to the port.' },
-          { title: 'Export documents', text: 'Health certificates, certificates of origin and shipping documents prepared with you.' },
-        ],
         faq: [
           {
             q: 'Which frozen fish do you supply?',
@@ -187,7 +179,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     key: 'seafood',
-    group: 'sea',
+    group: 'export',
     slugs: t('fruits-de-mer', 'seafood'),
     accent: 'var(--cat-sea)',
     image: img('seafood'),
@@ -208,11 +200,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Présentations', value: 'Entier, nettoyé, anneaux, lanières' },
           { label: 'Congélation', value: 'IQF ou blocs' },
           { label: 'Transport', value: 'Conteneur frigorifique ou fret aérien pour petits lots' },
-        ],
-        points: [
-          { title: 'Découpe sur mesure', text: 'Choisissez la présentation et le calibre : nous transmettons votre cahier des charges à l’usine.' },
-          { title: 'Contrôle avant chargement', text: 'Poids, glaçage, calibre et emballage vérifiés avant la fermeture du conteneur.' },
-          { title: 'Fret aérien possible', text: 'Pour les lots urgents ou de petite taille, une expédition par avion peut être organisée.' },
         ],
         faq: [
           {
@@ -246,11 +233,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Freezing', value: 'IQF or blocks' },
           { label: 'Shipping', value: 'Reefer container, or air freight for small lots' },
         ],
-        points: [
-          { title: 'Cut to order', text: 'Choose the cut and size; we pass your specification on to the plant.' },
-          { title: 'Pre-loading inspection', text: 'Weight, glazing, size and packing are checked before the container is sealed.' },
-          { title: 'Air freight available', text: 'For urgent or small lots, shipment by air can be arranged.' },
-        ],
         faq: [
           {
             q: 'Is octopus available all year?',
@@ -269,33 +251,28 @@ export const CATEGORIES: Category[] = [
     },
   },
   {
-    key: 'canned-fish',
-    group: 'sea',
-    slugs: t('conserves-de-poisson', 'canned-fish'),
+    key: 'canned-food',
+    group: 'export',
+    slugs: t('conserves-alimentaires', 'canned-food'),
     accent: 'var(--cat-sea)',
-    image: img('canned-fish'),
+    image: img('canned-food'),
     copy: {
       fr: {
-        name: 'Conserves de poisson',
-        h1: 'Conserves de sardines et de maquereaux du Maroc',
-        seoTitle: 'Conserves de sardines et maquereaux du Maroc, en gros',
+        name: 'Conserves alimentaires',
+        h1: 'Conserves de poisson, thon et olives du Maroc',
+        seoTitle: 'Conserves du Maroc : sardines, thon, olives, câpres',
         description:
-          'Conserves de sardines et de maquereaux du Maroc en gros : à l’huile d’olive, à l’huile végétale, à la sauce tomate ou piquante. Marque blanche, export.',
-        lead: 'Sardines et maquereaux à l’huile d’olive, à l’huile végétale ou à la sauce tomate, en boîtes de différents formats.',
+          'Conserves du Maroc en gros : sardines, maquereaux et thon à l’huile ou à la tomate, olives vertes et noires, câpres. Marque blanche, export.',
+        lead: 'Sardines, maquereaux et thon en boîte, olives de table et câpres : les conserves marocaines les plus demandées, à la marque du fabricant ou à la vôtre.',
         intro: [
-          'Le Maroc est le premier exportateur mondial de conserves de sardines. ALIOM TRADING travaille avec des conserveries qui respectent les exigences HACCP, IFS et BRC pour fournir importateurs, distributeurs et centrales d’achat.',
-          'Huile d’olive, huile de tournesol, sauce tomate, piment, citron ou recette sur mesure : choisissez la recette, le format de boîte et l’étiquette, nous coordonnons la production et l’expédition.',
+          'Le Maroc est le premier exportateur mondial de conserves de sardines, et compte parmi les grands exportateurs d’olives de table et de câpres. ALIOM TRADING travaille avec des conserveries qui respectent les exigences HACCP, IFS et BRC pour fournir importateurs, distributeurs et centrales d’achat.',
+          'Poisson à l’huile d’olive, à l’huile végétale ou à la tomate, olives entières, dénoyautées ou farcies, en boîtes, en bocaux ou en fûts : choisissez la recette, le format et l’étiquette, nous coordonnons la production et l’expédition.',
         ],
         facts: [
-          { label: 'Espèces', value: 'Sardine, maquereau' },
-          { label: 'Recettes', value: 'Huile d’olive, huile végétale, tomate, piquante' },
-          { label: 'Formats', value: 'Boîtes de différentes tailles, selon conserverie' },
+          { label: 'Produits', value: 'Sardine, maquereau, thon, olives, câpres' },
+          { label: 'Recettes', value: 'Huile d’olive, huile végétale, tomate, saumure' },
+          { label: 'Formats', value: 'Boîtes, bocaux ou fûts, selon le produit' },
           { label: 'Marque', value: 'Marque du fabricant ou marque blanche' },
-        ],
-        points: [
-          { title: 'Recette au choix', text: 'Huile, sauce et assaisonnement selon les habitudes de votre marché.' },
-          { title: 'Étiquetage', text: 'Étiquettes et mentions conformes au pays de destination, préparées avec vous.' },
-          { title: 'Longue conservation', text: 'Un produit stable, transporté en conteneur sec, sans chaîne du froid.' },
         ],
         faq: [
           {
@@ -303,8 +280,8 @@ export const CATEGORIES: Category[] = [
             a: 'Oui, sous réserve de quantités minimales fixées par la conserverie. Envoyez-nous votre recette, votre format et vos volumes.',
           },
           {
-            q: 'Quels formats de boîte ?',
-            a: 'Les conserveries marocaines produisent plusieurs formats, du club 1/4 aux grands formats pour la restauration. Nous vous indiquons ceux qui sont disponibles pour votre recette.',
+            q: 'Quels formats proposez-vous ?',
+            a: 'Pour le poisson, du club 1/4 aux grands formats pour la restauration ; pour les olives et les câpres, des bocaux et des boîtes pour la distribution jusqu’aux fûts pour l’industrie. Nous vous indiquons les formats disponibles pour votre recette.',
           },
           {
             q: 'Comment les conserves sont-elles transportées ?',
@@ -313,39 +290,34 @@ export const CATEGORIES: Category[] = [
         ],
       },
       en: {
-        name: 'Canned fish',
-        h1: 'Canned sardines and mackerel from Morocco',
-        seoTitle: 'Canned sardines and mackerel from Morocco, wholesale',
+        name: 'Canned food',
+        h1: 'Canned fish, tuna and olives from Morocco',
+        seoTitle: 'Canned food from Morocco: sardines, tuna, olives, capers',
         description:
-          'Wholesale canned sardines and mackerel from Morocco: in olive oil, vegetable oil, tomato or spicy sauce. Private label and export.',
-        lead: 'Sardines and mackerel in olive oil, vegetable oil or tomato sauce, in a range of can sizes.',
+          'Wholesale canned food from Morocco: sardines, mackerel and tuna in oil or tomato, green and black olives, capers. Private label and export.',
+        lead: 'Canned sardines, mackerel and tuna, table olives and capers: Morocco’s most sought-after preserves, under the manufacturer’s brand or your own.',
         intro: [
-          'Morocco is the world’s leading exporter of canned sardines. ALIOM TRADING works with canneries that meet HACCP, IFS and BRC requirements to supply importers, distributors and buying groups.',
-          'Olive oil, sunflower oil, tomato sauce, chilli, lemon or a custom recipe: choose the recipe, can size and label, and we coordinate production and shipping.',
+          'Morocco is the world’s leading exporter of canned sardines, and one of the major exporters of table olives and capers. ALIOM TRADING works with canneries that meet HACCP, IFS and BRC requirements to supply importers, distributors and buying groups.',
+          'Fish in olive oil, vegetable oil or tomato, olives whole, pitted or stuffed, in cans, jars or drums: choose the recipe, format and label, and we coordinate production and shipping.',
         ],
         facts: [
-          { label: 'Species', value: 'Sardine, mackerel' },
-          { label: 'Recipes', value: 'Olive oil, vegetable oil, tomato, spicy' },
-          { label: 'Formats', value: 'Several can sizes, by cannery' },
+          { label: 'Products', value: 'Sardine, mackerel, tuna, olives, capers' },
+          { label: 'Recipes', value: 'Olive oil, vegetable oil, tomato, brine' },
+          { label: 'Formats', value: 'Cans, jars or drums, by product' },
           { label: 'Brand', value: 'Manufacturer’s brand or private label' },
-        ],
-        points: [
-          { title: 'Your recipe', text: 'Oil, sauce and seasoning to suit the tastes of your market.' },
-          { title: 'Labelling', text: 'Labels and mandatory information for the destination country, prepared with you.' },
-          { title: 'Long shelf life', text: 'A stable product shipped in dry containers, with no cold chain needed.' },
         ],
         faq: [
           {
-            q: 'Do you offer private-label canned fish?',
-            a: 'Yes, subject to the cannery’s minimum quantities. Send us your recipe, can size and volumes.',
+            q: 'Do you offer private-label canned food?',
+            a: 'Yes, subject to the cannery’s minimum quantities. Send us your recipe, format and volumes.',
           },
           {
-            q: 'Which can sizes are available?',
-            a: 'Moroccan canneries produce several sizes, from the classic 1/4 club can to large catering formats. We tell you which ones are available for your recipe.',
+            q: 'Which formats do you offer?',
+            a: 'For fish, from the classic 1/4 club can to large catering formats; for olives and capers, retail jars and cans up to drums for industry. We tell you which formats are available for your recipe.',
           },
           {
-            q: 'How is canned fish shipped?',
-            a: 'In dry containers, on stretch-wrapped pallets. Canned fish needs no refrigeration, which keeps logistics simple.',
+            q: 'How is canned food shipped?',
+            a: 'In dry containers, on stretch-wrapped pallets. Canned food needs no refrigeration, which keeps logistics simple.',
           },
         ],
       },
@@ -353,7 +325,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     key: 'precooked-fish',
-    group: 'sea',
+    group: 'export',
     slugs: t('poisson-precuit', 'precooked-fish'),
     accent: 'var(--cat-sea)',
     image: img('precooked-fish'),
@@ -374,11 +346,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Gamme', value: 'Bâtonnets, nuggets, burgers, boulettes, pré-frit' },
           { label: 'Conservation', value: 'Surgelé à −18 °C' },
           { label: 'Clients', value: 'Restauration, collectivités, distribution' },
-        ],
-        points: [
-          { title: 'Prêt à cuisiner', text: 'Four, friteuse ou poêle : un produit qui se prépare en quelques minutes.' },
-          { title: 'Portions régulières', text: 'Un grammage constant, idéal pour le calcul des coûts en restauration.' },
-          { title: 'Formats pro', text: 'Cartons pour la restauration ou sachets pour le libre-service.' },
         ],
         faq: [
           {
@@ -412,11 +379,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Storage', value: 'Frozen at −18 °C' },
           { label: 'Customers', value: 'Food service, catering, retail' },
         ],
-        points: [
-          { title: 'Ready to cook', text: 'Oven, fryer or pan: a product ready in a few minutes.' },
-          { title: 'Consistent portions', text: 'A steady weight per piece, ideal for food-service costing.' },
-          { title: 'Trade formats', text: 'Catering cartons or retail bags.' },
-        ],
         faq: [
           {
             q: 'Which fish are used?',
@@ -435,8 +397,81 @@ export const CATEGORIES: Category[] = [
     },
   },
   {
+    key: 'vegetable-oils',
+    group: 'export',
+    slugs: t('huiles-vegetales-du-maroc', 'moroccan-vegetable-oils'),
+    accent: 'var(--cat-land)',
+    image: img('vegetable-oils'),
+    copy: {
+      fr: {
+        name: 'Huiles végétales',
+        h1: 'Huile d’olive, huile d’argan et huiles végétales du Maroc',
+        seoTitle: 'Huile d’olive et huile d’argan du Maroc, en gros',
+        description:
+          'Export d’huiles végétales du Maroc : huile d’olive vierge extra, huile d’argan alimentaire et cosmétique, huile de figue de barbarie. En vrac ou conditionnées.',
+        lead: 'Huile d’olive vierge extra, huile d’argan et huile de figue de barbarie, en vrac pour l’industrie ou conditionnées pour la distribution.',
+        intro: [
+          'Le Maroc compte parmi les grands producteurs d’huile d’olive du bassin méditerranéen, et c’est le seul pays où l’arganier pousse à l’état naturel. ALIOM TRADING sélectionne des huileries et des coopératives qui travaillent selon les normes internationales et suit chaque lot jusqu’au chargement.',
+          'Huile d’olive pour la distribution et l’industrie agroalimentaire, huile d’argan torréfiée pour la cuisine ou vierge pour la cosmétique, huile de pépins de figue de barbarie : indiquez la qualité, le conditionnement et les volumes, nous revenons vers vous avec une offre.',
+        ],
+        facts: [
+          { label: 'Origine', value: 'Oliveraies du Maroc, arganeraie du Souss' },
+          { label: 'Qualités', value: 'Vierge extra, vierge, alimentaire, cosmétique' },
+          { label: 'Conditionnement', value: 'Bouteilles, bidons, fûts, IBC, flexitank' },
+          { label: 'Documents', value: 'Certificat d’analyse et certificat d’origine' },
+        ],
+        faq: [
+          {
+            q: 'Quelle différence entre huile d’olive vierge extra et vierge ?',
+            a: 'L’huile d’olive vierge extra a une acidité libre d’au plus 0,8 % et aucun défaut au goût ; l’huile d’olive vierge tolère jusqu’à 2 % et de légers défauts. Les deux sont obtenues uniquement par des procédés mécaniques.',
+          },
+          {
+            q: 'L’huile d’argan alimentaire et l’huile cosmétique sont-elles les mêmes ?',
+            a: 'Non. L’huile alimentaire est pressée à partir d’amandons torréfiés, ce qui lui donne son goût de noisette ; l’huile cosmétique est pressée à partir d’amandons non torréfiés et reste presque sans odeur.',
+          },
+          {
+            q: 'Quelle quantité minimale ?',
+            a: 'Cela dépend du produit : l’huile d’olive se vend généralement au fût, à l’IBC ou au flexitank, l’huile d’argan et l’huile de figue de barbarie en plus petites quantités. Indiquez vos volumes dans la demande de devis.',
+          },
+        ],
+      },
+      en: {
+        name: 'Vegetable oils',
+        h1: 'Olive oil, argan oil and vegetable oils from Morocco',
+        seoTitle: 'Olive oil and argan oil from Morocco, wholesale',
+        description:
+          'Vegetable oils exported from Morocco: extra virgin olive oil, culinary and cosmetic argan oil, prickly pear seed oil. In bulk or packed.',
+        lead: 'Extra virgin olive oil, argan oil and prickly pear seed oil, in bulk for industry or packed for retail.',
+        intro: [
+          'Morocco is one of the major olive oil producers of the Mediterranean, and the only country where the argan tree grows in the wild. ALIOM TRADING selects mills and cooperatives that work to international standards and follows each lot up to loading.',
+          'Olive oil for retail and the food industry, roasted argan oil for cooking or virgin argan oil for cosmetics, prickly pear seed oil: tell us the grade, packing and volumes, and we come back with an offer.',
+        ],
+        facts: [
+          { label: 'Origin', value: 'Moroccan olive groves, Souss argan forest' },
+          { label: 'Grades', value: 'Extra virgin, virgin, culinary, cosmetic' },
+          { label: 'Packing', value: 'Bottles, cans, drums, IBCs, flexitanks' },
+          { label: 'Documents', value: 'Certificate of analysis and of origin' },
+        ],
+        faq: [
+          {
+            q: 'What is the difference between extra virgin and virgin olive oil?',
+            a: 'Extra virgin olive oil has a free acidity of at most 0.8% and no taste defects; virgin olive oil allows up to 2% and slight defects. Both are obtained by mechanical means only.',
+          },
+          {
+            q: 'Are culinary and cosmetic argan oil the same?',
+            a: 'No. Culinary oil is pressed from roasted kernels, which gives its nutty taste; cosmetic oil is pressed from unroasted kernels and stays almost odourless.',
+          },
+          {
+            q: 'What is the minimum order?',
+            a: 'It depends on the product: olive oil usually sells by the drum, IBC or flexitank, argan and prickly pear seed oil in smaller quantities. Give your volumes in the quote request.',
+          },
+        ],
+      },
+    },
+  },
+  {
     key: 'fruits',
-    group: 'land',
+    group: 'export',
     slugs: t('fruits', 'fruits'),
     accent: 'var(--cat-land)',
     image: img('fruits'),
@@ -457,11 +492,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Présentation', value: 'Frais en colis, ou surgelé (IQF)' },
           { label: 'Calibres', value: 'Selon la variété et votre marché' },
           { label: 'Transport', value: 'Conteneur ou camion frigorifique' },
-        ],
-        points: [
-          { title: 'Conditionné à la récolte', text: 'Les fruits sont emballés le jour de la cueillette et expédiés aussitôt.' },
-          { title: 'Variétés en succession', text: 'Des premières clémentines à la Maroc Late, la campagne d’agrumes couvre une grande partie de l’année.' },
-          { title: 'Expertise par lot', text: 'Chaque lot peut être accompagné d’un rapport d’expertise indépendant.' },
         ],
         faq: [
           {
@@ -495,11 +525,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Sizes', value: 'By variety and target market' },
           { label: 'Shipping', value: 'Reefer container or truck' },
         ],
-        points: [
-          { title: 'Packed at harvest', text: 'Fruit is packed on picking day and shipped straight away.' },
-          { title: 'Varieties in succession', text: 'From the first clementines to Maroc Late oranges, the citrus campaign covers much of the year.' },
-          { title: 'Inspection per lot', text: 'Each lot can come with an independent inspection report.' },
-        ],
         faq: [
           {
             q: 'When does the citrus season start?',
@@ -519,7 +544,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     key: 'vegetables',
-    group: 'land',
+    group: 'export',
     slugs: t('legumes', 'vegetables'),
     accent: 'var(--cat-land)',
     image: img('vegetables'),
@@ -540,11 +565,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Culture', value: 'Serre et plein champ' },
           { label: 'Conditionnement', value: 'Colis selon le produit et le marché' },
           { label: 'Transport', value: 'Camion ou conteneur frigorifique' },
-        ],
-        points: [
-          { title: 'Régularité', text: 'Des programmes hebdomadaires pour garder vos rayons approvisionnés.' },
-          { title: 'Fraîcheur', text: 'Récolte, conditionnement et départ en froid dans les plus brefs délais.' },
-          { title: 'Contrôle indépendant', text: 'Un certificat d’expertise peut accompagner chaque lot.' },
         ],
         faq: [
           {
@@ -578,11 +598,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Packing', value: 'Packs by product and market' },
           { label: 'Shipping', value: 'Reefer truck or container' },
         ],
-        points: [
-          { title: 'Regular supply', text: 'Weekly programmes that keep your shelves stocked.' },
-          { title: 'Freshness', text: 'Harvest, packing and cold dispatch as quickly as possible.' },
-          { title: 'Independent inspection', text: 'An inspection certificate can come with every lot.' },
-        ],
         faq: [
           {
             q: 'Which vegetables do you supply?',
@@ -601,93 +616,10 @@ export const CATEGORIES: Category[] = [
     },
   },
   {
-    key: 'wood',
-    group: 'industry',
-    slugs: t('bois', 'wood'),
-    accent: 'var(--cat-industry)',
-    image: img('wood'),
-    copy: {
-      fr: {
-        name: 'Bois',
-        h1: 'Bois rouge, palettes Europe et panneaux OSB',
-        seoTitle: 'Bois rouge, palettes Europe et OSB au Maroc',
-        description:
-          'Import de bois au Maroc : bois rouge pour la construction, palettes Europe EUR / EPAL et panneaux OSB, à vos dimensions, livrés dans les ports marocains.',
-        lead: 'Bois résineux de construction, palettes Europe et panneaux OSB, sélectionnés selon vos dimensions et livrés dans tous les ports du Maroc.',
-        intro: [
-          'Le bâtiment, l’industrie et la logistique marocains consomment chaque année de grands volumes de bois importé. ALIOM TRADING s’approvisionne auprès de scieries et de fabricants européens et sélectionne les produits selon les dimensions et les exigences de chaque client.',
-          'Bois rouge en planches et madriers pour la charpente et le coffrage, palettes Europe 1200 × 800 mm pour la logistique, panneaux OSB pour la construction et l’emballage : nous livrons dans tous les ports marocains.',
-        ],
-        facts: [
-          { label: 'Origine', value: 'Europe, selon arrivages' },
-          { label: 'Produits', value: 'Bois rouge, palettes EUR/EPAL, OSB' },
-          { label: 'Dimensions', value: 'Selon votre cahier des charges' },
-          { label: 'Livraison', value: 'Tous les ports du Maroc' },
-        ],
-        points: [
-          { title: 'Sur mesure', text: 'Section, longueur, épaisseur et qualité choisies selon votre usage.' },
-          { title: 'Normes export', text: 'Palettes traitées thermiquement et marquées selon la norme NIMP 15 (ISPM 15).' },
-          { title: 'Dédouanement', text: 'Nous vous accompagnons sur les documents d’import et la livraison au port.' },
-        ],
-        faq: [
-          {
-            q: 'Qu’appelle-t-on bois rouge au Maroc ?',
-            a: 'Au Maroc, « bois rouge » désigne couramment le pin sylvestre importé d’Europe du Nord, au cœur rougeâtre, utilisé en charpente, menuiserie et coffrage, par opposition au « bois blanc » (épicéa, sapin).',
-          },
-          {
-            q: 'Quelles sont les dimensions d’une palette Europe ?',
-            a: 'Une palette Europe (EUR / EPAL) mesure 1200 × 800 × 144 mm. Elle pèse environ 25 kg et peut porter jusqu’à 1500 kg de charge uniformément répartie.',
-          },
-          {
-            q: 'Quelle épaisseur d’OSB ?',
-            a: 'Les panneaux OSB existent couramment de 9 à 22 mm. L’OSB/3 convient aux usages en milieu humide. Précisez l’épaisseur, le format et la quantité dans votre demande.',
-          },
-        ],
-      },
-      en: {
-        name: 'Timber',
-        h1: 'Redwood timber, euro pallets and OSB boards',
-        seoTitle: 'Redwood timber, euro pallets and OSB for Morocco',
-        description:
-          'Timber imports into Morocco: redwood softwood for construction, EUR / EPAL euro pallets and OSB boards, cut to your dimensions and delivered to Moroccan ports.',
-        lead: 'Construction softwood, euro pallets and OSB boards, selected to your dimensions and delivered to every port in Morocco.',
-        intro: [
-          'Moroccan construction, industry and logistics use large volumes of imported timber every year. ALIOM TRADING sources from European sawmills and manufacturers and selects products to each customer’s dimensions and requirements.',
-          'Redwood planks and beams for framing and formwork, 1200 × 800 mm euro pallets for logistics, OSB boards for building and packaging: we deliver to all Moroccan ports.',
-        ],
-        facts: [
-          { label: 'Origin', value: 'Europe, by availability' },
-          { label: 'Products', value: 'Redwood, EUR/EPAL pallets, OSB' },
-          { label: 'Dimensions', value: 'To your specification' },
-          { label: 'Delivery', value: 'All Moroccan ports' },
-        ],
-        points: [
-          { title: 'Made to measure', text: 'Section, length, thickness and grade chosen for your use.' },
-          { title: 'Export standards', text: 'Pallets heat-treated and marked to ISPM 15.' },
-          { title: 'Customs support', text: 'We help with the import documents and delivery at the port.' },
-        ],
-        faq: [
-          {
-            q: 'What is “redwood” timber?',
-            a: 'In the timber trade, redwood usually means Scots pine imported from Northern Europe, with a reddish heartwood, used for framing, joinery and formwork, as opposed to whitewood (spruce, fir).',
-          },
-          {
-            q: 'What are the dimensions of a euro pallet?',
-            a: 'A euro pallet (EUR / EPAL) measures 1200 × 800 × 144 mm. It weighs about 25 kg and can carry up to 1,500 kg of evenly distributed load.',
-          },
-          {
-            q: 'Which OSB thickness?',
-            a: 'OSB boards commonly range from 9 to 22 mm. OSB/3 suits humid conditions. Give the thickness, size and quantity in your request.',
-          },
-        ],
-      },
-    },
-  },
-  {
     key: 'animal-feed',
-    group: 'industry',
+    group: 'export',
     slugs: t('alimentation-animale', 'animal-feed'),
-    accent: 'var(--cat-industry)',
+    accent: 'var(--cat-sea)',
     image: img('animal-feed'),
     copy: {
       fr: {
@@ -706,11 +638,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Usages', value: 'Volaille, aquaculture, petfood' },
           { label: 'Conditionnement', value: 'Big bags, sacs ou citernes (huile)' },
           { label: 'Documents', value: 'Certificat d’analyse et sanitaire' },
-        ],
-        points: [
-          { title: 'Analyse par lot', text: 'Protéines, matières grasses, humidité : un certificat d’analyse accompagne chaque lot.' },
-          { title: 'Traçabilité', text: 'Origine et usine de fabrication identifiées pour chaque expédition.' },
-          { title: 'Conformité', text: 'Produits conformes aux normes internationales et aux exigences sanitaires.' },
         ],
         faq: [
           {
@@ -744,11 +671,6 @@ export const CATEGORIES: Category[] = [
           { label: 'Packing', value: 'Big bags, sacks, or tanks (oil)' },
           { label: 'Documents', value: 'Certificate of analysis and health certificate' },
         ],
-        points: [
-          { title: 'Analysis per lot', text: 'Protein, fat, moisture: a certificate of analysis comes with every lot.' },
-          { title: 'Traceability', text: 'Origin and production plant identified for every shipment.' },
-          { title: 'Compliance', text: 'Products meet international standards and health requirements.' },
-        ],
         faq: [
           {
             q: 'What protein content does the fish meal have?',
@@ -767,83 +689,219 @@ export const CATEGORIES: Category[] = [
     },
   },
   {
-    key: 'polymers',
-    group: 'industry',
-    slugs: t('polymeres', 'polymers'),
-    accent: 'var(--cat-industry)',
-    image: img('polymers'),
+    key: 'metal-packaging',
+    group: 'import',
+    slugs: t('boites-metalliques', 'metal-cans'),
+    accent: 'var(--cat-import)',
+    image: img('metal-packaging'),
     copy: {
       fr: {
-        name: 'Polymères',
-        h1: 'Polymères et caoutchoucs synthétiques',
-        seoTitle: 'Import de polymères et caoutchoucs synthétiques au Maroc',
+        name: 'Boîtes métalliques',
+        h1: 'Boîtes métalliques et emballages pour conserveries',
+        seoTitle: 'Boîtes métalliques et fer-blanc pour conserveries au Maroc',
         description:
-          'Import de polymères (granulés plastiques) et de caoutchoucs synthétiques au Maroc pour la plasturgie et l’industrie du caoutchouc. Grades sur demande.',
-        lead: 'Matières plastiques et caoutchoucs synthétiques pour les transformateurs et les industriels marocains.',
+          'Import de boîtes métalliques au Maroc : boîtes de conserve en fer-blanc, boîtes 1/4 club, couvercles easy-open, fer-blanc. Pour conserveries et industriels.',
+        lead: 'Boîtes de conserve, boîtes embouties, couvercles à ouverture facile et fer-blanc, importés pour les conserveries et les industriels marocains.',
         intro: [
-          'La plasturgie et l’industrie du caoutchouc marocaines dépendent largement de matières premières importées. ALIOM TRADING importe des polymères et des caoutchoucs synthétiques pour les usages industriels.',
-          'Indiquez-nous le type de matière, le grade, l’indice de fluidité ou la référence fabricant dont vous avez besoin : nous recherchons la source et vous transmettons une offre avec la fiche technique.',
+          'Les conserveries marocaines de poisson, de légumes et de fruits consomment chaque année de très grandes quantités d’emballages métalliques. ALIOM TRADING s’approvisionne auprès de fabricants étrangers de boîtes et de fer-blanc pour compléter l’offre locale et sécuriser vos approvisionnements.',
+          'Boîtes rondes trois pièces, boîtes embouties 1/4 club ou ovales pour le poisson, couvercles easy-open, feuilles de fer-blanc vernies ou imprimées : envoyez-nous le format, le vernis intérieur, l’impression et les volumes, nous vous transmettons une offre avec la fiche technique.',
         ],
         facts: [
-          { label: 'Produits', value: 'Polymères, caoutchoucs synthétiques' },
-          { label: 'Grades', value: 'Selon fiche technique demandée' },
-          { label: 'Conditionnement', value: 'Sacs de 25 kg, octabins, balles' },
+          { label: 'Produits', value: 'Boîtes 3 pièces, boîtes embouties, couvercles, fer-blanc' },
+          { label: 'Matières', value: 'Fer-blanc, aluminium' },
+          { label: 'Finitions', value: 'Vernis intérieur, impression ou boîte nue' },
           { label: 'Livraison', value: 'Ports du Maroc, ou rendu usine' },
-        ],
-        points: [
-          { title: 'Recherche de grade', text: 'À partir de votre référence ou de votre fiche technique, nous trouvons l’équivalent disponible.' },
-          { title: 'Fiche technique', text: 'Chaque offre est accompagnée de la fiche technique et de la fiche de données de sécurité.' },
-          { title: 'Logistique import', text: 'Transport, documents et livraison organisés jusqu’à votre site.' },
         ],
         faq: [
           {
-            q: 'Quels polymères pouvez-vous fournir ?',
-            a: 'Les principales familles de thermoplastiques et de caoutchoucs synthétiques, selon les disponibilités. Envoyez-nous la référence recherchée.',
+            q: 'Quels formats de boîtes pouvez-vous fournir ?',
+            a: 'Les formats standard de l’industrie de la conserve, dont le 1/4 club pour la sardine, ainsi que des formats spécifiques sur demande. Indiquez-nous les dimensions et la contenance.',
           },
           {
-            q: 'Faut-il une quantité minimale ?',
-            a: 'Les offres se font généralement par camion ou par conteneur complet. Pour de plus petits volumes, contactez-nous.',
+            q: 'Les boîtes peuvent-elles être imprimées à notre marque ?',
+            a: 'Oui, l’impression lithographiée est possible, selon les quantités minimales du fabricant. Envoyez-nous vos fichiers et vos volumes.',
           },
           {
-            q: 'Fournissez-vous les fiches de sécurité ?',
-            a: 'Oui, la fiche technique et la fiche de données de sécurité (FDS) accompagnent chaque produit.',
+            q: 'Fournissez-vous aussi les couvercles ?',
+            a: 'Oui, les couvercles easy-open ou classiques sont proposés seuls ou avec les boîtes, dans les diamètres standard.',
           },
         ],
       },
       en: {
-        name: 'Polymers',
-        h1: 'Polymers and synthetic rubbers',
-        seoTitle: 'Polymers and synthetic rubber imports into Morocco',
+        name: 'Metal cans',
+        h1: 'Metal cans and packaging for canneries',
+        seoTitle: 'Metal cans and tinplate for canneries in Morocco',
         description:
-          'Imports of polymers (plastic resins) and synthetic rubbers into Morocco for plastics processors and the rubber industry. Grades on request.',
-        lead: 'Plastic resins and synthetic rubbers for Moroccan processors and manufacturers.',
+          'Metal cans imported into Morocco: tinplate food cans, 1/4 club drawn cans, easy-open ends and tinplate sheets, for canneries and manufacturers.',
+        lead: 'Food cans, drawn cans, easy-open ends and tinplate, imported for Moroccan canneries and manufacturers.',
         intro: [
-          'Morocco’s plastics and rubber industries rely heavily on imported raw materials. ALIOM TRADING imports polymers and synthetic rubbers for industrial uses.',
-          'Tell us the material type, grade, melt index or manufacturer reference you need: we find the source and send you an offer with the data sheet.',
+          'Morocco’s fish, vegetable and fruit canneries use very large quantities of metal packaging every year. ALIOM TRADING sources from foreign can and tinplate makers to complement local supply and secure yours.',
+          'Three-piece round cans, 1/4 club or oval drawn cans for fish, easy-open ends, lacquered or printed tinplate sheets: send us the format, inside lacquer, print and volumes, and we send an offer with the data sheet.',
         ],
         facts: [
-          { label: 'Products', value: 'Polymers, synthetic rubbers' },
-          { label: 'Grades', value: 'To the data sheet requested' },
-          { label: 'Packing', value: '25 kg bags, octabins, bales' },
+          { label: 'Products', value: 'Three-piece cans, drawn cans, ends, tinplate' },
+          { label: 'Materials', value: 'Tinplate, aluminium' },
+          { label: 'Finishes', value: 'Inside lacquer, printed or plain' },
           { label: 'Delivery', value: 'Moroccan ports, or delivered to plant' },
-        ],
-        points: [
-          { title: 'Grade search', text: 'From your reference or data sheet, we find the available equivalent.' },
-          { title: 'Data sheets', text: 'Every offer comes with the technical data sheet and the safety data sheet.' },
-          { title: 'Import logistics', text: 'Transport, documents and delivery organised to your site.' },
         ],
         faq: [
           {
-            q: 'Which polymers can you supply?',
-            a: 'The main families of thermoplastics and synthetic rubbers, subject to availability. Send us the reference you are looking for.',
+            q: 'Which can formats can you supply?',
+            a: 'The canning industry’s standard formats, including the 1/4 club can for sardines, and specific formats on request. Tell us the dimensions and capacity.',
           },
           {
-            q: 'Is there a minimum quantity?',
-            a: 'Offers are usually per full truck or container. For smaller volumes, contact us.',
+            q: 'Can the cans be printed with our brand?',
+            a: 'Yes, lithographic printing is possible, subject to the maker’s minimum quantities. Send us your artwork and volumes.',
           },
           {
-            q: 'Do you provide safety data sheets?',
-            a: 'Yes, the technical data sheet and the safety data sheet (SDS) come with every product.',
+            q: 'Do you also supply the ends?',
+            a: 'Yes, easy-open or standard ends are available on their own or with the cans, in standard diameters.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    key: 'imported-oils',
+    group: 'import',
+    slugs: t('huiles-vegetales-importees', 'imported-vegetable-oils'),
+    accent: 'var(--cat-import)',
+    image: img('imported-oils'),
+    copy: {
+      fr: {
+        name: 'Huiles végétales importées',
+        h1: 'Huiles de soja, de tournesol, de palme et de colza',
+        seoTitle: 'Import d’huiles végétales au Maroc : soja, tournesol, palme',
+        description:
+          'Import d’huiles végétales au Maroc : soja, tournesol, palme et oléine, colza. Brutes ou raffinées, en vrac ou conditionnées, pour raffineurs et industriels.',
+        lead: 'Huiles brutes pour les raffineries, huiles raffinées pour l’agroalimentaire et la distribution, livrées en vrac ou conditionnées.',
+        intro: [
+          'Le Maroc importe la grande majorité des huiles végétales qu’il consomme. ALIOM TRADING s’approvisionne auprès de producteurs et de négociants étrangers pour fournir les raffineries, les industriels de l’agroalimentaire et les distributeurs marocains.',
+          'Huile de soja brute dégommée, huile de tournesol brute ou raffinée, huile de palme et oléine, huile de colza : précisez la qualité, l’origine souhaitée, le conditionnement et le calendrier, nous revenons vers vous avec une offre.',
+        ],
+        facts: [
+          { label: 'Produits', value: 'Soja, tournesol, palme, colza' },
+          { label: 'Qualités', value: 'Brute ou raffinée' },
+          { label: 'Conditionnement', value: 'Vrac, flexitank, IBC, bidons, bouteilles' },
+          { label: 'Documents', value: 'Certificats d’analyse, d’origine et sanitaire' },
+        ],
+        faq: [
+          {
+            q: 'Livrez-vous de l’huile brute pour le raffinage ?',
+            a: 'Oui, l’huile de soja et l’huile de tournesol brutes sont proposées en vrac pour les raffineries. Indiquez les spécifications attendues.',
+          },
+          {
+            q: 'Proposez-vous de l’huile conditionnée ?',
+            a: 'Oui, l’huile raffinée peut être livrée en bidons ou en bouteilles, à la marque du fabricant ou à votre marque selon les volumes.',
+          },
+          {
+            q: 'Quelle quantité minimale ?',
+            a: 'Les offres se font généralement au conteneur ou au flexitank. Pour de plus petits volumes, contactez-nous.',
+          },
+        ],
+      },
+      en: {
+        name: 'Imported vegetable oils',
+        h1: 'Soybean, sunflower, palm and rapeseed oils',
+        seoTitle: 'Vegetable oil imports into Morocco: soybean, sunflower, palm',
+        description:
+          'Vegetable oils imported into Morocco: soybean, sunflower, palm oil and olein, rapeseed. Crude or refined, in bulk or packed, for refiners and manufacturers.',
+        lead: 'Crude oils for refineries, refined oils for the food industry and retail, delivered in bulk or packed.',
+        intro: [
+          'Morocco imports most of the vegetable oil it consumes. ALIOM TRADING sources from foreign producers and traders to supply Moroccan refineries, food manufacturers and distributors.',
+          'Crude degummed soybean oil, crude or refined sunflower oil, palm oil and olein, rapeseed oil: tell us the grade, preferred origin, packing and schedule, and we come back with an offer.',
+        ],
+        facts: [
+          { label: 'Products', value: 'Soybean, sunflower, palm, rapeseed' },
+          { label: 'Grades', value: 'Crude or refined' },
+          { label: 'Packing', value: 'Bulk, flexitank, IBC, cans, bottles' },
+          { label: 'Documents', value: 'Certificates of analysis, origin and health' },
+        ],
+        faq: [
+          {
+            q: 'Do you supply crude oil for refining?',
+            a: 'Yes, crude soybean and sunflower oil are available in bulk for refineries. Tell us the specifications you need.',
+          },
+          {
+            q: 'Do you supply packed oil?',
+            a: 'Yes, refined oil can be delivered in cans or bottles, under the maker’s brand or yours depending on volumes.',
+          },
+          {
+            q: 'What is the minimum order?',
+            a: 'Offers are usually per container or flexitank. For smaller volumes, contact us.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    key: 'imported-canned',
+    group: 'import',
+    slugs: t('conserves-importees', 'imported-canned-food'),
+    accent: 'var(--cat-import)',
+    image: img('imported-canned'),
+    copy: {
+      fr: {
+        name: 'Conserves importées',
+        h1: 'Conserves alimentaires d’importation',
+        seoTitle: 'Import de conserves au Maroc : thon, maïs, tomate',
+        description:
+          'Import de conserves au Maroc : thon, maïs doux, concentré de tomate, champignons, légumes et fruits au sirop. Pour la distribution et la restauration.',
+        lead: 'Thon, légumes, concentré de tomate et fruits au sirop de fabricants étrangers, pour les grossistes, les distributeurs et la restauration au Maroc.',
+        intro: [
+          'Pour compléter l’offre locale, de nombreuses conserves sont importées au Maroc : thon, maïs doux, champignons, fruits au sirop. ALIOM TRADING sélectionne des fabricants étrangers qui travaillent selon les normes internationales de sécurité alimentaire et importe pour les grossistes, les distributeurs et les professionnels de la restauration.',
+          'Indiquez le produit, le format de boîte, la marque souhaitée ou la marque blanche, et les volumes : nous recherchons le fabricant adapté et vous transmettons une offre avec la fiche technique.',
+        ],
+        facts: [
+          { label: 'Produits', value: 'Thon, légumes, tomate, fruits au sirop' },
+          { label: 'Formats', value: 'Du format familial au format restauration' },
+          { label: 'Marque', value: 'Marque du fabricant ou marque blanche' },
+          { label: 'Étiquetage', value: 'Conforme à la réglementation marocaine' },
+        ],
+        faq: [
+          {
+            q: 'Pouvez-vous importer une marque précise ?',
+            a: 'Oui, si la marque est disponible à l’export. Sinon, nous vous proposons un produit équivalent ou une marque blanche.',
+          },
+          {
+            q: 'Quels formats de boîtes ?',
+            a: 'Des petits formats pour la distribution jusqu’aux boîtes de plusieurs kilos pour la restauration. Précisez le format dans votre demande.',
+          },
+          {
+            q: 'Qui s’occupe du contrôle sanitaire à l’import ?',
+            a: 'Nous préparons avec vous le dossier pour le contrôle de l’ONSSA et les formalités de dédouanement.',
+          },
+        ],
+      },
+      en: {
+        name: 'Imported canned food',
+        h1: 'Imported canned food',
+        seoTitle: 'Canned food imports into Morocco: tuna, corn, tomato',
+        description:
+          'Canned food imported into Morocco: tuna, sweet corn, tomato paste, mushrooms, vegetables and fruit in syrup. For distribution and food service.',
+        lead: 'Tuna, vegetables, tomato paste and fruit in syrup from foreign manufacturers, for wholesalers, distributors and food service in Morocco.',
+        intro: [
+          'Many canned foods are imported into Morocco to complement local supply: tuna, sweet corn, mushrooms, fruit in syrup. ALIOM TRADING selects foreign manufacturers that work to international food safety standards and imports for wholesalers, distributors and food-service professionals.',
+          'Tell us the product, can size, preferred brand or private label, and volumes: we find the right manufacturer and send you an offer with the data sheet.',
+        ],
+        facts: [
+          { label: 'Products', value: 'Tuna, vegetables, tomato, fruit in syrup' },
+          { label: 'Formats', value: 'From retail to catering sizes' },
+          { label: 'Brand', value: 'Manufacturer’s brand or private label' },
+          { label: 'Labelling', value: 'Compliant with Moroccan regulations' },
+        ],
+        faq: [
+          {
+            q: 'Can you import a specific brand?',
+            a: 'Yes, if the brand is available for export. If not, we offer an equivalent product or a private label.',
+          },
+          {
+            q: 'Which can sizes?',
+            a: 'From small retail sizes to multi-kilo catering cans. Give the size in your request.',
+          },
+          {
+            q: 'Who handles the import health inspection?',
+            a: 'We prepare the file for the ONSSA inspection and the customs formalities with you.',
           },
         ],
       },
@@ -851,89 +909,18 @@ export const CATEGORIES: Category[] = [
   },
 ];
 
-const citrus = t('Agrumes', 'Citrus');
-const freshFruit = t('Fruits frais', 'Fresh fruit');
-const frozenFruit = t('Fruits surgelés', 'Frozen fruit');
-
-export const PRODUCTS: Product[] = [
-  // Poisson congelé
-  { id: 'sardine', category: 'frozen-fish', featured: true, name: t('Sardine', 'Sardine'), text: t('Sardina pilchardus, le poisson emblématique de l’Atlantique marocain, entier ou en blocs.', 'Sardina pilchardus, the signature fish of the Moroccan Atlantic, whole or block-frozen.') },
-  { id: 'maquereau', category: 'frozen-fish', featured: true, name: t('Maquereau', 'Mackerel'), text: t('Maquereau entier congelé, calibré, pour la transformation et la distribution.', 'Whole frozen mackerel, size-graded, for processing and distribution.') },
-  { id: 'sardinelle', category: 'frozen-fish', name: t('Allache (sardinelle)', 'Sardinella'), text: t('Sardinelle ronde, très demandée sur les marchés africains et pour l’appât.', 'Round sardinella, in high demand on African markets and for bait.') },
-  { id: 'chinchard', category: 'frozen-fish', name: t('Chinchard', 'Horse mackerel'), text: t('Chinchard entier congelé en cartons, prisé en Afrique de l’Ouest.', 'Whole frozen horse mackerel in cartons, popular in West Africa.') },
-  { id: 'denti-dorade', category: 'frozen-fish', name: t('Denti / Dorade', 'Dentex / Sea bream'), text: t('Poissons nobles à chair blanche, entiers et glacés.', 'Premium white-fleshed fish, whole and glazed.') },
-  { id: 'rouget', category: 'frozen-fish', name: t('Rouget', 'Red mullet'), text: t('Rouget entier congelé, apprécié en restauration.', 'Whole frozen red mullet, valued by restaurants.') },
-  { id: 'pelamide', category: 'frozen-fish', name: t('Pélamide', 'Atlantic bonito'), text: t('Thonidé de l’Atlantique à la chair ferme, entier congelé.', 'Firm-fleshed Atlantic tuna relative, whole frozen.') },
-  { id: 'sole', category: 'frozen-fish', name: t('Sole', 'Sole'), text: t('Poisson plat à chair fine, entier ou en filets selon disponibilité.', 'Delicate flatfish, whole or filleted subject to availability.') },
-  { id: 'sabre', category: 'frozen-fish', name: t('Sabre argenté', 'Silver scabbardfish'), text: t('Poisson-ruban congelé, entier ou en tronçons.', 'Frozen ribbon fish, whole or in sections.') },
-  { id: 'poisson-appat', category: 'frozen-fish', name: t('Poisson pour appât', 'Bait fish'), text: t('Petits pélagiques congelés en blocs pour la pêche à la palangre.', 'Small pelagics frozen in blocks for longline fishing.') },
-
-  // Fruits de mer
-  { id: 'poulpe', category: 'seafood', featured: true, name: t('Poulpe', 'Octopus'), text: t('Octopus vulgaris de l’Atlantique, entier ou nettoyé, IQF ou en blocs.', 'Atlantic Octopus vulgaris, whole or cleaned, IQF or block-frozen.') },
-  { id: 'seiche', category: 'seafood', featured: true, name: t('Seiche', 'Cuttlefish'), text: t('Seiche entière ou nettoyée, congelée à bord ou à terre.', 'Whole or cleaned cuttlefish, frozen at sea or on shore.') },
-  { id: 'calamar', category: 'seafood', name: t('Calamar', 'Squid'), text: t('Calamar entier, en tubes ou en anneaux, réfrigéré ou congelé.', 'Squid whole, as tubes or rings, chilled or frozen.') },
-
-  // Conserves
-  { id: 'conserve-sardines', category: 'canned-fish', featured: true, name: t('Sardines en conserve', 'Canned sardines'), text: t('À l’huile d’olive, à l’huile végétale, à la tomate ou piquantes.', 'In olive oil, vegetable oil, tomato sauce or spicy.') },
-  { id: 'conserve-maquereaux', category: 'canned-fish', name: t('Maquereaux en conserve', 'Canned mackerel'), text: t('Filets ou morceaux de maquereau à l’huile ou en sauce.', 'Mackerel fillets or pieces in oil or sauce.') },
-
-  // Précuit
-  { id: 'boulettes', category: 'precooked-fish', name: t('Boulettes de poisson', 'Fishballs'), text: t('Boulettes à base de chair de poisson, précuites et surgelées.', 'Balls made from fish flesh, precooked and frozen.') },
-  { id: 'burger-kebab', category: 'precooked-fish', name: t('Kebab de poisson', 'Fish kebab'), text: t('Galettes façon kebab à base de poisson, prêtes à griller.', 'Kebab-style fish patties, ready to grill.') },
-  { id: 'burger', category: 'precooked-fish', name: t('Burger de poisson', 'Fish burger'), text: t('Steaks de poisson panés pour la restauration rapide.', 'Breaded fish patties for quick-service restaurants.') },
-  { id: 'batonnets', category: 'precooked-fish', featured: true, name: t('Bâtonnets de poisson pané', 'Fish fingers'), text: t('Le classique pané, calibré, pour les cantines et le libre-service.', 'The breaded classic, evenly sized, for canteens and retail.') },
-  { id: 'nuggets', category: 'precooked-fish', name: t('Nuggets de poisson', 'Fish nuggets'), text: t('Bouchées panées, précuites, prêtes en quelques minutes.', 'Breaded bites, precooked, ready in minutes.') },
-  { id: 'pre-frit', category: 'precooked-fish', name: t('Poisson pré-frit surgelé', 'Frozen pre-fried fish'), text: t('Poisson pré-frit à réchauffer au four ou à la friteuse.', 'Pre-fried fish to reheat in the oven or fryer.') },
-
-  // Fruits — agrumes
-  { id: 'clementine-nour', category: 'fruits', sub: citrus, featured: true, name: t('Clémentine Nour', 'Nour clementine'), text: t('Clémentine tardive marocaine, sans pépins, à la peau fine.', 'Late Moroccan clementine, seedless, with a thin peel.') },
-  { id: 'clementine', category: 'fruits', sub: citrus, name: t('Clémentine', 'Clementine'), text: t('Les clémentines de début de campagne, douces et faciles à éplucher.', 'Early-season clementines, sweet and easy to peel.') },
-  { id: 'mandarine-nova', category: 'fruits', sub: citrus, name: t('Mandarine Nova', 'Nova mandarin'), text: t('Mandarine à la couleur orange vif et au jus abondant.', 'Mandarin with a bright orange colour and plenty of juice.') },
-  { id: 'mandarine-ortanique', category: 'fruits', sub: citrus, name: t('Mandarine Ortanique', 'Ortanique mandarin'), text: t('Hybride de mandarine et d’orange, riche en jus.', 'Mandarin–orange hybrid, rich in juice.') },
-  { id: 'nadorcott', category: 'fruits', sub: citrus, name: t('Mandarine Nadorcott', 'Nadorcott mandarin'), text: t('Variété née au Maroc, tardive, sucrée et parfumée.', 'A late variety born in Morocco, sweet and fragrant.') },
-  { id: 'orange-navel', category: 'fruits', sub: citrus, name: t('Orange Navel', 'Navel orange'), text: t('Orange de table sans pépins, dont la Washington Navel.', 'Seedless table orange, including Washington Navel.') },
-  { id: 'orange-salustiana', category: 'fruits', sub: citrus, name: t('Orange Salustiana', 'Salustiana orange'), text: t('Orange juteuse et sucrée, idéale pour la table et le jus.', 'Juicy, sweet orange for the table and for juice.') },
-  { id: 'orange-valencia', category: 'fruits', sub: citrus, name: t('Orange Valencia', 'Valencia orange'), text: t('La grande orange à jus de fin de saison.', 'The classic late-season juice orange.') },
-  { id: 'orange-maroc-late', category: 'fruits', sub: citrus, name: t('Orange Maroc Late', 'Maroc Late orange'), text: t('Variété tardive emblématique du Maroc, qui prolonge la campagne.', 'Morocco’s signature late variety, extending the season.') },
-  { id: 'citron', category: 'fruits', sub: citrus, name: t('Citron', 'Lemon'), text: t('Citrons frais pour la distribution et l’industrie.', 'Fresh lemons for retail and industry.') },
-  { id: 'pamplemousse', category: 'fruits', sub: citrus, name: t('Pamplemousse', 'Grapefruit'), text: t('Pamplemousses à chair blanche ou rose selon arrivages.', 'White or pink grapefruit, by availability.') },
-  // Fruits frais
-  { id: 'fraise', category: 'fruits', sub: freshFruit, name: t('Fraise', 'Strawberry'), text: t('Fraises de primeur, cueillies et conditionnées le jour même.', 'Early-season strawberries, picked and packed the same day.') },
-  { id: 'grenade', category: 'fruits', sub: freshFruit, name: t('Grenade', 'Pomegranate'), text: t('Grenades aux grains rouge vif, en automne.', 'Pomegranates with bright red arils, in autumn.') },
-  { id: 'melon', category: 'fruits', sub: freshFruit, name: t('Melon', 'Melon'), text: t('Melons sucrés de saison, calibrés en colis.', 'Sweet seasonal melons, size-graded in cartons.') },
-  { id: 'pasteque', category: 'fruits', sub: freshFruit, name: t('Pastèque', 'Watermelon'), text: t('Pastèques de printemps et d’été, en vrac ou en caisses.', 'Spring and summer watermelons, loose or in bins.') },
-  { id: 'raisin', category: 'fruits', sub: freshFruit, name: t('Raisin', 'Table grapes'), text: t('Raisin de table blanc ou noir selon la saison.', 'White or black table grapes, by season.') },
-  { id: 'avocat', category: 'fruits', sub: freshFruit, featured: true, name: t('Avocat', 'Avocado'), text: t('Avocats Hass et variétés vertes du Gharb.', 'Hass and green-skin avocados from the Gharb.') },
-  { id: 'peche-nectarine', category: 'fruits', sub: freshFruit, name: t('Pêche / Nectarine', 'Peach / Nectarine'), text: t('Fruits à noyau d’été, à chair jaune ou blanche.', 'Summer stone fruit, yellow or white flesh.') },
-  // Fruits surgelés
-  { id: 'abricot-surgele', category: 'fruits', sub: frozenFruit, name: t('Abricot surgelé', 'Frozen apricot'), text: t('Oreillons d’abricot surgelés pour la pâtisserie et la confiture.', 'Frozen apricot halves for bakery and jam.') },
-  { id: 'melon-surgele', category: 'fruits', sub: frozenFruit, name: t('Melon surgelé', 'Frozen melon'), text: t('Billes ou dés de melon surgelés.', 'Frozen melon balls or dice.') },
-  { id: 'clementine-surgelee', category: 'fruits', sub: frozenFruit, name: t('Clémentine surgelée', 'Frozen clementine'), text: t('Segments de clémentine surgelés.', 'Frozen clementine segments.') },
-  { id: 'orange-surgelee', category: 'fruits', sub: frozenFruit, name: t('Orange surgelée', 'Frozen orange'), text: t('Segments et pulpe d’orange pour l’industrie.', 'Orange segments and pulp for industry.') },
-  { id: 'figue-surgelee', category: 'fruits', sub: frozenFruit, name: t('Figue surgelée', 'Frozen fig'), text: t('Figues entières ou en quartiers, surgelées.', 'Whole or quartered figs, frozen.') },
-  { id: 'fraise-surgelee', category: 'fruits', sub: frozenFruit, name: t('Fraise surgelée (IQF)', 'Frozen strawberry (IQF)'), text: t('Fraises surgelées individuellement, entières ou en dés.', 'Individually quick-frozen strawberries, whole or diced.') },
-
-  // Légumes
-  { id: 'tomate', category: 'vegetables', featured: true, name: t('Tomate', 'Tomato'), text: t('Tomates rondes, grappe et cerise, de serre.', 'Round, vine and cherry tomatoes, greenhouse-grown.') },
-  { id: 'poivron', category: 'vegetables', name: t('Poivron', 'Sweet pepper'), text: t('Poivrons rouges, jaunes et verts, calibrés.', 'Red, yellow and green peppers, size-graded.') },
-  { id: 'piment', category: 'vegetables', name: t('Piment fort', 'Hot pepper'), text: t('Piments forts frais pour la distribution et l’industrie.', 'Fresh hot peppers for retail and industry.') },
-  { id: 'haricot-vert', category: 'vegetables', featured: true, name: t('Haricot vert', 'Green beans'), text: t('Haricots verts fins et extra-fins, triés à la main.', 'Fine and extra-fine green beans, hand-sorted.') },
-  { id: 'courgette', category: 'vegetables', name: t('Courgette', 'Zucchini'), text: t('Courgettes vertes de serre, calibre régulier.', 'Greenhouse green zucchini, even sizing.') },
-  { id: 'oignon', category: 'vegetables', name: t('Oignon', 'Onion'), text: t('Oignons jaunes et rouges en filets ou en sacs.', 'Yellow and red onions in nets or sacks.') },
-
-  // Bois
-  { id: 'bois-rouge', category: 'wood', featured: true, name: t('Bois rouge', 'Redwood timber'), text: t('Planches et madriers résineux pour la charpente, la menuiserie et le coffrage.', 'Softwood planks and beams for framing, joinery and formwork.') },
-  { id: 'palettes', category: 'wood', name: t('Palettes Europe EUR / EPAL', 'EUR / EPAL euro pallets'), text: t('Palettes 1200 × 800 mm, neuves ou reconditionnées, traitées NIMP 15.', '1200 × 800 mm pallets, new or refurbished, ISPM 15 treated.') },
-  { id: 'osb', category: 'wood', name: t('Panneaux OSB', 'OSB boards'), text: t('Panneaux de grandes particules orientées, de 9 à 22 mm.', 'Oriented strand boards, from 9 to 22 mm.') },
-
-  // Alimentation animale
-  { id: 'farine-poisson', category: 'animal-feed', featured: true, name: t('Farine de poisson', 'Fish meal'), text: t('Source naturelle de protéines complètes, issue de la sardine marocaine.', 'A natural source of complete protein, made from Moroccan sardines.') },
-  { id: 'huile-poisson', category: 'animal-feed', name: t('Huile de poisson', 'Fish oil'), text: t('Riche en oméga-3, vitamines et minéraux naturels.', 'Rich in omega-3, natural vitamins and minerals.') },
-
-  // Polymères
-  { id: 'polymeres', category: 'polymers', name: t('Polymères', 'Polymers'), text: t('Résines thermoplastiques en granulés pour la plasturgie.', 'Thermoplastic resin pellets for plastics processing.') },
-  { id: 'caoutchoucs', category: 'polymers', name: t('Caoutchoucs synthétiques', 'Synthetic rubbers'), text: t('Élastomères synthétiques pour l’industrie du caoutchouc.', 'Synthetic elastomers for the rubber industry.') },
-];
+/**
+ * The products: products.json is the snapshot the build bakes into the pages. Once the site
+ * is live, the admin (/admin/) edits the server's copy and the pages read it after load
+ * (components/Catalog/liveProducts.ts); scripts/pull-products.mjs brings it back here
+ * before a build so the static HTML catches up. A product whose family no longer exists is
+ * left out rather than failing the build.
+ */
+export const PRODUCTS: Product[] = (productData as Product[]).filter((p) => {
+  const known = CATEGORIES.some((c) => c.key === p.category);
+  if (!known) console.warn(`products.json: "${p.id}" is in unknown family "${p.category}", left out`);
+  return known;
+});
 
 export const getCategory = (key: string) => CATEGORIES.find((c) => c.key === key);
 export const categoryCopy = (category: Category, locale: Locale) => category.copy[locale];
@@ -944,6 +931,3 @@ export const groupOf = (key: CategoryKey) => GROUPS.find((g) => g.categories.inc
 
 /** The product's card on its family page, e.g. #poulpe. */
 export const productAnchor = (product: Product) => product.id;
-
-/** The basket shows the family photo next to a product: there is no photo per product. */
-export const productImage = (product: Product) => getCategory(product.category)!.image;

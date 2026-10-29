@@ -45,3 +45,7 @@ next-env.d.ts
 /public/api/mail-config.php
 
 .vercel
+
+# admin password, and the live catalogue the admin writes on the server
+/public/api/admin-config.php
+/public/api/data/

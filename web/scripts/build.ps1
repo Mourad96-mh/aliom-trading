@@ -6,6 +6,13 @@
 # node_modules across, build there, copy `out` back.
 #
 #   powershell -ExecutionPolicy Bypass -File scripts/build.ps1
+#   powershell -ExecutionPolicy Bypass -File scripts/build.ps1 -NoPull   # offline
+#
+# First it pulls the catalogue the client edits at /admin/ into data/products.json, so the
+# static pages carry it (scripts/pull-products.mjs). Offline, or before the site is live,
+# that step only warns and the build uses the products.json already there.
+
+param([switch]$NoPull)
 
 $ErrorActionPreference = 'Stop'
 
@@ -14,6 +21,12 @@ $work = Join-Path $env:TEMP 'aliom-build'
 
 Write-Host "source : $source"
 Write-Host "build  : $work"
+
+if (-not $NoPull) {
+  node (Join-Path $source 'scripts/pull-products.mjs')
+  if ($LASTEXITCODE -ne 0) { Write-Warning "could not pull the live catalogue: building with data/products.json as it is" }
+  $global:LASTEXITCODE = 0
+}
 
 # /MIR keeps the mirror honest between runs; node_modules and outputs are excluded
 # because they are junctioned or regenerated.

@@ -76,7 +76,7 @@ ${entries.join('\n')}
 `
 );
 
-writeFileSync(join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${SITE}/sitemap.xml\n`);
+writeFileSync(join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 
 /* ------------------------------------------------------- language picker */
 
@@ -87,8 +87,8 @@ writeFileSync(
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ALIOM TRADING — Import-export et représentation de marques à Casablanca</title>
-<meta name="description" content="ALIOM TRADING, agent représentant de marques internationales et négociant import-export à Casablanca : produits de la mer, fruits et légumes, bois, alimentation animale et polymères.">
+<title>ALIOM TRADING — Société d’import-export à Casablanca</title>
+<meta name="description" content="ALIOM TRADING, société d’import-export à Casablanca : export de produits marocains (produits de la mer, conserves, huiles, fruits et légumes), import de boîtes métalliques, huiles et conserves.">
 <link rel="canonical" href="${SITE}/${DEFAULT}/">
 ${LOCALES.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}/${l}/">`).join('\n')}
 <link rel="alternate" hreflang="x-default" href="${SITE}/">
@@ -179,6 +179,13 @@ ErrorDocument 404 /404.html
   RewriteCond %{HTTPS} !=on [OR]
   RewriteCond %{HTTP_HOST} ^www\\. [NC]
   RewriteRule ^ https://aliomtrading.com%{REQUEST_URI} [L,R=301]
+  # Pages renamed or removed with the export / import catalogue (2026-10-29)
+  RewriteRule ^fr/produits/conserves-de-poisson/?$ /fr/produits/conserves-alimentaires/ [L,R=301]
+  RewriteRule ^en/products/canned-fish/?$ /en/products/canned-food/ [L,R=301]
+  RewriteRule ^fr/produits/(bois|polymeres)/?$ /fr/produits/ [L,R=301]
+  RewriteRule ^en/products/(wood|polymers)/?$ /en/products/ [L,R=301]
+  RewriteRule ^fr/blog/palette-europe-dimensions-normes/?$ /fr/blog/ [L,R=301]
+  RewriteRule ^en/blog/euro-pallet-dimensions-standards/?$ /en/blog/ [L,R=301]
   # A page asked for without its trailing slash
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME}/index.html -f

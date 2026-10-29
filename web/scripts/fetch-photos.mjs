@@ -57,7 +57,7 @@ const meta = (title) => {
 };
 
 for (const [out, entry] of Object.entries(selection)) {
-  const { title, position = 'centre', crop } = typeof entry === 'string' ? { title: entry } : entry;
+  const { title, position = 'centre', crop, quality } = typeof entry === 'string' ? { title: entry } : entry;
   const target = join(MEDIA, out);
   if (existsSync(target) && !force) {
     // On disk from an earlier, interrupted run: only the credit may be missing.
@@ -79,6 +79,7 @@ for (const [out, entry] of Object.entries(selection)) {
 
   mkdirSync(dirname(target), { recursive: true });
   // `crop` keeps a part of the frame first, in fractions: { left, top, width, height }.
+  // `quality` overrides the folder's, for busy frames that would otherwise weigh 500 KB.
   let source = await sharp(tmp).rotate().toBuffer();
   if (crop) {
     const { width, height } = await sharp(source).metadata();
@@ -93,7 +94,7 @@ for (const [out, entry] of Object.entries(selection)) {
   }
   const info = await sharp(source)
     .resize(size.width, size.height, { fit: 'cover', position })
-    .webp({ quality: size.quality })
+    .webp({ quality: quality ?? size.quality })
     .toFile(target);
   unlinkSync(tmp);
 

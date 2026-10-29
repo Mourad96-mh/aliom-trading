@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "sardine",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Sardine",
+      "en": "Sardine"
+    },
+    "text": {
+      "fr": "Sardina pilchardus, le poisson emblématique de l’Atlantique marocain, entier ou en blocs.",
+      "en": "Sardina pilchardus, the signature fish of the Moroccan Atlantic, whole or block-frozen."
+    }
+  },
+  {
+    "id": "maquereau",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Maquereau",
+      "en": "Mackerel"
+    },
+    "text": {
+      "fr": "Maquereau entier congelé, calibré, pour la transformation et la distribution.",
+      "en": "Whole frozen mackerel, size-graded, for processing and distribution."
+    }
+  },
+  {
+    "id": "sardinelle",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Allache (sardinelle)",
+      "en": "Sardinella"
+    },
+    "text": {
+      "fr": "Sardinelle ronde, très demandée sur les marchés africains et pour l’appât.",
+      "en": "Round sardinella, in high demand on African markets and for bait."
+    }
+  },
+  {
+    "id": "chinchard",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Chinchard",
+      "en": "Horse mackerel"
+    },
+    "text": {
+      "fr": "Chinchard entier congelé en cartons, prisé en Afrique de l’Ouest.",
+      "en": "Whole frozen horse mackerel in cartons, popular in West Africa."
+    }
+  },
+  {
+    "id": "denti-dorade",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Denti / Dorade",
+      "en": "Dentex / Sea bream"
+    },
+    "text": {
+      "fr": "Poissons nobles à chair blanche, entiers et glacés.",
+      "en": "Premium white-fleshed fish, whole and glazed."
+    }
+  },
+  {
+    "id": "rouget",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Rouget",
+      "en": "Red mullet"
+    },
+    "text": {
+      "fr": "Rouget entier congelé, apprécié en restauration.",
+      "en": "Whole frozen red mullet, valued by restaurants."
+    }
+  },
+  {
+    "id": "pelamide",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Pélamide",
+      "en": "Atlantic bonito"
+    },
+    "text": {
+      "fr": "Thonidé de l’Atlantique à la chair ferme, entier congelé.",
+      "en": "Firm-fleshed Atlantic tuna relative, whole frozen."
+    }
+  },
+  {
+    "id": "sole",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Sole",
+      "en": "Sole"
+    },
+    "text": {
+      "fr": "Poisson plat à chair fine, entier ou en filets selon disponibilité.",
+      "en": "Delicate flatfish, whole or filleted subject to availability."
+    }
+  },
+  {
+    "id": "sabre",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Sabre argenté",
+      "en": "Silver scabbardfish"
+    },
+    "text": {
+      "fr": "Poisson-ruban congelé, entier ou en tronçons.",
+      "en": "Frozen ribbon fish, whole or in sections."
+    }
+  },
+  {
+    "id": "poisson-appat",
+    "category": "frozen-fish",
+    "name": {
+      "fr": "Poisson pour appât",
+      "en": "Bait fish"
+    },
+    "text": {
+      "fr": "Petits pélagiques congelés en blocs pour la pêche à la palangre.",
+      "en": "Small pelagics frozen in blocks for longline fishing."
+    }
+  },
+  {
+    "id": "poulpe",
+    "category": "seafood",
+    "name": {
+      "fr": "Poulpe",
+      "en": "Octopus"
+    },
+    "text": {
+      "fr": "Octopus vulgaris de l’Atlantique, entier ou nettoyé, IQF ou en blocs.",
+      "en": "Atlantic Octopus vulgaris, whole or cleaned, IQF or block-frozen."
+    }
+  },
+  {
+    "id": "seiche",
+    "category": "seafood",
+    "name": {
+      "fr": "Seiche",
+      "en": "Cuttlefish"
+    },
+    "text": {
+      "fr": "Seiche entière ou nettoyée, congelée à bord ou à terre.",
+      "en": "Whole or cleaned cuttlefish, frozen at sea or on shore."
+    }
+  },
+  {
+    "id": "calamar",
+    "category": "seafood",
+    "name": {
+      "fr": "Calamar",
+      "en": "Squid"
+    },
+    "text": {
+      "fr": "Calamar entier, en tubes ou en anneaux, réfrigéré ou congelé.",
+      "en": "Squid whole, as tubes or rings, chilled or frozen."
+    }
+  },
+  {
+    "id": "conserve-sardines",
+    "category": "canned-food",
+    "name": {
+      "fr": "Sardines en conserve",
+      "en": "Canned sardines"
+    },
+    "text": {
+      "fr": "À l’huile d’olive, à l’huile végétale, à la tomate ou piquantes.",
+      "en": "In olive oil, vegetable oil, tomato sauce or spicy."
+    }
+  },
+  {
+    "id": "conserve-maquereaux",
+    "category": "canned-food",
+    "name": {
+      "fr": "Maquereaux en conserve",
+      "en": "Canned mackerel"
+    },
+    "text": {
+      "fr": "Filets ou morceaux de maquereau à l’huile ou en sauce.",
+      "en": "Mackerel fillets or pieces in oil or sauce."
+    }
+  },
+  {
+    "id": "conserve-thon",
+    "category": "canned-food",
+    "name": {
+      "fr": "Thon en conserve",
+      "en": "Canned tuna"
+    },
+    "text": {
+      "fr": "Thon à l’huile d’olive, à l’huile végétale, au naturel ou à la tomate, en boîtes de différents formats.",
+      "en": "Tuna in olive oil, vegetable oil, brine or tomato, in a range of can sizes."
+    }
+  },
+  {
+    "id": "olives-vertes",
+    "category": "canned-food",
+    "name": {
+      "fr": "Olives vertes",
+      "en": "Green olives"
+    },
+    "text": {
+      "fr": "Entières, dénoyautées, en rondelles ou farcies, en bocaux, en boîtes ou en fûts.",
+      "en": "Whole, pitted, sliced or stuffed, in jars, cans or drums."
+    }
+  },
+  {
+    "id": "olives-noires",
+    "category": "canned-food",
+    "name": {
+      "fr": "Olives noires",
+      "en": "Black olives"
+    },
+    "text": {
+      "fr": "Olives noires confites ou oxydées, entières, dénoyautées ou en rondelles.",
+      "en": "Cured or ripe black olives, whole, pitted or sliced."
+    }
+  },
+  {
+    "id": "capres",
+    "category": "canned-food",
+    "name": {
+      "fr": "Câpres",
+      "en": "Capers"
+    },
+    "text": {
+      "fr": "Câpres en saumure ou au vinaigre, calibrées, en bocaux ou en fûts.",
+      "en": "Capers in brine or vinegar, size-graded, in jars or drums."
+    }
+  },
+  {
+    "id": "boulettes",
+    "category": "precooked-fish",
+    "name": {
+      "fr": "Boulettes de poisson",
+      "en": "Fishballs"
+    },
+    "text": {
+      "fr": "Boulettes à base de chair de poisson, précuites et surgelées.",
+      "en": "Balls made from fish flesh, precooked and frozen."
+    }
+  },
+  {
+    "id": "burger-kebab",
+    "category": "precooked-fish",
+    "name": {
+      "fr": "Kebab de poisson",
+      "en": "Fish kebab"
+    },
+    "text": {
+      "fr": "Galettes façon kebab à base de poisson, prêtes à griller.",
+      "en": "Kebab-style fish patties, ready to grill."
+    }
+  },
+  {
+    "id": "burger",
+    "category": "precooked-fish",
+    "name": {
+      "fr": "Burger de poisson",
+      "en": "Fish burger"
+    },
+    "text": {
+      "fr": "Steaks de poisson panés pour la restauration rapide.",
+      "en": "Breaded fish patties for quick-service restaurants."
+    }
+  },
+  {
+    "id": "batonnets",
+    "category": "precooked-fish",
+    "name": {
+      "fr": "Bâtonnets de poisson pané",
+      "en": "Fish fingers"
+    },
+    "text": {
+      "fr": "Le classique pané, calibré, pour les cantines et le libre-service.",
+      "en": "The breaded classic, evenly sized, for canteens and retail."
+    }
+  },
+  {
+    "id": "nuggets",
+    "category": "precooked-fish",
+    "name": {
+      "fr": "Nuggets de poisson",
+      "en": "Fish nuggets"
+    },
+    "text": {
+      "fr": "Bouchées panées, précuites, prêtes en quelques minutes.",
+      "en": "Breaded bites, precooked, ready in minutes."
+    }
+  },
+  {
+    "id": "pre-frit",
+    "category": "precooked-fish",
+    "name": {
+      "fr": "Poisson pré-frit surgelé",
+      "en": "Frozen pre-fried fish"
+    },
+    "text": {
+      "fr": "Poisson pré-frit à réchauffer au four ou à la friteuse.",
+      "en": "Pre-fried fish to reheat in the oven or fryer."
+    }
+  },
+  {
+    "id": "huile-olive-vierge-extra",
+    "category": "vegetable-oils",
+    "name": {
+      "fr": "Huile d’olive vierge extra",
+      "en": "Extra virgin olive oil"
+    },
+    "text": {
+      "fr": "Obtenue par procédés mécaniques uniquement, en bouteilles, en bidons ou en vrac.",
+      "en": "Obtained by mechanical means only, in bottles, cans or bulk."
+    }
+  },
+  {
+    "id": "huile-olive-vierge",
+    "category": "vegetable-oils",
+    "name": {
+      "fr": "Huile d’olive vierge",
+      "en": "Virgin olive oil"
+    },
+    "text": {
+      "fr": "Pour la distribution et l’industrie agroalimentaire, en bidons, en fûts ou en vrac.",
+      "en": "For retail and the food industry, in cans, drums or bulk."
+    }
+  },
+  {
+    "id": "huile-argan-alimentaire",
+    "category": "vegetable-oils",
+    "name": {
+      "fr": "Huile d’argan alimentaire",
+      "en": "Culinary argan oil"
+    },
+    "text": {
+      "fr": "Pressée à partir d’amandons torréfiés, au goût de noisette, issue de coopératives du Souss.",
+      "en": "Pressed from roasted kernels, with a nutty taste, from cooperatives in the Souss."
+    }
+  },
+  {
+    "id": "huile-argan-cosmetique",
+    "category": "vegetable-oils",
+    "name": {
+      "fr": "Huile d’argan cosmétique",
+      "en": "Cosmetic argan oil"
+    },
+    "text": {
+      "fr": "Huile vierge pressée à froid à partir d’amandons non torréfiés, pour la cosmétique.",
+      "en": "Cold-pressed virgin oil from unroasted kernels, for cosmetics."
+    }
+  },
+  {
+    "id": "huile-figue-barbarie",
+    "category": "vegetable-oils",
+    "name": {
+      "fr": "Huile de figue de barbarie",
+      "en": "Prickly pear seed oil"
+    },
+    "text": {
+      "fr": "Huile de pépins de figue de barbarie pressée à froid, pour la cosmétique.",
+      "en": "Cold-pressed prickly pear seed oil, for cosmetics."
+    }
+  },
+  {
+    "id": "clementine-nour",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Clémentine Nour",
+      "en": "Nour clementine"
+    },
+    "text": {
+      "fr": "Clémentine tardive marocaine, sans pépins, à la peau fine.",
+      "en": "Late Moroccan clementine, seedless, with a thin peel."
+    }
+  },
+  {
+    "id": "clementine",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Clémentine",
+      "en": "Clementine"
+    },
+    "text": {
+      "fr": "Les clémentines de début de campagne, douces et faciles à éplucher.",
+      "en": "Early-season clementines, sweet and easy to peel."
+    }
+  },
+  {
+    "id": "mandarine-nova",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Mandarine Nova",
+      "en": "Nova mandarin"
+    },
+    "text": {
+      "fr": "Mandarine à la couleur orange vif et au jus abondant.",
+      "en": "Mandarin with a bright orange colour and plenty of juice."
+    }
+  },
+  {
+    "id": "mandarine-ortanique",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Mandarine Ortanique",
+      "en": "Ortanique mandarin"
+    },
+    "text": {
+      "fr": "Hybride de mandarine et d’orange, riche en jus.",
+      "en": "Mandarin–orange hybrid, rich in juice."
+    }
+  },
+  {
+    "id": "nadorcott",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Mandarine Nadorcott",
+      "en": "Nadorcott mandarin"
+    },
+    "text": {
+      "fr": "Variété née au Maroc, tardive, sucrée et parfumée.",
+      "en": "A late variety born in Morocco, sweet and fragrant."
+    }
+  },
+  {
+    "id": "orange-navel",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Orange Navel",
+      "en": "Navel orange"
+    },
+    "text": {
+      "fr": "Orange de table sans pépins, dont la Washington Navel.",
+      "en": "Seedless table orange, including Washington Navel."
+    }
+  },
+  {
+    "id": "orange-salustiana",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Orange Salustiana",
+      "en": "Salustiana orange"
+    },
+    "text": {
+      "fr": "Orange juteuse et sucrée, idéale pour la table et le jus.",
+      "en": "Juicy, sweet orange for the table and for juice."
+    }
+  },
+  {
+    "id": "orange-valencia",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Orange Valencia",
+      "en": "Valencia orange"
+    },
+    "text": {
+      "fr": "La grande orange à jus de fin de saison.",
+      "en": "The classic late-season juice orange."
+    }
+  },
+  {
+    "id": "orange-maroc-late",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Orange Maroc Late",
+      "en": "Maroc Late orange"
+    },
+    "text": {
+      "fr": "Variété tardive emblématique du Maroc, qui prolonge la campagne.",
+      "en": "Morocco’s signature late variety, extending the season."
+    }
+  },
+  {
+    "id": "citron",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Citron",
+      "en": "Lemon"
+    },
+    "text": {
+      "fr": "Citrons frais pour la distribution et l’industrie.",
+      "en": "Fresh lemons for retail and industry."
+    }
+  },
+  {
+    "id": "pamplemousse",
+    "category": "fruits",
+    "sub": {
+      "fr": "Agrumes",
+      "en": "Citrus"
+    },
+    "name": {
+      "fr": "Pamplemousse",
+      "en": "Grapefruit"
+    },
+    "text": {
+      "fr": "Pamplemousses à chair blanche ou rose selon arrivages.",
+      "en": "White or pink grapefruit, by availability."
+    }
+  },
+  {
+    "id": "fraise",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits frais",
+      "en": "Fresh fruit"
+    },
+    "name": {
+      "fr": "Fraise",
+      "en": "Strawberry"
+    },
+    "text": {
+      "fr": "Fraises de primeur, cueillies et conditionnées le jour même.",
+      "en": "Early-season strawberries, picked and packed the same day."
+    }
+  },
+  {
+    "id": "grenade",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits frais",
+      "en": "Fresh fruit"
+    },
+    "name": {
+      "fr": "Grenade",
+      "en": "Pomegranate"
+    },
+    "text": {
+      "fr": "Grenades aux grains rouge vif, en automne.",
+      "en": "Pomegranates with bright red arils, in autumn."
+    }
+  },
+  {
+    "id": "melon",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits frais",
+      "en": "Fresh fruit"
+    },
+    "name": {
+      "fr": "Melon",
+      "en": "Melon"
+    },
+    "text": {
+      "fr": "Melons sucrés de saison, calibrés en colis.",
+      "en": "Sweet seasonal melons, size-graded in cartons."
+    }
+  },
+  {
+    "id": "pasteque",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits frais",
+      "en": "Fresh fruit"
+    },
+    "name": {
+      "fr": "Pastèque",
+      "en": "Watermelon"
+    },
+    "text": {
+      "fr": "Pastèques de printemps et d’été, en vrac ou en caisses.",
+      "en": "Spring and summer watermelons, loose or in bins."
+    }
+  },
+  {
+    "id": "raisin",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits frais",
+      "en": "Fresh fruit"
+    },
+    "name": {
+      "fr": "Raisin",
+      "en": "Table grapes"
+    },
+    "text": {
+      "fr": "Raisin de table blanc ou noir selon la saison.",
+      "en": "White or black table grapes, by season."
+    }
+  },
+  {
+    "id": "avocat",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits frais",
+      "en": "Fresh fruit"
+    },
+    "name": {
+      "fr": "Avocat",
+      "en": "Avocado"
+    },
+    "text": {
+      "fr": "Avocats Hass et variétés vertes du Gharb.",
+      "en": "Hass and green-skin avocados from the Gharb."
+    }
+  },
+  {
+    "id": "peche-nectarine",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits frais",
+      "en": "Fresh fruit"
+    },
+    "name": {
+      "fr": "Pêche / Nectarine",
+      "en": "Peach / Nectarine"
+    },
+    "text": {
+      "fr": "Fruits à noyau d’été, à chair jaune ou blanche.",
+      "en": "Summer stone fruit, yellow or white flesh."
+    }
+  },
+  {
+    "id": "abricot-surgele",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits surgelés",
+      "en": "Frozen fruit"
+    },
+    "name": {
+      "fr": "Abricot surgelé",
+      "en": "Frozen apricot"
+    },
+    "text": {
+      "fr": "Oreillons d’abricot surgelés pour la pâtisserie et la confiture.",
+      "en": "Frozen apricot halves for bakery and jam."
+    }
+  },
+  {
+    "id": "melon-surgele",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits surgelés",
+      "en": "Frozen fruit"
+    },
+    "name": {
+      "fr": "Melon surgelé",
+      "en": "Frozen melon"
+    },
+    "text": {
+      "fr": "Billes ou dés de melon surgelés.",
+      "en": "Frozen melon balls or dice."
+    }
+  },
+  {
+    "id": "clementine-surgelee",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits surgelés",
+      "en": "Frozen fruit"
+    },
+    "name": {
+      "fr": "Clémentine surgelée",
+      "en": "Frozen clementine"
+    },
+    "text": {
+      "fr": "Segments de clémentine surgelés.",
+      "en": "Frozen clementine segments."
+    }
+  },
+  {
+    "id": "orange-surgelee",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits surgelés",
+      "en": "Frozen fruit"
+    },
+    "name": {
+      "fr": "Orange surgelée",
+      "en": "Frozen orange"
+    },
+    "text": {
+      "fr": "Segments et pulpe d’orange pour l’industrie.",
+      "en": "Orange segments and pulp for industry."
+    }
+  },
+  {
+    "id": "figue-surgelee",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits surgelés",
+      "en": "Frozen fruit"
+    },
+    "name": {
+      "fr": "Figue surgelée",
+      "en": "Frozen fig"
+    },
+    "text": {
+      "fr": "Figues entières ou en quartiers, surgelées.",
+      "en": "Whole or quartered figs, frozen."
+    }
+  },
+  {
+    "id": "fraise-surgelee",
+    "category": "fruits",
+    "sub": {
+      "fr": "Fruits surgelés",
+      "en": "Frozen fruit"
+    },
+    "name": {
+      "fr": "Fraise surgelée (IQF)",
+      "en": "Frozen strawberry (IQF)"
+    },
+    "text": {
+      "fr": "Fraises surgelées individuellement, entières ou en dés.",
+      "en": "Individually quick-frozen strawberries, whole or diced."
+    }
+  },
+  {
+    "id": "tomate",
+    "category": "vegetables",
+    "name": {
+      "fr": "Tomate",
+      "en": "Tomato"
+    },
+    "text": {
+      "fr": "Tomates rondes, grappe et cerise, de serre.",
+      "en": "Round, vine and cherry tomatoes, greenhouse-grown."
+    }
+  },
+  {
+    "id": "poivron",
+    "category": "vegetables",
+    "name": {
+      "fr": "Poivron",
+      "en": "Sweet pepper"
+    },
+    "text": {
+      "fr": "Poivrons rouges, jaunes et verts, calibrés.",
+      "en": "Red, yellow and green peppers, size-graded."
+    }
+  },
+  {
+    "id": "piment",
+    "category": "vegetables",
+    "name": {
+      "fr": "Piment fort",
+      "en": "Hot pepper"
+    },
+    "text": {
+      "fr": "Piments forts frais pour la distribution et l’industrie.",
+      "en": "Fresh hot peppers for retail and industry."
+    }
+  },
+  {
+    "id": "haricot-vert",
+    "category": "vegetables",
+    "name": {
+      "fr": "Haricot vert",
+      "en": "Green beans"
+    },
+    "text": {
+      "fr": "Haricots verts fins et extra-fins, triés à la main.",
+      "en": "Fine and extra-fine green beans, hand-sorted."
+    }
+  },
+  {
+    "id": "courgette",
+    "category": "vegetables",
+    "name": {
+      "fr": "Courgette",
+      "en": "Zucchini"
+    },
+    "text": {
+      "fr": "Courgettes vertes de serre, calibre régulier.",
+      "en": "Greenhouse green zucchini, even sizing."
+    }
+  },
+  {
+    "id": "oignon",
+    "category": "vegetables",
+    "name": {
+      "fr": "Oignon",
+      "en": "Onion"
+    },
+    "text": {
+      "fr": "Oignons jaunes et rouges en filets ou en sacs.",
+      "en": "Yellow and red onions in nets or sacks."
+    }
+  },
+  {
+    "id": "farine-poisson",
+    "category": "animal-feed",
+    "name": {
+      "fr": "Farine de poisson",
+      "en": "Fish meal"
+    },
+    "text": {
+      "fr": "Source naturelle de protéines complètes, issue de la sardine marocaine.",
+      "en": "A natural source of complete protein, made from Moroccan sardines."
+    }
+  },
+  {
+    "id": "huile-poisson",
+    "category": "animal-feed",
+    "name": {
+      "fr": "Huile de poisson",
+      "en": "Fish oil"
+    },
+    "text": {
+      "fr": "Riche en oméga-3, vitamines et minéraux naturels.",
+      "en": "Rich in omega-3, natural vitamins and minerals."
+    }
+  },
+  {
+    "id": "boites-3-pieces",
+    "category": "metal-packaging",
+    "name": {
+      "fr": "Boîtes de conserve 3 pièces",
+      "en": "Three-piece food cans"
+    },
+    "text": {
+      "fr": "Boîtes rondes en fer-blanc soudé, vernies à l’intérieur, pour légumes, tomate et plats cuisinés.",
+      "en": "Round welded tinplate cans, internally lacquered, for vegetables, tomato and ready meals."
+    }
+  },
+  {
+    "id": "boites-embouties",
+    "category": "metal-packaging",
+    "name": {
+      "fr": "Boîtes embouties 1/4 club et ovales",
+      "en": "Drawn cans, 1/4 club and oval"
+    },
+    "text": {
+      "fr": "Boîtes deux pièces rectangulaires et ovales pour les conserves de sardines et de maquereaux.",
+      "en": "Two-piece rectangular and oval cans for canned sardines and mackerel."
+    }
+  },
+  {
+    "id": "couvercles-easy-open",
+    "category": "metal-packaging",
+    "name": {
+      "fr": "Couvercles à ouverture facile",
+      "en": "Easy-open ends"
+    },
+    "text": {
+      "fr": "Couvercles easy-open en fer-blanc ou en aluminium, dans les diamètres et formats standard.",
+      "en": "Tinplate or aluminium easy-open ends, in standard diameters and shapes."
+    }
+  },
+  {
+    "id": "fer-blanc",
+    "category": "metal-packaging",
+    "name": {
+      "fr": "Fer-blanc en feuilles",
+      "en": "Tinplate sheets"
+    },
+    "text": {
+      "fr": "Feuilles de fer-blanc nues, vernies ou imprimées, pour les fabricants de boîtes.",
+      "en": "Plain, lacquered or printed tinplate sheets for can makers."
+    }
+  },
+  {
+    "id": "boites-aluminium",
+    "category": "metal-packaging",
+    "name": {
+      "fr": "Boîtes et barquettes en aluminium",
+      "en": "Aluminium cans and trays"
+    },
+    "text": {
+      "fr": "Boîtes et barquettes en aluminium pour les conserves de poisson et les plats préparés.",
+      "en": "Aluminium cans and trays for canned fish and prepared meals."
+    }
+  },
+  {
+    "id": "huile-soja",
+    "category": "imported-oils",
+    "name": {
+      "fr": "Huile de soja",
+      "en": "Soybean oil"
+    },
+    "text": {
+      "fr": "Brute dégommée pour les raffineries, ou raffinée pour l’agroalimentaire.",
+      "en": "Crude degummed for refineries, or refined for the food industry."
+    }
+  },
+  {
+    "id": "huile-tournesol",
+    "category": "imported-oils",
+    "name": {
+      "fr": "Huile de tournesol",
+      "en": "Sunflower oil"
+    },
+    "text": {
+      "fr": "Brute ou raffinée, en vrac ou conditionnée en bouteilles et en bidons.",
+      "en": "Crude or refined, in bulk or packed in bottles and cans."
+    }
+  },
+  {
+    "id": "huile-palme",
+    "category": "imported-oils",
+    "name": {
+      "fr": "Huile de palme et oléine",
+      "en": "Palm oil and olein"
+    },
+    "text": {
+      "fr": "Pour la friture, la biscuiterie et la margarinerie.",
+      "en": "For frying, biscuits and margarine."
+    }
+  },
+  {
+    "id": "huile-colza",
+    "category": "imported-oils",
+    "name": {
+      "fr": "Huile de colza",
+      "en": "Rapeseed oil"
+    },
+    "text": {
+      "fr": "Brute ou raffinée, pour la distribution et l’industrie.",
+      "en": "Crude or refined, for retail and industry."
+    }
+  },
+  {
+    "id": "thon-importe",
+    "category": "imported-canned",
+    "name": {
+      "fr": "Thon en conserve importé",
+      "en": "Imported canned tuna"
+    },
+    "text": {
+      "fr": "Thon listao ou albacore, à l’huile ou au naturel, en boîtes familiales ou restauration.",
+      "en": "Skipjack or yellowfin tuna, in oil or brine, in retail or catering cans."
+    }
+  },
+  {
+    "id": "mais-doux",
+    "category": "imported-canned",
+    "name": {
+      "fr": "Maïs doux",
+      "en": "Sweet corn"
+    },
+    "text": {
+      "fr": "Maïs doux en grains, au naturel ou sous vide.",
+      "en": "Whole-kernel sweet corn, in brine or vacuum-packed."
+    }
+  },
+  {
+    "id": "concentre-tomate",
+    "category": "imported-canned",
+    "name": {
+      "fr": "Concentré de tomate",
+      "en": "Tomato paste"
+    },
+    "text": {
+      "fr": "Double et triple concentré, en boîtes et en fûts aseptiques.",
+      "en": "Double and triple concentrate, in cans and aseptic drums."
+    }
+  },
+  {
+    "id": "champignons",
+    "category": "imported-canned",
+    "name": {
+      "fr": "Champignons de Paris",
+      "en": "Button mushrooms"
+    },
+    "text": {
+      "fr": "Entiers, émincés ou en morceaux, en boîtes.",
+      "en": "Whole, sliced or in pieces, canned."
+    }
+  },
+  {
+    "id": "legumes-conserve",
+    "category": "imported-canned",
+    "name": {
+      "fr": "Légumes en conserve",
+      "en": "Canned vegetables"
+    },
+    "text": {
+      "fr": "Petits pois, haricots, pois chiches et macédoine de légumes.",
+      "en": "Peas, beans, chickpeas and mixed vegetables."
+    }
+  },
+  {
+    "id": "fruits-sirop",
+    "category": "imported-canned",
+    "name": {
+      "fr": "Fruits au sirop",
+      "en": "Fruit in syrup"
+    },
+    "text": {
+      "fr": "Pêches, ananas et cocktail de fruits au sirop.",
+      "en": "Peaches, pineapple and fruit cocktail in syrup."
+    }
+  }
+]

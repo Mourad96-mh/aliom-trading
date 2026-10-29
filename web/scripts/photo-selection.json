@@ -1,22 +1,36 @@
 {
   "categories/frozen-fish.webp": "File:Fish at the Market (Unsplash).jpg",
   "categories/seafood.webp": "File:Seafood Market in Japan (Unsplash).jpg",
-  "categories/canned-fish.webp": "File:1732Foods Fruits Baliuag Bulacan Mega Sardines 27.jpg",
-  "categories/precooked-fish.webp": "File:Fish Fingers - RYBKA 2024-01-25.jpg",
+  "categories/vegetable-oils.webp": {
+    "title": "File:Fresh Salad (Unsplash).jpg",
+    "position": "west"
+  },
+  "categories/precooked-fish.webp": "File:Fishfinger classic frozen 1.jpg",
   "categories/fruits.webp": "File:Orange Fruit (Unsplash).jpg",
   "categories/vegetables.webp": "File:Fresh Vegetable Produce (Unsplash).jpg",
-  "categories/wood.webp": "File:Wood (Unsplash).jpg",
   "categories/animal-feed.webp": "File:Shad fishing.jpg",
-  "categories/polymers.webp": "File:Pellets di masterbatch carbonato per plastica 2.jpg",
   "scenes/sea.webp": "File:Fishing boats, morning, Beach, Rincon de la Victoria, Andalusia, Spain.jpg",
   "scenes/land.webp": "File:Tyler Shaw 2016 (Unsplash).jpg",
   "blog/cephalopods.webp": "File:Frozen squid head.jpg",
-  "scenes/industry.webp": "File:Wooden-pallets stacked 8.jpg",
-  "blog/euro-pallet.webp": "File:Wooden-pallets stacked 4.jpg",
   "scenes/services.webp": "File:Large cargo port (Unsplash).jpg",
   "scenes/products.webp": "File:Crates (Unsplash).jpg",
   "scenes/mission.webp": "File:Shipping terminal in Singapore (Unsplash).jpg",
   "scenes/about.webp": "File:Businessman working and writing notes in office (Unsplash).jpg",
   "scenes/quality.webp": "File:Collection of fruits (Unsplash).jpg",
-  "blog/standards.webp": "File:Plants in beakers (Unsplash).jpg"
+  "blog/standards.webp": "File:Plants in beakers (Unsplash).jpg",
+  "categories/metal-packaging.webp": {
+    "title": "File:Canned salmon, photo from The Encyclopedia of Food by Artemas Ward.jpg",
+    "crop": {
+      "left": 0.04,
+      "top": 0.03,
+      "width": 0.92,
+      "height": 0.9
+    },
+    "quality": 50
+  },
+  "categories/imported-oils.webp": "File:Impressive sunflowers (Unsplash).jpg",
+  "categories/imported-canned.webp": {
+    "title": "File:Canned Beans on Grocery Shelf.jpg",
+    "quality": 32
+  }
 }

@@ -1,10 +1,11 @@
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { PRODUCTS, productImage } from '@/data/catalog';
+import { CATEGORIES, PRODUCTS } from '@/data/catalog';
 import { CONTACT } from '@/data/nav';
 import { href } from '@/data/routes';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import QuoteForm from '@/components/Quote/QuoteForm';
+import MissingProduct from '@/components/MissingProduct/MissingProduct';
 
 export default function QuoteView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
@@ -17,13 +18,15 @@ export default function QuoteView({ locale }: { locale: Locale }) {
         <div className="page">
           <QuoteForm
             locale={locale}
-            catalogue={PRODUCTS.map((p) => ({ slug: p.id, name: p.name[locale], image: productImage(p) }))}
+            products={PRODUCTS}
+            images={Object.fromEntries(CATEGORIES.map((c) => [c.key, c.image]))}
             productsHref={href(locale, 'products')}
             privacyHref={href(locale, 'legal')}
             email={CONTACT.email}
             whatsapp={CONTACT.whatsapp}
             labels={{ ...t.quote, orWhatsapp: t.contact.orWhatsapp, consent: t.contact.consent }}
           />
+          <MissingProduct locale={locale} />
         </div>
       </section>
     </>

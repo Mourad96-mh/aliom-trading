@@ -33,6 +33,9 @@ export default function SiteFooter({ locale }: { locale: Locale }) {
             <li>
               <Link href={href(locale, 'quote')}>{t.nav.quote}</Link>
             </li>
+            <li>
+              <Link href={href(locale, 'request')}>{t.nav.request}</Link>
+            </li>
           </ul>
         </nav>
 

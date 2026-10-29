@@ -1,8 +1,8 @@
 {
   "site": {
     "name": "ALIOM TRADING",
-    "tagline": "Import-export and brand agent in Casablanca",
-    "description": "Agent for international brands and import-export trader in Casablanca, Morocco: seafood, fruit and vegetables, timber, animal feed and polymers."
+    "tagline": "Import-export company in Casablanca, Morocco",
+    "description": "Import-export in Casablanca: Moroccan seafood, canned food, oils, fruit and vegetables for export; metal cans, vegetable oils and canned food for import."
   },
   "a11y": {
     "skipToContent": "Skip to content",
@@ -19,48 +19,26 @@
     "contact": "Contact",
     "quote": "Quote request",
     "quoteShort": "Quote",
+    "request": "Request a product",
     "openMenu": "Open the menu",
     "closeMenu": "Close the menu",
     "language": "Language"
   },
   "home": {
-    "heroEyebrow": "Import · Export · Brand representation",
+    "heroEyebrow": "Exports from Morocco · Imports into Morocco",
     "heroTitle": "The world’s finest products, selected for you",
-    "heroText": "Seafood, fruit and vegetables, timber and industrial materials: one partner in Casablanca, from choosing the supplier to delivery.",
+    "heroText": "Moroccan products for foreign markets, foreign products for Morocco: one partner in Casablanca, from choosing the supplier to delivery.",
     "heroPrimary": "Explore our products",
     "heroSecondary": "Request a quote",
     "eyebrow": "ALIOM TRADING",
-    "title": "International brand agent and import-export trader in Casablanca, Morocco",
+    "title": "Import-export company in Casablanca, Morocco",
     "lead": "ALIOM TRADING grew out of long experience in distribution, as an agent for world-renowned brands.",
     "paragraphs": [
       "Our constant aim is to put our know-how at our customers’ service, with quality service and answers that meet their needs, both technical and commercial.",
       "Our strengths: high-quality products at the best value for money, with respect for the environment."
     ],
-    "pillarsTitle": "Five commitments to our customers",
-    "pillars": [
-      {
-        "title": "Commitment to quality",
-        "text": "Quality is the source of our success: we meet HACCP, IFS and BRC requirements."
-      },
-      {
-        "title": "Product quality",
-        "text": "A demanding, expert selection of our suppliers and sources."
-      },
-      {
-        "title": "Always available",
-        "text": "Direct contact and an ongoing dialogue with our customers, wherever they are."
-      },
-      {
-        "title": "Reliable logistics",
-        "text": "Products available when you need them, and logistics controlled from loading to delivery."
-      },
-      {
-        "title": "Technical support",
-        "text": "Support that listens and is always there to find solutions."
-      }
-    ],
-    "polesTitle": "Three divisions, nine product families",
-    "polesLead": "From Morocco’s Atlantic coast to European sawmills, we select every source for its quality and reliability.",
+    "polesTitle": "Two divisions: export and import",
+    "polesLead": "We export Moroccan products abroad and supply Morocco with imported products, selecting every source for its quality and reliability.",
     "missionEyebrow": "Our mission",
     "mission": "To select and promote the world’s best products and brands.",
     "valuesTitle": "Our values",
@@ -76,12 +54,12 @@
         "label": "Founded in Casablanca"
       },
       {
-        "value": "9",
+        "value": "{families}",
         "label": "Product families"
       },
       {
-        "value": "58",
-        "label": "Products in our range"
+        "value": "2",
+        "label": "Divisions: export and import"
       },
       {
         "value": "HACCP · IFS · BRC",
@@ -91,22 +69,21 @@
     "blogTitle": "Guides and news",
     "blogLead": "Standards, seasons and logistics: notes for professional buyers.",
     "blogAll": "All articles",
-    "quoteTitle": "A product to source, a brand to represent?",
+    "quoteTitle": "A product to export or import?",
     "quoteText": "Tell us the product, volumes and destination. We’ll come back with an offer.",
     "quoteCta": "Request a quote"
   },
   "products": {
     "title": "Our products",
-    "h1": "Seafood, fruit and vegetables, timber and polymers",
-    "lead": "Nine product families in three divisions. Add products to your quote request and tell us your volumes: we reply with availability and a price.",
-    "seoDescription": "ALIOM TRADING range: frozen fish, seafood, canned fish, precooked fish, citrus and fruit, vegetables, timber, animal feed and polymers. Quotes on request."
+    "h1": "Moroccan exports and imports into Morocco",
+    "lead": "Two divisions: the Moroccan products we export, and the foreign products we import for Morocco. Add products to your quote request; if one is missing, ask us for it.",
+    "seoDescription": "Exports: fish, seafood, canned food, olive and argan oil, fruit and vegetables from Morocco. Imports: metal cans, vegetable oils, canned food."
   },
   "catalog": {
     "addToQuote": "Add to quote",
     "inQuote": "In your quote",
     "factsTitle": "At a glance",
     "productsTitle": "Our products",
-    "pointsTitle": "How we support you",
     "faqTitle": "Frequently asked questions",
     "otherTitle": "In the same division",
     "seeRange": "See the range",
@@ -119,25 +96,25 @@
   },
   "services": {
     "title": "Services",
-    "h1": "Brand representation, sourcing and import-export trading",
-    "lead": "As a commercial agent and trader, ALIOM TRADING supports brands that want to grow in Morocco and buyers looking for a reliable supplier.",
-    "seoDescription": "Commercial agent in Morocco: representation of international brands, supplier sourcing, import, export, quality control and logistics from Casablanca.",
+    "h1": "Import-export, sourcing and brand representation",
+    "lead": "As an import-export trader, ALIOM TRADING exports Moroccan products abroad, supplies Morocco with imported products and supports brands that want to grow there.",
+    "seoDescription": "Import-export company in Morocco: Moroccan exports, imports into Morocco, supplier sourcing, quality control, logistics and brand representation.",
     "items": [
       {
-        "title": "Brand representation",
-        "text": "We represent international brands in Morocco: prospecting, presenting to distributors, following up orders and customers, and reporting market information."
+        "title": "Export",
+        "text": "Seafood, canned food, oils, citrus, fruit and vegetables: we supply foreign importers with Moroccan products, by the container or in lots."
+      },
+      {
+        "title": "Import",
+        "text": "Metal cans, vegetable oils, canned food: we supply Moroccan manufacturers and distributors and coordinate transport, customs clearance and delivery."
       },
       {
         "title": "Supplier sourcing",
         "text": "We find and select the producers that match your specification, in Morocco and abroad, and compare the offers for you."
       },
       {
-        "title": "Import",
-        "text": "Timber, polymers, raw materials: we import for Moroccan manufacturers and coordinate transport, customs clearance and delivery."
-      },
-      {
-        "title": "Export",
-        "text": "Seafood, citrus, fruit and vegetables: we supply foreign importers with Moroccan products, by the container or in lots."
+        "title": "Brand representation",
+        "text": "We represent international brands in Morocco: prospecting, presenting to distributors, following up orders and customers, and reporting market information."
       },
       {
         "title": "Quality control",
@@ -234,7 +211,7 @@
       },
       {
         "label": "Business",
-        "value": "Import-export, trading and intermediation"
+        "value": "Import-export and international trade"
       },
       {
         "label": "Founded",
@@ -266,9 +243,9 @@
     "formTitle": "Send us a message",
     "subject": "Subject",
     "subjects": [
-      "Seafood products",
-      "Fruit and vegetables",
-      "Timber, animal feed, polymers",
+      "Exports from Morocco",
+      "Imports into Morocco",
+      "Product not in the catalogue",
       "Brand representation",
       "Other"
     ],
@@ -340,6 +317,58 @@
       "Côte d’Ivoire"
     ]
   },
+  "request": {
+    "title": "Request a product",
+    "h1": "Looking for a product that is not in our catalogue?",
+    "lead": "Our product list is not limited. Tell us what you are looking for, for export or import: we search our suppliers and come back with an offer.",
+    "seoDescription": "A product to export from Morocco or import into Morocco that is not in our catalogue? Describe it and ALIOM TRADING will source it for you.",
+    "bandTitle": "Can’t find your product?",
+    "bandText": "The list is not limited: tell us the product you need and we will find it for you.",
+    "bandCta": "Request a product",
+    "stepsTitle": "How we handle your request",
+    "steps": [
+      {
+        "title": "You describe the product",
+        "text": "Type, grade, packing, quantity and destination."
+      },
+      {
+        "title": "We check our sources",
+        "text": "Moroccan producers for export, foreign manufacturers for import."
+      },
+      {
+        "title": "You receive an offer",
+        "text": "Price, availability and lead time, with the data sheet where there is one."
+      }
+    ],
+    "formTitle": "Describe the product you need",
+    "form": {
+      "pole": "Direction of trade",
+      "polePick": "Choose",
+      "poles": {
+        "export": "Export from Morocco",
+        "import": "Import into Morocco",
+        "unsure": "Not sure yet"
+      },
+      "product": "Product you need",
+      "productHint": "e.g. chickpeas, white sugar, paprika…",
+      "details": "Description and specifications",
+      "detailsHint": "Grade, size, packing, preferred origin or brand, certifications…",
+      "quantity": "Estimated quantity",
+      "quantityHint": "e.g. 2 containers a month",
+      "destination": "Delivery country",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "company": "Company",
+      "email": "E-mail",
+      "phone": "Phone",
+      "country": "Country",
+      "required": "Required fields",
+      "submit": "Send my request",
+      "sending": "Sending…",
+      "success": "Thank you, your request has been sent. We are looking for the product and will get back to you shortly.",
+      "error": "Your request could not be sent. Write to us directly at"
+    }
+  },
   "legal": {
     "title": "Legal notice",
     "h1": "Legal notice and privacy",
@@ -355,11 +384,11 @@
       },
       {
         "h": "Intellectual property",
-        "p": "The texts, the ALIOM TRADING name and logo belong to the company. Illustrative photographs come from royalty-free image libraries. Reproduction without permission is prohibited."
+        "p": "The texts, the ALIOM TRADING name and logo belong to the company. Illustrative photographs come from royalty-free image libraries. Precooked fish photo: Superbass, Wikimedia Commons, licence CC BY-SA 4.0 (commons.wikimedia.org/wiki/File:Fishfinger_classic_frozen_1.jpg). Reproduction without permission is prohibited."
       },
       {
         "h": "Data we collect",
-        "p": "Only what you type into the contact and quote forms: name, company, e-mail address, phone number, country, the products you selected and your message."
+        "p": "Only what you type into the contact, quote and product request forms: name, company, e-mail address, phone number, country, the products you selected or are looking for, and your message."
       },
       {
         "h": "Purpose and retention",

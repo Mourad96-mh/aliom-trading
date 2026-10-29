@@ -1,11 +1,11 @@
 /**
- * Where the contact and quote forms go: public/api/<form>.php, small mailers on the site's
+ * Where the contact, quote and product-request forms go: public/api/<form>.php, small mailers on the site's
  * own server that sign in to the client's mailbox over SMTP (see public/api/mailer.php).
  * Not a form service: on moreco.ma EmailJS capped requests at 50 KB and FormSubmit's
  * activation answered 500. The scripts only run on the PHP host, so under `next dev` or on
  * a static preview every form reports a failure — honestly.
  */
-export type MailerForm = 'contact' | 'quote';
+export type MailerForm = 'contact' | 'quote' | 'product-request';
 
 /** Resolves once the server has mailed the form, throws otherwise. */
 export async function sendForm(form: MailerForm, data: FormData): Promise<void> {

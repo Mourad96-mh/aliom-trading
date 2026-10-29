@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { GROUPS, categoriesIn } from '@/data/catalog';
+import { CATEGORIES, GROUPS, categoriesIn } from '@/data/catalog';
 import { ARTICLES } from '@/data/blog';
 import { articleHref, categoryHref, href } from '@/data/routes';
 import HeroVideo from '@/components/Hero/HeroVideo';
@@ -13,41 +13,9 @@ import Reveal from '@/components/Reveal/Reveal';
 import { formatDate } from './BlogView';
 import s from './HomeView.module.css';
 
-/* Line pictograms at currentColor, one per commitment, in the dictionary's order. */
-const PILLAR_ICONS = [
-  /* Quality — a shield with a tick. */
-  <svg key="quality" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 21.5s7.5-3.2 7.5-9.5V5.2L12 2.5 4.5 5.2V12c0 6.3 7.5 9.5 7.5 9.5Z" />
-    <path d="m8.8 12 2.2 2.2 4.2-4.4" />
-  </svg>,
-  /* Product quality — a magnifier. */
-  <svg key="selection" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
-    <circle cx="10.5" cy="10.5" r="6.5" />
-    <path d="m15.5 15.5 5 5M8 10.5l1.8 1.8 3.2-3.6" />
-  </svg>,
-  /* Always available — a speech bubble. */
-  <svg key="dialogue" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round">
-    <path d="M4 5.5h16v10H9.5L5 19.5v-4H4Z" />
-    <path d="M8 9.5h8M8 12.5h5" strokeLinecap="round" />
-  </svg>,
-  /* Logistics — a container ship. */
-  <svg key="logistics" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M2.5 14h19l-2.2 5.5H5Z" />
-    <path d="M5.5 14V9.5h5V14M10.5 14V7h5v7M15.5 14v-3.5h3V14" />
-  </svg>,
-  /* Technical support — a headset. */
-  <svg key="support" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4.5 14v-2a7.5 7.5 0 0 1 15 0v2" />
-    <rect x="3" y="13.5" width="4" height="6" rx="1.5" />
-    <rect x="17" y="13.5" width="4" height="6" rx="1.5" />
-    <path d="M19 19.5c0 1.4-1.6 2-4 2h-1.5" />
-  </svg>,
-];
-
 const GROUP_IMAGE = {
-  sea: '/media/scenes/sea.webp',
-  land: '/media/scenes/land.webp',
-  industry: '/media/scenes/industry.webp',
+  export: '/media/scenes/sea.webp',
+  import: '/media/scenes/mission.webp',
 } as const;
 
 export default function HomeView({ locale }: { locale: Locale }) {
@@ -68,7 +36,7 @@ export default function HomeView({ locale }: { locale: Locale }) {
         sources={[{ src: '/media/hero/hero.mp4', type: 'video/mp4' }]}
       />
 
-      {/* Who we are: the h1, the client's own words, then the five commitments. */}
+      {/* Who we are: the h1 and the client's own words. */}
       <section className={`section ${s.intro}`}>
         <div className="page">
           <Reveal>
@@ -88,28 +56,10 @@ export default function HomeView({ locale }: { locale: Locale }) {
               ))}
             </Reveal>
           </div>
-
-          <Reveal>
-            <h2 className={s.pillarsTitle}>{t.home.pillarsTitle}</h2>
-          </Reveal>
-          <ol className={s.pillars}>
-            {t.home.pillars.map((pillar, i) => (
-              <li key={pillar.title} className={s.pillar}>
-                <Reveal delay={i * 70} className={s.pillarInner}>
-                  <span className={s.pillarHead} aria-hidden="true">
-                    <span className={s.pillarIcon}>{PILLAR_ICONS[i]}</span>
-                    <span className={s.pillarNumber}>{String(i + 1).padStart(2, '0')}</span>
-                  </span>
-                  <strong className={s.pillarTitle}>{pillar.title}</strong>
-                  <span className={s.pillarText}>{pillar.text}</span>
-                </Reveal>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 
-      {/* The three divisions as alternating rows, each listing its product families. */}
+      {/* Export and import as alternating rows, each listing its product families. */}
       <section className="section section--tint" id="poles">
         <div className="page">
           <Reveal className="section-head section-head--center">
@@ -166,7 +116,7 @@ export default function HomeView({ locale }: { locale: Locale }) {
             {t.home.facts.map((fact, i) => (
               <li key={fact.label}>
                 <Reveal className={s.stat} delay={i * 110}>
-                  <p className={s.statNumber}>{fact.value}</p>
+                  <p className={s.statNumber}>{fact.value.replace('{families}', String(CATEGORIES.length))}</p>
                   <p className={s.statLabel}>{fact.label}</p>
                 </Reveal>
               </li>

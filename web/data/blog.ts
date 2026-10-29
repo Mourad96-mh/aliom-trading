@@ -2,10 +2,10 @@ import type { Locale } from '@/i18n/config';
 import type { CategoryKey } from './catalog';
 
 /**
- * The blog. Three starter guides written by us, each aimed at a search the keyword study
- * found (docs/01-research.md): euro pallet dimensions, frozen cephalopods, and the food
- * safety standards the client says it works to. They state general, checkable facts only
- * and are listed in docs/CONTENT-TO-VALIDATE.md.
+ * The blog. Starter guides written by us, each aimed at a search the keyword study found
+ * (docs/01-research.md): frozen cephalopods, and the food safety standards the client says
+ * it works to. (A euro-pallet guide went with the timber family on 2026-10-29.) They state
+ * general, checkable facts only and are listed in docs/CONTENT-TO-VALIDATE.md.
  *
  * A body is a list of blocks: a string is a paragraph, `{ h: … }` a sub-heading.
  */
@@ -36,7 +36,7 @@ export const ARTICLES: Article[] = [
     },
     date: '2026-10-20',
     image: '/media/blog/standards.webp',
-    related: ['frozen-fish', 'canned-fish', 'seafood'],
+    related: ['frozen-fish', 'canned-food', 'seafood'],
     copy: {
       fr: {
         title: 'HACCP, IFS, BRC : ce que garantissent ces référentiels',
@@ -112,54 +112,6 @@ export const ARTICLES: Article[] = [
           'To protect the resource, octopus fishing in Morocco runs in campaigns separated by biological rest periods. Availability and prices therefore change through the year: plan your needs and book your volumes early in the campaign.',
           { h: 'With ALIOM TRADING' },
           'We connect you with selected processing plants, pass on your specification and check weight, glazing, size and packing before loading. Send us your requirements and we come back with the current offer.',
-        ],
-      },
-    },
-  },
-  {
-    id: 'euro-pallet',
-    slugs: {
-      fr: 'palette-europe-dimensions-normes',
-      en: 'euro-pallet-dimensions-standards',
-    },
-    date: '2026-10-05',
-    image: '/media/blog/euro-pallet.webp',
-    related: ['wood'],
-    copy: {
-      fr: {
-        title: 'Palette Europe : dimensions, poids, charge et norme NIMP 15',
-        excerpt:
-          'La palette EUR / EPAL mesure 1200 × 800 mm. Poids, charge admissible, marquages, traitement thermique : l’essentiel à savoir avant d’en commander.',
-        body: [
-          'La palette Europe est le support de manutention le plus utilisé en Europe et dans le commerce avec le Maroc. Ses dimensions standardisées permettent de remplir camions et conteneurs sans perte de place et de la manipuler avec n’importe quel chariot élévateur.',
-          { h: 'Les dimensions d’une palette Europe' },
-          'Une palette Europe (EUR ou EPAL) mesure 1200 mm de long, 800 mm de large et 144 mm de haut. Elle est assemblée à partir de 11 planches, 9 dés et 78 clous, et pèse environ 25 kg selon l’humidité du bois. Elle se prend par les quatre côtés.',
-          { h: 'Quelle charge peut-elle porter ?' },
-          'Une palette Europe peut porter jusqu’à 1500 kg de charge uniformément répartie, et davantage en gerbage au sol sur une surface plane, selon les règles de l’EPAL. Pour un chargement lourd ou une charge concentrée, demandez conseil avant de choisir le modèle.',
-          { h: 'Les marquages à vérifier' },
-          'Une palette conforme porte le logo EPAL ou EUR sur ses dés, ainsi qu’un clou de contrôle. Pour l’export, elle doit aussi porter le marquage NIMP 15 (ISPM 15) : le symbole de l’épi, le code du pays, le numéro du producteur et le code du traitement, en général HT pour un traitement thermique.',
-          { h: 'Pourquoi le traitement NIMP 15 est obligatoire' },
-          'La norme internationale NIMP 15 impose de traiter les emballages en bois pour éviter la propagation d’insectes et de maladies du bois. Le traitement thermique (HT) chauffe le cœur du bois à au moins 56 °C pendant 30 minutes. Sans ce marquage, une marchandise peut être refusée à la frontière.',
-          { h: 'Commander des palettes au Maroc' },
-          'ALIOM TRADING importe des palettes Europe neuves ou reconditionnées, ainsi que du bois rouge et des panneaux OSB, livrés dans les ports marocains. Indiquez le modèle, la quantité et le lieu de livraison dans votre demande de devis.',
-        ],
-      },
-      en: {
-        title: 'Euro pallet: dimensions, weight, load and ISPM 15',
-        excerpt:
-          'The EUR / EPAL pallet measures 1200 × 800 mm. Weight, load capacity, markings, heat treatment: what to know before you order.',
-        body: [
-          'The euro pallet is the most widely used load carrier in Europe and in trade with Morocco. Its standard size fills trucks and containers without wasted space, and any forklift can handle it.',
-          { h: 'Euro pallet dimensions' },
-          'A euro pallet (EUR or EPAL) is 1200 mm long, 800 mm wide and 144 mm high. It is built from 11 boards, 9 blocks and 78 nails, and weighs about 25 kg depending on the moisture of the wood. It is a four-way-entry pallet.',
-          { h: 'How much can it carry?' },
-          'A euro pallet carries up to 1,500 kg of evenly distributed load, and more when stacked on a flat floor, according to EPAL rules. For heavy or concentrated loads, ask for advice before choosing the model.',
-          { h: 'Markings to check' },
-          'A compliant pallet carries the EPAL or EUR logo on its blocks and a control nail. For export it must also carry the ISPM 15 mark: the wheat-ear symbol, the country code, the producer number and the treatment code, usually HT for heat treatment.',
-          { h: 'Why ISPM 15 treatment is mandatory' },
-          'The ISPM 15 international standard requires wood packaging to be treated to stop the spread of wood pests and diseases. Heat treatment (HT) raises the core of the wood to at least 56 °C for 30 minutes. Without the mark, goods can be refused at the border.',
-          { h: 'Ordering pallets in Morocco' },
-          'ALIOM TRADING imports new and refurbished euro pallets, as well as redwood timber and OSB boards, delivered to Moroccan ports. Give the model, quantity and delivery place in your quote request.',
         ],
       },
     },

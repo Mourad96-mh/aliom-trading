@@ -4,9 +4,9 @@ import { categoriesIn, getCategory, groupOf, productsIn, type CategoryKey } from
 import { href, productHref } from '@/data/routes';
 import { breadcrumbs, faqPage, itemList } from '@/data/schema';
 import PageHeader from '@/components/PageHeader/PageHeader';
-import { ProductList } from '@/components/ProductItem/ProductItem';
+import { LiveProductList } from '@/components/ProductItem/ProductItem';
+import MissingProduct from '@/components/MissingProduct/MissingProduct';
 import CategoryCard from '@/components/CategoryCard/CategoryCard';
-import NumberedPoints from '@/components/WhyMorocco/WhyMorocco';
 import Faq from '@/components/Faq/Faq';
 import QuoteBand from '@/components/QuoteBand/QuoteBand';
 import Reveal from '@/components/Reveal/Reveal';
@@ -15,7 +15,7 @@ import s from './Catalog.module.css';
 
 /**
  * One product family — the site's money pages. Intro and key facts, every product as an
- * anchored card, how we support you, the FAQ, then the other families of the division.
+ * anchored card, the FAQ, then the other families of the division.
  */
 export default function CategoryView({ locale, categoryKey }: { locale: Locale; categoryKey: CategoryKey }) {
   const t = getDictionary(locale);
@@ -70,18 +70,19 @@ export default function CategoryView({ locale, categoryKey }: { locale: Locale; 
 
       <section className="section section--tint" id="references">
         <div className="page">
-          <Reveal className="section-head">
-            <h2>
-              {t.catalog.productsTitle} <span className={s.count}>({products.length})</span>
-            </h2>
-          </Reveal>
-          <ProductList products={products} locale={locale} />
+          <LiveProductList
+            category={category.key}
+            initial={products}
+            locale={locale}
+            labels={{ add: t.catalog.addToQuote, inQuote: t.catalog.inQuote }}
+            title={t.catalog.productsTitle}
+            countClassName={s.count}
+          />
+          <MissingProduct locale={locale} pole={group.key} />
         </div>
       </section>
 
-      <NumberedPoints title={t.catalog.pointsTitle} points={copy.points} accent={category.accent} tint={false} />
-
-      <section className="section section--tint">
+      <section className="section">
         <div className={`page-narrow`}>
           <Reveal className="section-head">
             <h2>{t.catalog.faqTitle}</h2>
@@ -91,7 +92,7 @@ export default function CategoryView({ locale, categoryKey }: { locale: Locale; 
       </section>
 
       {siblings.length > 0 && (
-        <section className="section">
+        <section className="section section--tint">
           <div className="page">
             <Reveal className="section-head">
               <h2>{t.catalog.otherTitle}</h2>

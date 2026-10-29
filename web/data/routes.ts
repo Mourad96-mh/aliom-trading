@@ -20,6 +20,7 @@ export type View =
   | 'article'
   | 'contact'
   | 'quote'
+  | 'request'
   | 'legal';
 
 export type WordKey = keyof typeof words;
@@ -61,6 +62,7 @@ function routesFor(locale: Locale): Route[] {
   }
   add('contact', 'contact', [w('contact', locale)]);
   add('quote', 'quote', [w('quote', locale)]);
+  add('request', 'request', [w('request', locale)]);
   add('legal', 'legal', [w('legal', locale)]);
 
   return out;

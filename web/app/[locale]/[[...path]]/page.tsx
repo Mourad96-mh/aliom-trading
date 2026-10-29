@@ -16,6 +16,7 @@ import BlogView from '@/views/BlogView';
 import ArticleView from '@/views/ArticleView';
 import ContactView from '@/views/ContactView';
 import QuoteView from '@/views/QuoteView';
+import ProductRequestView from '@/views/ProductRequestView';
 import LegalView from '@/views/LegalView';
 
 /**
@@ -62,6 +63,8 @@ function seoFor(route: Route, locale: Locale): Seo {
     case 'quote':
       // The basket is personal and empty for a crawler: not worth indexing.
       return { title: t.quote.title, description: t.quote.intro, noindex: true };
+    case 'request':
+      return { title: t.request.title, description: t.request.seoDescription };
     case 'legal':
       return { title: t.legal.title, description: t.legal.lead };
   }
@@ -127,6 +130,8 @@ export default async function Page(props: PageProps<'/[locale]/[[...path]]'>) {
       return <ContactView locale={locale} />;
     case 'quote':
       return <QuoteView locale={locale} />;
+    case 'request':
+      return <ProductRequestView locale={locale} />;
     case 'legal':
       return <LegalView locale={locale} />;
   }

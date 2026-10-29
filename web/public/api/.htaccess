@@ -1,5 +1,6 @@
-# mail-config.php holds the mailbox password, mailer.php only the shared code: neither is
-# ever served, even as source.
-<FilesMatch "^(mail-config|mailer)">
+# mail-config.php and admin-config.php hold passwords; mailer.php and catalog-store.php only
+# shared code: none is ever served, even as source. data/ (the live catalogue) closes
+# itself with its own .htaccess, written by catalog-store.php.
+<FilesMatch "^(mail-config|mailer|admin-config|catalog-store)">
   Require all denied
 </FilesMatch>

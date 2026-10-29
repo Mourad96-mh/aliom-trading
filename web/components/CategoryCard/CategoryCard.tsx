@@ -5,6 +5,7 @@ import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { productsIn, type Category } from '@/data/catalog';
 import { categoryHref } from '@/data/routes';
+import { LiveCount } from '@/components/ProductItem/ProductItem';
 import s from './CategoryCard.module.css';
 
 /** A product family as a photo card — the products hub and "in the same division". */
@@ -19,7 +20,6 @@ export default function CategoryCard({
 }) {
   const t = getDictionary(locale);
   const copy = category.copy[locale];
-  const count = productsIn(category.key).length;
 
   return (
     <article className={s.card} style={{ '--accent': category.accent } as React.CSSProperties}>
@@ -36,7 +36,7 @@ export default function CategoryCard({
       </div>
       <div className={s.body}>
         <p className={s.count}>
-          {count} {count > 1 ? t.catalog.count.other : t.catalog.count.one}
+          <LiveCount category={category.key} initial={productsIn(category.key)} labels={t.catalog.count} />
         </p>
         <h3 className={s.title}>
           <Link href={categoryHref(locale, category.key)}>{copy.name}</Link>

@@ -1,8 +1,8 @@
 {
   "site": {
     "name": "ALIOM TRADING",
-    "tagline": "Import-export et agent de marques à Casablanca",
-    "description": "Agent de marques internationales et négociant import-export à Casablanca : produits de la mer, fruits et légumes, bois, alimentation animale, polymères."
+    "tagline": "Société d’import-export à Casablanca",
+    "description": "Import-export à Casablanca : produits de la mer, conserves, huiles, fruits et légumes du Maroc à l’export ; boîtes métalliques, huiles et conserves à l’import."
   },
   "a11y": {
     "skipToContent": "Aller au contenu",
@@ -19,48 +19,26 @@
     "contact": "Contact",
     "quote": "Demande de devis",
     "quoteShort": "Devis",
+    "request": "Demander un produit",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "language": "Langue"
   },
   "home": {
-    "heroEyebrow": "Import · Export · Représentation de marques",
+    "heroEyebrow": "Export du Maroc · Import vers le Maroc",
     "heroTitle": "Les meilleurs produits du monde, sélectionnés pour vous",
-    "heroText": "Produits de la mer, fruits et légumes, bois et matières industrielles : un seul interlocuteur à Casablanca, de la sélection du fournisseur à la livraison.",
+    "heroText": "Les produits marocains pour les marchés étrangers, les produits étrangers pour le Maroc : un seul interlocuteur à Casablanca, de la sélection du fournisseur à la livraison.",
     "heroPrimary": "Découvrir nos produits",
     "heroSecondary": "Demander un devis",
     "eyebrow": "ALIOM TRADING",
-    "title": "Agent de marques internationales et négociant import-export à Casablanca",
+    "title": "Société d’import-export à Casablanca",
     "lead": "ALIOM TRADING est le fruit d’une riche expérience de la distribution, en tant qu’agent représentant de marques mondialement renommées.",
     "paragraphs": [
       "Notre volonté constante est de mettre notre savoir-faire au service de nos clients, d’apporter une qualité de services et des réponses adaptées pour satisfaire au mieux leurs besoins, tant sur le plan technique que commercial.",
       "Nos atouts : des produits de haute qualité au meilleur rapport qualité-prix, dans le respect de l’environnement."
     ],
-    "pillarsTitle": "Cinq engagements envers nos clients",
-    "pillars": [
-      {
-        "title": "Engagement qualité",
-        "text": "La qualité est la source de notre succès : nous respectons les exigences HACCP, IFS et BRC."
-      },
-      {
-        "title": "Qualité des produits",
-        "text": "Une sélection exigeante et experte de nos fournisseurs et de nos sources d’approvisionnement."
-      },
-      {
-        "title": "Disponibilité permanente",
-        "text": "Un contact direct et un dialogue permanent avec nos clients, quelle que soit leur implantation."
-      },
-      {
-        "title": "Logistique performante",
-        "text": "La disponibilité de nos produits et une logistique maîtrisée, du chargement à la livraison."
-      },
-      {
-        "title": "Assistance technique",
-        "text": "Une assistance à l’écoute et toujours disponible pour trouver des solutions."
-      }
-    ],
-    "polesTitle": "Trois pôles, neuf familles de produits",
-    "polesLead": "De l’Atlantique marocain aux scieries européennes, nous sélectionnons chaque source pour sa qualité et sa régularité.",
+    "polesTitle": "Deux pôles : l’export et l’import",
+    "polesLead": "Nous exportons les produits du Maroc vers l’étranger et approvisionnons le Maroc en produits importés, en sélectionnant chaque source pour sa qualité et sa régularité.",
     "missionEyebrow": "Notre mission",
     "mission": "Sélectionner et promouvoir les meilleurs produits et les meilleures marques du monde.",
     "valuesTitle": "Nos valeurs",
@@ -76,12 +54,12 @@
         "label": "Création à Casablanca"
       },
       {
-        "value": "9",
+        "value": "{families}",
         "label": "Familles de produits"
       },
       {
-        "value": "58",
-        "label": "Références au catalogue"
+        "value": "2",
+        "label": "Pôles : export et import"
       },
       {
         "value": "HACCP · IFS · BRC",
@@ -91,22 +69,21 @@
     "blogTitle": "Guides et actualités",
     "blogLead": "Normes, saisons et logistique : nos notes pour les acheteurs professionnels.",
     "blogAll": "Tous les articles",
-    "quoteTitle": "Un produit à sourcer, une marque à représenter ?",
+    "quoteTitle": "Un produit à exporter ou à importer ?",
     "quoteText": "Dites-nous le produit, les volumes et la destination. Nous revenons vers vous avec une offre.",
     "quoteCta": "Demander un devis"
   },
   "products": {
     "title": "Nos produits",
-    "h1": "Produits de la mer, fruits et légumes, bois et polymères",
-    "lead": "Neuf familles de produits réparties en trois pôles. Ajoutez des références à votre demande de devis et précisez vos volumes : nous revenons vers vous avec la disponibilité et un prix.",
-    "seoDescription": "Poisson congelé, fruits de mer, conserves, poisson pané, agrumes et fruits, légumes, bois, alimentation animale et polymères. Devis sur demande."
+    "h1": "Export de produits marocains et import vers le Maroc",
+    "lead": "Deux pôles : les produits marocains que nous exportons, et les produits étrangers que nous importons pour le Maroc. Ajoutez des références à votre demande de devis ; si un produit n’y figure pas, demandez-le-nous.",
+    "seoDescription": "Export : poisson, fruits de mer, conserves, huiles d’olive et d’argan, fruits et légumes du Maroc. Import : boîtes métalliques, huiles végétales, conserves."
   },
   "catalog": {
     "addToQuote": "Ajouter au devis",
     "inQuote": "Dans votre devis",
     "factsTitle": "En bref",
     "productsTitle": "Nos références",
-    "pointsTitle": "Notre accompagnement",
     "faqTitle": "Questions fréquentes",
     "otherTitle": "Dans le même pôle",
     "seeRange": "Voir la gamme",
@@ -119,25 +96,25 @@
   },
   "services": {
     "title": "Services",
-    "h1": "Représentation de marques, sourcing et négoce import-export",
-    "lead": "Agent commercial et négociant, ALIOM TRADING accompagne les marques qui veulent se développer au Maroc et les acheteurs qui cherchent un fournisseur fiable.",
-    "seoDescription": "Agent commercial au Maroc : représentation de marques internationales, sourcing de fournisseurs, import, export, contrôle qualité et logistique depuis Casablanca.",
+    "h1": "Import-export, sourcing et représentation de marques",
+    "lead": "Négociant import-export, ALIOM TRADING exporte les produits marocains vers l’étranger, approvisionne le Maroc en produits importés et accompagne les marques qui veulent s’y développer.",
+    "seoDescription": "Import-export au Maroc : export de produits marocains, import vers le Maroc, sourcing de fournisseurs, contrôle qualité, logistique et représentation de marques.",
     "items": [
       {
-        "title": "Représentation de marques",
-        "text": "Nous représentons des marques internationales au Maroc : prospection, présentation aux distributeurs, suivi des commandes et des clients, remontée des informations du marché."
+        "title": "Exportation",
+        "text": "Produits de la mer, conserves, huiles, agrumes, fruits et légumes : nous fournissons les importateurs étrangers en produits marocains, au conteneur ou par lots."
+      },
+      {
+        "title": "Importation",
+        "text": "Boîtes métalliques, huiles végétales, conserves alimentaires : nous approvisionnons les industriels et les distributeurs marocains et coordonnons transport, dédouanement et livraison."
       },
       {
         "title": "Sourcing de fournisseurs",
         "text": "Nous identifions et sélectionnons les producteurs adaptés à votre cahier des charges, au Maroc comme à l’étranger, et comparons les offres pour vous."
       },
       {
-        "title": "Importation",
-        "text": "Bois, polymères, matières premières : nous importons pour les industriels marocains et coordonnons transport, dédouanement et livraison."
-      },
-      {
-        "title": "Exportation",
-        "text": "Produits de la mer, agrumes, fruits et légumes : nous fournissons les importateurs étrangers en produits marocains, au conteneur ou par lots."
+        "title": "Représentation de marques",
+        "text": "Nous représentons des marques internationales au Maroc : prospection, présentation aux distributeurs, suivi des commandes et des clients, remontée des informations du marché."
       },
       {
         "title": "Contrôle qualité",
@@ -234,7 +211,7 @@
       },
       {
         "label": "Activité",
-        "value": "Import-export, négoce et intermédiation"
+        "value": "Import-export et négoce international"
       },
       {
         "label": "Création",
@@ -266,9 +243,9 @@
     "formTitle": "Envoyez-nous un message",
     "subject": "Objet",
     "subjects": [
-      "Produits de la mer",
-      "Fruits et légumes",
-      "Bois, alimentation animale, polymères",
+      "Export de produits marocains",
+      "Import vers le Maroc",
+      "Produit hors catalogue",
       "Représentation de marque",
       "Autre"
     ],
@@ -340,6 +317,58 @@
       "Côte d’Ivoire"
     ]
   },
+  "request": {
+    "title": "Demander un produit",
+    "h1": "Un produit qui ne figure pas au catalogue ?",
+    "lead": "Notre liste de produits n’est pas limitée. Décrivez-nous ce que vous cherchez, à l’export comme à l’import : nous le recherchons auprès de nos fournisseurs et revenons vers vous avec une offre.",
+    "seoDescription": "Un produit à exporter du Maroc ou à importer au Maroc qui ne figure pas au catalogue ? Décrivez-le : ALIOM TRADING le recherche pour vous.",
+    "bandTitle": "Vous ne trouvez pas votre produit ?",
+    "bandText": "La liste n’est pas limitée : décrivez-nous le produit recherché, nous le trouvons pour vous.",
+    "bandCta": "Demander un produit",
+    "stepsTitle": "Comment nous traitons votre demande",
+    "steps": [
+      {
+        "title": "Vous décrivez le produit",
+        "text": "Nature, qualité, conditionnement, quantité et destination."
+      },
+      {
+        "title": "Nous consultons nos sources",
+        "text": "Producteurs marocains pour l’export, fabricants étrangers pour l’import."
+      },
+      {
+        "title": "Vous recevez une offre",
+        "text": "Prix, disponibilité et délais, avec la fiche technique quand elle existe."
+      }
+    ],
+    "formTitle": "Décrivez le produit recherché",
+    "form": {
+      "pole": "Sens de l’échange",
+      "polePick": "Choisir",
+      "poles": {
+        "export": "Export du Maroc vers l’étranger",
+        "import": "Import vers le Maroc",
+        "unsure": "Je ne sais pas encore"
+      },
+      "product": "Produit recherché",
+      "productHint": "ex. pois chiches, sucre blanc, paprika…",
+      "details": "Description et spécifications",
+      "detailsHint": "Qualité, calibre, conditionnement, origine ou marque souhaitée, certifications…",
+      "quantity": "Quantité estimée",
+      "quantityHint": "ex. 2 conteneurs par mois",
+      "destination": "Pays de livraison",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "company": "Société",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "country": "Pays",
+      "required": "Champs obligatoires",
+      "submit": "Envoyer ma demande",
+      "sending": "Envoi…",
+      "success": "Merci, votre demande a bien été envoyée. Nous recherchons le produit et revenons vers vous rapidement.",
+      "error": "Votre demande n’a pas pu être envoyée. Écrivez-nous directement à"
+    }
+  },
   "legal": {
     "title": "Mentions légales",
     "h1": "Mentions légales et confidentialité",
@@ -355,11 +384,11 @@
       },
       {
         "h": "Propriété intellectuelle",
-        "p": "Les textes, la marque et le logo ALIOM TRADING appartiennent à la société. Les photographies d’illustration proviennent de banques d’images libres de droits. Toute reproduction sans autorisation est interdite."
+        "p": "Les textes, la marque et le logo ALIOM TRADING appartiennent à la société. Les photographies d’illustration proviennent de banques d’images libres de droits. Photo du poisson précuit : Superbass, Wikimedia Commons, licence CC BY-SA 4.0 (commons.wikimedia.org/wiki/File:Fishfinger_classic_frozen_1.jpg). Toute reproduction sans autorisation est interdite."
       },
       {
         "h": "Données collectées",
-        "p": "Uniquement ce que vous saisissez dans les formulaires de contact et de devis : nom, société, adresse e-mail, téléphone, pays, produits sélectionnés et message."
+        "p": "Uniquement ce que vous saisissez dans les formulaires de contact, de devis et de demande de produit : nom, société, adresse e-mail, téléphone, pays, produits sélectionnés ou recherchés et message."
       },
       {
         "h": "Finalité et durée",
