@@ -31,6 +31,12 @@ products at /admin/; families still live in `web/data/catalog.ts`.
 - [ ] "Expertise indépendante par lot" (fruit and vegetables) comes from the reference site. Does ALIOM offer it?
 - [ ] Home facts band: 2021 / 11 families (counted from the code) / 2 poles / HACCP · IFS · BRC. These are all from the documents. Add real figures if the client has them (countries served, tonnes per year).
 
+## Positioning (brief of 2026-11-01: généraliste, négoce international)
+
+- [ ] Tagline "Votre partenaire commercial entre le Maroc et les marchés internationaux" and the "service complet" sentence are the client's own words. The rest of the trading-house copy (home, services, about) is ours.
+- [ ] "Nos domaines d'intervention" (`web/data/sectors.ts`): Agroalimentaire and Emballage are linked to the catalogue. The four "Sourcing sur demande" sectors (matières premières et semi-finis, grande consommation, matériaux de construction, équipements industriels) are our proposal. The client should confirm, add or remove sectors.
+- [ ] Home facts band now reads "3 métiers : import, export, sourcing" instead of "2 pôles".
+
 ## Blog
 
 - [ ] Two starter guides (HACCP-IFS-BRC, cephalopods), written by us from general public facts. The client should read them. (The euro-pallet guide was removed with timber; an article on canned food or olive oil would fit the new range.)

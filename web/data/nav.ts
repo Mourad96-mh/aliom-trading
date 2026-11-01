@@ -4,7 +4,7 @@ import { GROUPS, categoriesIn } from './catalog';
 import { categoryHref, href } from './routes';
 
 /**
- * Accueil · Produits · Services · À propos · Blog · Contact, plus the quote basket on the
+ * Accueil · Services · Produits · À propos · Blog · Contact, plus the quote basket on the
  * right. "Produits" opens a mega panel with one column per pole (sea, land, industry).
  */
 export interface NavLink {
@@ -32,6 +32,7 @@ export interface NavItem extends NavLink {
 export function mainNav(locale: Locale, t: Dictionary): NavItem[] {
   return [
     { label: t.nav.home, href: href(locale, 'home') },
+    { label: t.nav.services, href: href(locale, 'services') },
     {
       label: t.nav.products,
       href: href(locale, 'products'),
@@ -43,7 +44,6 @@ export function mainNav(locale: Locale, t: Dictionary): NavItem[] {
       })),
       footer: { label: t.nav.allProducts, href: href(locale, 'products') },
     },
-    { label: t.nav.services, href: href(locale, 'services') },
     { label: t.nav.about, href: href(locale, 'about') },
     { label: t.nav.blog, href: href(locale, 'blog') },
     { label: t.nav.contact, href: href(locale, 'contact') },

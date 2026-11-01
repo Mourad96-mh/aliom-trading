@@ -13,20 +13,6 @@
   line-height: 1.45;
 }
 
-.founder {
-  display: grid;
-  gap: 0.15rem;
-  margin: 1.5rem 0 0;
-  padding-inline-start: 1rem;
-  border-inline-start: 3px solid var(--gold);
-  font-family: var(--font-sans), system-ui, sans-serif;
-  font-size: var(--step-0);
-}
-
-.founder span {
-  color: var(--ink-3);
-}
-
 .engagement {
   padding: clamp(1.35rem, 3vw, 2rem);
   border-radius: var(--radius-lg);

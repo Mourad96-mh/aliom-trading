@@ -1,8 +1,8 @@
 {
   "site": {
     "name": "ALIOM TRADING",
-    "tagline": "Import-export company in Casablanca, Morocco",
-    "description": "Import-export in Casablanca: Moroccan seafood, canned food, oils, fruit and vegetables for export; metal cans, vegetable oils and canned food for import."
+    "tagline": "International trading company in Casablanca",
+    "description": "International trading in Casablanca: import, export and sourcing of finished and semi-finished goods, between manufacturers, brands and distributors worldwide."
   },
   "a11y": {
     "skipToContent": "Skip to content",
@@ -25,20 +25,20 @@
     "language": "Language"
   },
   "home": {
-    "heroEyebrow": "Exports from Morocco · Imports into Morocco",
-    "heroTitle": "The world’s finest products, selected for you",
-    "heroText": "Moroccan products for foreign markets, foreign products for Morocco: one partner in Casablanca, from choosing the supplier to delivery.",
-    "heroPrimary": "Explore our products",
+    "heroEyebrow": "From Morocco to the world · From the world to Morocco",
+    "heroTitle": "Your trading partner between Morocco and international markets",
+    "heroText": "ALIOM TRADING connects manufacturers, brands, distributors and international markets: one partner in Casablanca, from finding the supplier to delivery.",
+    "heroPrimary": "Explore our services",
     "heroSecondary": "Request a quote",
     "eyebrow": "ALIOM TRADING",
-    "title": "Import-export company in Casablanca, Morocco",
-    "lead": "ALIOM TRADING grew out of long experience in distribution, as an agent for world-renowned brands.",
+    "title": "International trading company in Casablanca, Morocco",
+    "lead": "ALIOM TRADING is an international trading company: we connect manufacturers, brands, distributors and markets, between Morocco and the rest of the world.",
     "paragraphs": [
-      "Our constant aim is to put our know-how at our customers’ service, with quality service and answers that meet their needs, both technical and commercial.",
-      "Our strengths: high-quality products at the best value for money, with respect for the environment."
+      "It grew out of long experience in distribution, as an agent for world-renowned brands.",
+      "Our constant aim is to put our know-how at our customers’ service, with quality service and answers that meet their needs, both technical and commercial."
     ],
-    "polesTitle": "Two divisions: export and import",
-    "polesLead": "We export Moroccan products abroad and supply Morocco with imported products, selecting every source for its quality and reliability.",
+    "polesTitle": "Our established ranges: export and import",
+    "polesLead": "The product families we handle regularly, with suppliers selected for their quality and reliability.",
     "missionEyebrow": "Our mission",
     "mission": "To select and promote the world’s best products and brands.",
     "valuesTitle": "Our values",
@@ -58,8 +58,8 @@
         "label": "Product families"
       },
       {
-        "value": "2",
-        "label": "Divisions: export and import"
+        "value": "3",
+        "label": "Lines of business: import, export, sourcing"
       },
       {
         "value": "HACCP · IFS · BRC",
@@ -69,14 +69,36 @@
     "blogTitle": "Guides and news",
     "blogLead": "Standards, seasons and logistics: notes for professional buyers.",
     "blogAll": "All articles",
-    "quoteTitle": "A product to export or import?",
-    "quoteText": "Tell us the product, volumes and destination. We’ll come back with an offer.",
-    "quoteCta": "Request a quote"
+    "quoteTitle": "A product to find, export or import?",
+    "quoteText": "Tell us the product, volumes and destination. We’ll find the right supplier and come back with an offer.",
+    "quoteCta": "Request a quote",
+    "serviceEyebrow": "What we offer",
+    "serviceTitle": "A complete service, from finding the supplier to delivery",
+    "serviceText": "We offer a complete service to companies looking for suppliers of finished and semi-finished goods, or for producers directly, anywhere in the world.",
+    "serviceCta": "All our services",
+    "pillars": [
+      {
+        "title": "Import",
+        "text": "We find the right foreign manufacturers and producers for Moroccan companies."
+      },
+      {
+        "title": "Export",
+        "text": "We open international markets to Moroccan products and producers."
+      },
+      {
+        "title": "Sourcing",
+        "text": "We search, compare and select suppliers against your specification."
+      },
+      {
+        "title": "Logistics",
+        "text": "Transport, documents and customs clearance followed through to delivery."
+      }
+    ]
   },
   "products": {
     "title": "Our products",
-    "h1": "Moroccan exports and imports into Morocco",
-    "lead": "Two divisions: the Moroccan products we export, and the foreign products we import for Morocco. Add products to your quote request; if one is missing, ask us for it.",
+    "h1": "Our products: established ranges and sourcing on request",
+    "lead": "The product families we handle regularly, for export and import. Add products to your quote request; for anything else, we find it for you.",
     "seoDescription": "Exports: fish, seafood, canned food, olive and argan oil, fruit and vegetables from Morocco. Imports: metal cans, vegetable oils, canned food."
   },
   "catalog": {
@@ -96,33 +118,33 @@
   },
   "services": {
     "title": "Services",
-    "h1": "Import-export, sourcing and brand representation",
-    "lead": "As an import-export trader, ALIOM TRADING exports Moroccan products abroad, supplies Morocco with imported products and supports brands that want to grow there.",
-    "seoDescription": "Import-export company in Morocco: Moroccan exports, imports into Morocco, supplier sourcing, quality control, logistics and brand representation.",
+    "h1": "International trading: import, export and sourcing",
+    "lead": "We offer a complete service to companies looking for suppliers of finished and semi-finished goods, or for producers directly, anywhere in the world.",
+    "seoDescription": "International trading company in Morocco: import, export, sourcing of suppliers and producers worldwide, business matchmaking, quality control and logistics.",
     "items": [
       {
-        "title": "Export",
-        "text": "Seafood, canned food, oils, citrus, fruit and vegetables: we supply foreign importers with Moroccan products, by the container or in lots."
+        "title": "Import",
+        "text": "We find the right foreign manufacturers and producers for Moroccan manufacturers, distributors and resellers, and coordinate transport, customs clearance and delivery."
       },
       {
-        "title": "Import",
-        "text": "Metal cans, vegetable oils, canned food: we supply Moroccan manufacturers and distributors and coordinate transport, customs clearance and delivery."
+        "title": "Export",
+        "text": "We supply foreign importers with Moroccan products, by the container or in lots, and help Moroccan producers reach international markets."
       },
       {
         "title": "Supplier sourcing",
-        "text": "We find and select the producers that match your specification, in Morocco and abroad, and compare the offers for you."
+        "text": "Finished or semi-finished goods, manufacturer or direct producer: we find the sources that match your specification, anywhere in the world, and compare the offers for you."
       },
       {
-        "title": "Brand representation",
-        "text": "We represent international brands in Morocco: prospecting, presenting to distributors, following up orders and customers, and reporting market information."
+        "title": "Matchmaking and representation",
+        "text": "We connect manufacturers, brands and distributors, and represent international brands in Morocco: prospecting, order follow-up and market feedback."
       },
       {
         "title": "Quality control",
-        "text": "Plants selected against HACCP, IFS and BRC requirements, pre-loading checks and independent inspection on request."
+        "text": "Suppliers selected against the standards of your sector (HACCP, IFS, BRC for food), pre-loading checks and independent inspection on request."
       },
       {
         "title": "Logistics and documents",
-        "text": "Cold chain, containers, health and origin certificates, shipping documents: we prepare the file with you."
+        "text": "Sea, road or air freight, cold chain where needed, certificates of origin and shipping documents: we prepare the file with you."
       }
     ],
     "processTitle": "How we work",
@@ -151,13 +173,12 @@
   "about": {
     "title": "About",
     "h1": "ALIOM TRADING: high standards in our customers’ service",
-    "lead": "An agent for international brands, based at 2-4 rue Abou Dhabi, Oasis, Casablanca.",
-    "seoDescription": "ALIOM TRADING, founded in Casablanca in 2021 by Habiba Ouliass: agent for international brands and import-export trader. Commitment, values and mission.",
+    "lead": "An international trading company and brand agent, based at 2-4, rue Abou Dhabi, Oasis, Casablanca.",
+    "seoDescription": "ALIOM TRADING, a company founded in 2021 in Casablanca: international trading, import, export, sourcing and brand representation.",
     "story": [
       "ALIOM TRADING grew out of long experience in distribution, as an agent for world-renowned brands.",
-      "Its founder, Mrs Habiba Ouliass, owns and manages the company, registered with the Casablanca trade register in 2021."
+      "As an international trading company, it now puts its network at the service of businesses looking for suppliers or new markets, in Morocco and abroad."
     ],
-    "founderRole": "Founder and managing director",
     "engagementTitle": "Our commitment",
     "engagement": "Quality is the source of our success: we meet HACCP, IFS and BRC requirements. This quality has been built over decades of expertise and through the full commitment and dedication of our team.",
     "blocks": [
@@ -211,7 +232,7 @@
       },
       {
         "label": "Business",
-        "value": "Import-export and international trade"
+        "value": "International trading: import, export, sourcing"
       },
       {
         "label": "Founded",
@@ -243,6 +264,7 @@
     "formTitle": "Send us a message",
     "subject": "Subject",
     "subjects": [
+      "Supplier search (sourcing)",
       "Exports from Morocco",
       "Imports into Morocco",
       "Product not in the catalogue",
@@ -320,7 +342,7 @@
   "request": {
     "title": "Request a product",
     "h1": "Looking for a product that is not in our catalogue?",
-    "lead": "Our product list is not limited. Tell us what you are looking for, for export or import: we search our suppliers and come back with an offer.",
+    "lead": "Our business goes beyond the catalogue. Describe what you are looking for, finished or semi-finished, for export or import: we search manufacturers and producers and come back with an offer.",
     "seoDescription": "A product to export from Morocco or import into Morocco that is not in our catalogue? Describe it and ALIOM TRADING will source it for you.",
     "bandTitle": "Can’t find your product?",
     "bandText": "The list is not limited: tell us the product you need and we will find it for you.",
@@ -350,7 +372,7 @@
         "unsure": "Not sure yet"
       },
       "product": "Product you need",
-      "productHint": "e.g. chickpeas, white sugar, paprika…",
+      "productHint": "e.g. chickpeas, cardboard packaging, ceramic tiles…",
       "details": "Description and specifications",
       "detailsHint": "Grade, size, packing, preferred origin or brand, certifications…",
       "quantity": "Estimated quantity",
@@ -421,5 +443,19 @@
     "whatsapp": "Chat on WhatsApp",
     "call": "Call",
     "whatsappMessage": "Hello ALIOM TRADING, I would like information about your products."
+  },
+  "sectors": {
+    "title": "Where we work",
+    "lead": "Our business is not limited to a single category of goods, and it works both ways: from Morocco to foreign markets, and from foreign suppliers to Morocco. Our established ranges are in the catalogue; for other sectors, we find the right supplier for each request.",
+    "established": "Established range",
+    "onRequest": "Sourcing on request",
+    "seeRange": "See the range",
+    "ask": "Ask us",
+    "note": "Your product fits none of these sectors? Describe it: we review every request and tell you frankly whether we can handle it.",
+    "flowsLabel": "Direction of trade",
+    "flows": {
+      "export": "Morocco → World",
+      "import": "World → Morocco"
+    }
   }
 }

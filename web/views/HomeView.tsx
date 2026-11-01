@@ -10,6 +10,7 @@ import HeroVideo from '@/components/Hero/HeroVideo';
 import FeatureRow from '@/components/FeatureRow/FeatureRow';
 import QuoteBand from '@/components/QuoteBand/QuoteBand';
 import Reveal from '@/components/Reveal/Reveal';
+import Sectors from '@/components/Sectors/Sectors';
 import { formatDate } from './BlogView';
 import s from './HomeView.module.css';
 
@@ -29,7 +30,7 @@ export default function HomeView({ locale }: { locale: Locale }) {
         title={t.home.heroTitle}
         subtitle={t.home.heroText}
         ctas={[
-          { label: t.home.heroPrimary, href: href(locale, 'products') },
+          { label: t.home.heroPrimary, href: href(locale, 'services') },
           { label: t.home.heroSecondary, href: href(locale, 'quote') },
         ]}
         poster="/media/hero/hero-poster.webp"
@@ -58,6 +59,35 @@ export default function HomeView({ locale }: { locale: Locale }) {
           </div>
         </div>
       </section>
+
+      {/* The offer: the client's own sentence, then the four lines of business. */}
+      <section className={`section section--tint ${s.offer}`}>
+        <div className={`page ${s.offerInner}`}>
+          <Reveal>
+            <p className={s.introEyebrow}>{t.home.serviceEyebrow}</p>
+            <h2 className={s.offerTitle}>{t.home.serviceTitle}</h2>
+            <p className={s.offerText}>{t.home.serviceText}</p>
+            <Link className="btn" href={href(locale, 'services')}>
+              {t.home.serviceCta}
+            </Link>
+          </Reveal>
+          <ol className={s.pillars}>
+            {t.home.pillars.map((pillar, i) => (
+              <li key={pillar.title}>
+                <Reveal delay={i * 80} className={s.pillar}>
+                  <span className={s.pillarNumber} aria-hidden="true">
+                    0{i + 1}
+                  </span>
+                  <h3 className={s.pillarTitle}>{pillar.title}</h3>
+                  <p className={s.pillarText}>{pillar.text}</p>
+                </Reveal>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <Sectors locale={locale} />
 
       {/* Export and import as alternating rows, each listing its product families. */}
       <section className="section section--tint" id="poles">

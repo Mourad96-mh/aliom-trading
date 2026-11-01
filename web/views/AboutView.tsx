@@ -2,7 +2,6 @@ import Image from 'next/image';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { COMPANY } from '@/data/nav';
 import { href } from '@/data/routes';
 import { breadcrumbs } from '@/data/schema';
 import PageHeader from '@/components/PageHeader/PageHeader';
@@ -30,17 +29,13 @@ export default function AboutView({ locale }: { locale: Locale }) {
         image="/media/scenes/about.webp"
       />
 
-      {/* The story and the founder. */}
+      {/* The story. The founder is not named here, at the client's request (2026-11-01). */}
       <section className="section">
         <div className={`page ${s.story}`}>
           <Reveal className={s.storyText}>
             {t.about.story.map((p) => (
               <p key={p.slice(0, 32)}>{p}</p>
             ))}
-            <p className={s.founder}>
-              <strong>{COMPANY.founder}</strong>
-              <span>{t.about.founderRole}</span>
-            </p>
           </Reveal>
           <Reveal delay={120} className={s.engagement}>
             <h2 className={s.engagementTitle}>{t.about.engagementTitle}</h2>

@@ -19,7 +19,6 @@ export function organization(locale: Locale, description: string) {
     description,
     foundingDate: COMPANY.founded,
     taxID: COMPANY.ice,
-    founder: { '@type': 'Person', name: COMPANY.founder },
     address: {
       '@type': 'PostalAddress',
       streetAddress: ADDRESS.street,

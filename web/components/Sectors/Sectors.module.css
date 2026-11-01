@@ -1,0 +1,131 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grid > li {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  transition: box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.established {
+  border-top-color: var(--gold);
+}
+
+.card:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-2);
+}
+
+.badge {
+  align-self: flex-start;
+  margin-bottom: 0.85rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--paper-2);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.established .badge {
+  background: var(--brand);
+  color: #fff;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: var(--step-1);
+  line-height: 1.3;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+/* The whole card is the link. */
+.title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.text {
+  flex: 1;
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.more {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+.note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border-inline-start: 4px solid var(--gold);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+}
+
+.note p {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--ink-2);
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Direction of trade: Morocco -> world, world -> Morocco. */
+.flows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flows li {
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-2);
+}

@@ -13,15 +13,15 @@ import s from './ServicesView.module.css';
 
 /* One pictogram per service, in the dictionary's order. */
 const ICONS = [
-  /* Export — an arrow out of a box. */
-  <svg key="export" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 13v6.5h16V13" />
-    <path d="M12 14V3M7.5 7.5 12 3l4.5 4.5" />
-  </svg>,
   /* Import — an arrow into a box. */
   <svg key="import" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
     <path d="M4 13v6.5h16V13" />
     <path d="M12 3v11M7.5 9.5 12 14l4.5-4.5" />
+  </svg>,
+  /* Export — an arrow out of a box. */
+  <svg key="export" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 13v6.5h16V13" />
+    <path d="M12 14V3M7.5 7.5 12 3l4.5 4.5" />
   </svg>,
   /* Sourcing — a magnifier over a box. */
   <svg key="sourcing" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
