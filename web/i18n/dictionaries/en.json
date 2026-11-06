@@ -394,39 +394,19 @@
   "legal": {
     "title": "Legal notice",
     "h1": "Legal notice and privacy",
-    "lead": "Information about the publisher of this website and about how we handle the personal data you send us.",
+    "lead": "Information about the publisher of this website and about your personal data.",
     "sections": [
       {
         "h": "Publisher",
-        "p": "ALIOM TRADING, single-member SARL with a share capital of MAD 500,000. Registered office: 2-4 rue Abou Dhabi, Oasis, Casablanca, Morocco. Casablanca trade register no. 502559. ICE: 002810898000009. Corporate purpose: import, export, purchase, sale, distribution, packaging and processing of animal, vegetable, agricultural, mineral and industrial products; fish and seafood trading; intermediation, brokerage and commercial representation, in Morocco and abroad. Managing director and publication director: Mrs Habiba Ouliass. Contact: info@aliomtrading.com, +212 6 60 16 11 57."
+        "p": "ALIOM TRADING, 2-4 rue Abou Dhabi, Oasis, Casablanca, Morocco. Casablanca trade register no. 502559. ICE: 002810898000009. Contact: info@aliomtrading.com, +212 6 60 16 11 57."
       },
       {
-        "h": "Hosting",
-        "p": "The website is hosted by the company’s hosting provider, whose details are available on request."
+        "h": "Personal data",
+        "p": "What you type into our forms is used only to answer your request. It is never sold or passed on, and this website sets no tracking cookies. Under Moroccan Law 09-08 you have the right to access, correct and object to the use of your data: write to info@aliomtrading.com."
       },
       {
-        "h": "Intellectual property",
-        "p": "The texts, the ALIOM TRADING name and logo belong to the company. Illustrative photographs come from royalty-free image libraries. Precooked fish photo: Superbass, Wikimedia Commons, licence CC BY-SA 4.0 (commons.wikimedia.org/wiki/File:Fishfinger_classic_frozen_1.jpg). Reproduction without permission is prohibited."
-      },
-      {
-        "h": "Data we collect",
-        "p": "Only what you type into the contact, quote and product request forms: name, company, e-mail address, phone number, country, the products you selected or are looking for, and your message."
-      },
-      {
-        "h": "Purpose and retention",
-        "p": "We use this data to answer your request and, if you become a customer, to prepare and follow up offers and orders. Enquiries that do not lead to business are deleted after 24 months."
-      },
-      {
-        "h": "Sharing",
-        "p": "We do not sell your data. Form messages pass through our e-mail provider; the manufacturers and suppliers involved only receive what is needed to process your order."
-      },
-      {
-        "h": "Cookies",
-        "p": "This website sets no tracking cookies. Your quote selection is stored in your own browser (local storage) and only sent to us when you submit the form."
-      },
-      {
-        "h": "Your rights",
-        "p": "Under Moroccan Law 09-08 on the protection of individuals with regard to the processing of personal data, you have the right to access, correct and object to the use of your data. Write to info@aliomtrading.com."
+        "h": "Credits",
+        "p": "© 2026 ALIOM TRADING, all rights reserved. Precooked fish photo: Superbass, Wikimedia Commons, licence CC BY-SA 4.0."
       }
     ]
   },

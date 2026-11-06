@@ -394,39 +394,19 @@
   "legal": {
     "title": "Mentions légales",
     "h1": "Mentions légales et confidentialité",
-    "lead": "Informations sur l’éditeur du site et sur le traitement des données personnelles que vous nous transmettez.",
+    "lead": "Informations sur l’éditeur du site et sur vos données personnelles.",
     "sections": [
       {
         "h": "Éditeur du site",
-        "p": "ALIOM TRADING, SARL à associé unique au capital de 500 000 MAD. Siège social : 2-4, rue Abou Dhabi, Oasis, Casablanca, Maroc. Registre du commerce de Casablanca n° 502559. ICE : 002810898000009. Objet social : importation, exportation, achat, vente, distribution, conditionnement et transformation de produits d’origine animale, végétale, agricole ou minière et de produits industriels ; mareyage ; intermédiation, courtage et représentation commerciale, au Maroc et à l’étranger. Gérante et directrice de la publication : Mme Habiba Ouliass. Contact : info@aliomtrading.com, +212 6 60 16 11 57."
+        "p": "ALIOM TRADING, 2-4, rue Abou Dhabi, Oasis, Casablanca, Maroc. RC Casablanca n° 502559. ICE : 002810898000009. Contact : info@aliomtrading.com, +212 6 60 16 11 57."
       },
       {
-        "h": "Hébergement",
-        "p": "Le site est hébergé par le prestataire d’hébergement de la société. Ses coordonnées sont communiquées sur simple demande."
+        "h": "Données personnelles",
+        "p": "Les informations saisies dans nos formulaires servent uniquement à répondre à votre demande. Elles ne sont ni vendues ni cédées, et le site ne dépose aucun cookie de suivi. Conformément à la loi n° 09-08, vous disposez d’un droit d’accès, de rectification et d’opposition en écrivant à info@aliomtrading.com."
       },
       {
-        "h": "Propriété intellectuelle",
-        "p": "Les textes, la marque et le logo ALIOM TRADING appartiennent à la société. Les photographies d’illustration proviennent de banques d’images libres de droits. Photo du poisson précuit : Superbass, Wikimedia Commons, licence CC BY-SA 4.0 (commons.wikimedia.org/wiki/File:Fishfinger_classic_frozen_1.jpg). Toute reproduction sans autorisation est interdite."
-      },
-      {
-        "h": "Données collectées",
-        "p": "Uniquement ce que vous saisissez dans les formulaires de contact, de devis et de demande de produit : nom, société, adresse e-mail, téléphone, pays, produits sélectionnés ou recherchés et message."
-      },
-      {
-        "h": "Finalité et durée",
-        "p": "Ces données servent à répondre à votre demande et, si vous devenez client, à établir et suivre les offres et les commandes. Les demandes sans suite sont supprimées après 24 mois."
-      },
-      {
-        "h": "Partage",
-        "p": "Nous ne vendons pas vos données. Les messages des formulaires transitent par notre fournisseur de messagerie ; les fabricants et fournisseurs concernés ne reçoivent que ce qui est nécessaire au traitement de votre commande."
-      },
-      {
-        "h": "Cookies",
-        "p": "Ce site ne dépose aucun cookie de suivi. Votre sélection de devis est conservée dans votre propre navigateur (stockage local) et ne nous est transmise qu’à l’envoi du formulaire."
-      },
-      {
-        "h": "Vos droits",
-        "p": "Conformément à la loi n° 09-08 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel, vous disposez d’un droit d’accès, de rectification et d’opposition, que vous pouvez exercer en écrivant à info@aliomtrading.com."
+        "h": "Crédits",
+        "p": "© 2026 ALIOM TRADING, tous droits réservés. Photo du poisson précuit : Superbass, Wikimedia Commons, licence CC BY-SA 4.0."
       }
     ]
   },
