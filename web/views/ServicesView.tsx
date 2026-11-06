@@ -38,10 +38,10 @@ const ICONS = [
     <rect x="5" y="4" width="14" height="17" rx="2" />
     <path d="M9 4V2.5h6V4M8.8 13l2.2 2.2 4.2-4.4" />
   </svg>,
-  /* Logistics — a container ship. */
-  <svg key="logistics" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M2.5 14h19l-2.2 5.5H5Z" />
-    <path d="M5.5 14V9.5h5V14M10.5 14V7h5v7M15.5 14v-3.5h3V14" />
+  /* Order follow-up — a clock. */
+  <svg key="follow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="8.5" />
+    <path d="M12 7.5V12l3 2" />
   </svg>,
 ];
 
@@ -81,7 +81,7 @@ export default function ServicesView({ locale }: { locale: Locale }) {
 
       <NumberedPoints title={t.services.processTitle} points={t.services.steps} />
 
-      <section className="section">
+      <section className="section" id="brands">
         <div className="page">
           <Reveal className={s.brands}>
             <div>

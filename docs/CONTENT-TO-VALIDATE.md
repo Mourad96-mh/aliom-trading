@@ -36,6 +36,8 @@ products at /admin/; families still live in `web/data/catalog.ts`.
 - [ ] Tagline "Votre partenaire commercial entre le Maroc et les marchés internationaux" and the "service complet" sentence are the client's own words. The rest of the trading-house copy (home, services, about) is ours.
 - [ ] "Nos domaines d'intervention" (`web/data/sectors.ts`): Agroalimentaire and Emballage are linked to the catalogue. The four "Sourcing sur demande" sectors (matières premières et semi-finis, grande consommation, matériaux de construction, équipements industriels) are our proposal. The client should confirm, add or remove sectors.
 - [ ] Home facts band now reads "3 métiers : import, export, sourcing" instead of "2 pôles".
+- [ ] 2026-11-06: logistics is no longer offered ("nous n'offrons pas ces services, mais nous faisons le suivi"). Every logistics claim now reads as order follow-up. New wording to confirm: the "Suivi des commandes" service card ("Nous ne sommes pas transitaire…") and the ONSSA FAQ on imported canned food (inspection and customs are the importer's and their forwarder's job; we chase the manufacturer for the documents). Check that the live admin catalogue doesn't still carry the old canned-food texts.
+- [ ] 2026-11-06: "Distribution et représentation de marques" sector card ("Notre métier d'origine"), plus "poursuit cette activité de distribution" in About. This matches the Kerix listing. Ask the client whether the registered objet social (RC) covers import-export / négoce; if it doesn't, the statuts should be amended.
 
 ## Blog
 

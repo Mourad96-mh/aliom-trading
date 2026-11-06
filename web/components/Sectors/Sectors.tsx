@@ -25,15 +25,19 @@ export default function Sectors({ locale, tint = false }: { locale: Locale; tint
         <ul className={s.grid}>
           {SECTORS.map((sector, i) => {
             const established = Boolean(sector.group || sector.category);
-            const target = sector.category
+            const target = sector.heritage
+              ? `${href(locale, 'services')}#brands`
+              : sector.category
               ? categoryHref(locale, sector.category)
               : sector.group
                 ? `${href(locale, 'products')}#${sector.group}`
                 : request;
             return (
               <li key={sector.key}>
-                <Reveal delay={(i % 3) * 80} className={`${s.card} ${established ? s.established : ''}`}>
-                  <span className={s.badge}>{established ? t.sectors.established : t.sectors.onRequest}</span>
+                <Reveal delay={(i % 3) * 80} className={`${s.card} ${established || sector.heritage ? s.established : ''}`}>
+                  <span className={s.badge}>
+                    {sector.heritage ? t.sectors.heritage : established ? t.sectors.established : t.sectors.onRequest}
+                  </span>
                   <h3 className={s.title}>
                     <Link href={target}>{sector.name[locale]}</Link>
                   </h3>
@@ -44,7 +48,7 @@ export default function Sectors({ locale, tint = false }: { locale: Locale; tint
                     ))}
                   </ul>
                   <span className={s.more} aria-hidden="true">
-                    {established ? t.sectors.seeRange : t.sectors.ask} →
+                    {sector.heritage ? t.sectors.discover : established ? t.sectors.seeRange : t.sectors.ask} →
                   </span>
                 </Reveal>
               </li>

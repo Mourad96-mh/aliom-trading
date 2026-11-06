@@ -266,7 +266,7 @@ export const CATEGORIES: Category[] = [
         lead: 'Sardines, maquereaux et thon en boîte, olives de table et câpres : les conserves marocaines les plus demandées, à la marque du fabricant ou à la vôtre.',
         intro: [
           'Le Maroc est le premier exportateur mondial de conserves de sardines, et compte parmi les grands exportateurs d’olives de table et de câpres. ALIOM TRADING travaille avec des conserveries qui respectent les exigences HACCP, IFS et BRC pour fournir importateurs, distributeurs et centrales d’achat.',
-          'Poisson à l’huile d’olive, à l’huile végétale ou à la tomate, olives entières, dénoyautées ou farcies, en boîtes, en bocaux ou en fûts : choisissez la recette, le format et l’étiquette, nous coordonnons la production et l’expédition.',
+          'Poisson à l’huile d’olive, à l’huile végétale ou à la tomate, olives entières, dénoyautées ou farcies, en boîtes, en bocaux ou en fûts : choisissez la recette, le format et l’étiquette, nous assurons le suivi de la production jusqu’à l’expédition.',
         ],
         facts: [
           { label: 'Produits', value: 'Sardine, maquereau, thon, olives, câpres' },
@@ -298,7 +298,7 @@ export const CATEGORIES: Category[] = [
         lead: 'Canned sardines, mackerel and tuna, table olives and capers: Morocco’s most sought-after preserves, under the manufacturer’s brand or your own.',
         intro: [
           'Morocco is the world’s leading exporter of canned sardines, and one of the major exporters of table olives and capers. ALIOM TRADING works with canneries that meet HACCP, IFS and BRC requirements to supply importers, distributors and buying groups.',
-          'Fish in olive oil, vegetable oil or tomato, olives whole, pitted or stuffed, in cans, jars or drums: choose the recipe, format and label, and we coordinate production and shipping.',
+          'Fish in olive oil, vegetable oil or tomato, olives whole, pitted or stuffed, in cans, jars or drums: choose the recipe, format and label, and we follow up production through to shipment.',
         ],
         facts: [
           { label: 'Products', value: 'Sardine, mackerel, tuna, olives, capers' },
@@ -869,7 +869,7 @@ export const CATEGORIES: Category[] = [
           },
           {
             q: 'Qui s’occupe du contrôle sanitaire à l’import ?',
-            a: 'Nous préparons avec vous le dossier pour le contrôle de l’ONSSA et les formalités de dédouanement.',
+            a: 'Le contrôle de l’ONSSA et le dédouanement relèvent de l’importateur et de son transitaire. De notre côté, nous assurons le suivi avec le fabricant pour obtenir les documents nécessaires.',
           },
         ],
       },
@@ -901,7 +901,7 @@ export const CATEGORIES: Category[] = [
           },
           {
             q: 'Who handles the import health inspection?',
-            a: 'We prepare the file for the ONSSA inspection and the customs formalities with you.',
+            a: 'The ONSSA inspection and customs clearance are handled by the importer and their forwarder. On our side, we follow up with the manufacturer to obtain the documents required.',
           },
         ],
       },

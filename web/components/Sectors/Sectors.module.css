@@ -11,6 +11,21 @@
   display: flex;
 }
 
+/* A lone card on the last row sits in the middle rather than on the left. */
+@media (min-width: 1001px) {
+  .grid > li:last-child:nth-child(3n + 1) {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1000px) {
+  .grid > li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - clamp(1rem, 2vw, 1.5rem) / 2);
+  }
+}
+
 .card {
   position: relative;
   display: flex;

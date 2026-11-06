@@ -90,8 +90,8 @@
         "text": "Nous recherchons, comparons et sélectionnons les fournisseurs selon votre cahier des charges."
       },
       {
-        "title": "Logistique",
-        "text": "Transport, documents et dédouanement suivis jusqu’à la livraison."
+        "title": "Suivi",
+        "text": "Suivi de vos commandes auprès des industriels importateurs et exportateurs, jusqu’à la livraison."
       }
     ]
   },
@@ -120,11 +120,11 @@
     "title": "Services",
     "h1": "Négoce international : import, export et sourcing",
     "lead": "Nous sommes en mesure d’offrir un service complet aux entreprises intéressées à trouver des fournisseurs de produits semi-finis et finis, ou directement des producteurs, partout dans le monde.",
-    "seoDescription": "Négoce international au Maroc : import, export, sourcing de fournisseurs et de producteurs dans le monde entier, mise en relation, contrôle qualité et logistique.",
+    "seoDescription": "Négoce international au Maroc : import, export, sourcing de fournisseurs et de producteurs dans le monde entier, mise en relation, contrôle qualité et suivi des commandes.",
     "items": [
       {
         "title": "Importation",
-        "text": "Nous trouvons à l’étranger les fabricants et les producteurs adaptés aux industriels, distributeurs et revendeurs marocains, et coordonnons transport, dédouanement et livraison."
+        "text": "Nous trouvons à l’étranger les fabricants et les producteurs adaptés aux industriels, distributeurs et revendeurs marocains, et assurons le suivi de vos commandes auprès d’eux."
       },
       {
         "title": "Exportation",
@@ -143,8 +143,8 @@
         "text": "Sélection des fournisseurs selon les normes de votre secteur (HACCP, IFS, BRC pour l’alimentaire), vérification avant chargement et expertise indépendante sur demande."
       },
       {
-        "title": "Logistique et documents",
-        "text": "Transport maritime, routier ou aérien, chaîne du froid si nécessaire, certificats d’origine et documents d’expédition : nous préparons le dossier avec vous."
+        "title": "Suivi des commandes",
+        "text": "Nous ne sommes pas transitaire : nous assurons le suivi de vos commandes auprès des industriels importateurs et exportateurs, de la confirmation à la livraison, et vous tenons informé à chaque étape."
       }
     ],
     "processTitle": "Comment nous travaillons",
@@ -162,8 +162,8 @@
         "text": "Qualité, quantité et emballage vérifiés avant le départ."
       },
       {
-        "title": "La livraison",
-        "text": "Transport et documents suivis jusqu’à votre entrepôt."
+        "title": "Le suivi",
+        "text": "Nous suivons votre commande auprès du fournisseur jusqu’à la livraison."
       }
     ],
     "brandsTitle": "Vous êtes une marque ?",
@@ -174,10 +174,10 @@
     "title": "À propos",
     "h1": "ALIOM TRADING, l’exigence au service de nos clients",
     "lead": "Société de négoce international et agent représentant de marques, située au 2-4, rue Abou Dhabi, Oasis, à Casablanca.",
-    "seoDescription": "ALIOM TRADING, SARL créée en 2021 à Casablanca : société de négoce international, import, export, sourcing et représentation de marques.",
+    "seoDescription": "ALIOM TRADING, SARL créée en 2021 à Casablanca : société de négoce international, import, export, sourcing, distribution et représentation de marques.",
     "story": [
       "ALIOM TRADING est le fruit d’une riche expérience dans le domaine de la distribution, en tant qu’agent représentant de marques mondialement renommées.",
-      "Société de négoce international, elle met aujourd’hui son réseau au service des entreprises qui cherchent des fournisseurs ou de nouveaux marchés, au Maroc comme à l’étranger."
+      "Société de négoce international, elle poursuit cette activité de distribution et met aujourd’hui son réseau au service des entreprises qui cherchent des fournisseurs ou de nouveaux marchés, au Maroc comme à l’étranger."
     ],
     "engagementTitle": "Notre engagement",
     "engagement": "La qualité est la source de notre succès : nous respectons les exigences HACCP, IFS et BRC. Cette qualité s’est construite au fil de plusieurs décennies d’expertise, ainsi que par le plein engagement et le dévouement de nos collaborateurs.",
@@ -192,7 +192,7 @@
       },
       {
         "title": "Qualité des produits",
-        "text": "Nous sommes en quête permanente des meilleurs produits, en assurant une sélection exigeante et experte de nos fournisseurs et de nos sources d’approvisionnement. Nous garantissons à notre clientèle la disponibilité de nos produits et une logistique performante."
+        "text": "Nous sommes en quête permanente des meilleurs produits, en assurant une sélection exigeante et experte de nos fournisseurs et de nos sources d’approvisionnement. Nous garantissons à notre clientèle la disponibilité de nos produits et un suivi rigoureux de chaque commande."
       },
       {
         "title": "Assistance technique",
@@ -449,6 +449,8 @@
     "lead": "Notre activité ne se limite pas à une seule catégorie de marchandises, et fonctionne dans les deux sens : du Maroc vers les marchés étrangers, et des fournisseurs étrangers vers le Maroc. Nos gammes établies figurent au catalogue ; pour les autres secteurs, nous recherchons le fournisseur adapté à chaque demande.",
     "established": "Gamme établie",
     "onRequest": "Sourcing sur demande",
+    "heritage": "Notre métier d’origine",
+    "discover": "En savoir plus",
     "seeRange": "Voir la gamme",
     "ask": "Nous consulter",
     "note": "Votre produit n’appartient à aucun de ces secteurs ? Décrivez-le-nous : nous étudions chaque demande et vous disons franchement si nous pouvons y répondre.",

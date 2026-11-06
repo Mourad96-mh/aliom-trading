@@ -90,8 +90,8 @@
         "text": "We search, compare and select suppliers against your specification."
       },
       {
-        "title": "Logistics",
-        "text": "Transport, documents and customs clearance followed through to delivery."
+        "title": "Follow-up",
+        "text": "Your orders followed up with the importing and exporting manufacturers, through to delivery."
       }
     ]
   },
@@ -120,11 +120,11 @@
     "title": "Services",
     "h1": "International trading: import, export and sourcing",
     "lead": "We offer a complete service to companies looking for suppliers of finished and semi-finished goods, or for producers directly, anywhere in the world.",
-    "seoDescription": "International trading company in Morocco: import, export, sourcing of suppliers and producers worldwide, business matchmaking, quality control and logistics.",
+    "seoDescription": "International trading company in Morocco: import, export, sourcing of suppliers and producers worldwide, business matchmaking, quality control and order follow-up.",
     "items": [
       {
         "title": "Import",
-        "text": "We find the right foreign manufacturers and producers for Moroccan manufacturers, distributors and resellers, and coordinate transport, customs clearance and delivery."
+        "text": "We find the right foreign manufacturers and producers for Moroccan manufacturers, distributors and resellers, and follow up your orders with them."
       },
       {
         "title": "Export",
@@ -143,8 +143,8 @@
         "text": "Suppliers selected against the standards of your sector (HACCP, IFS, BRC for food), pre-loading checks and independent inspection on request."
       },
       {
-        "title": "Logistics and documents",
-        "text": "Sea, road or air freight, cold chain where needed, certificates of origin and shipping documents: we prepare the file with you."
+        "title": "Order follow-up",
+        "text": "We are not a freight forwarder: we follow up your orders with the importing and exporting manufacturers, from confirmation through to delivery, and keep you informed at every stage."
       }
     ],
     "processTitle": "How we work",
@@ -162,8 +162,8 @@
         "text": "Quality, quantity and packing checked before departure."
       },
       {
-        "title": "Delivery",
-        "text": "Transport and documents followed through to your warehouse."
+        "title": "Follow-up",
+        "text": "We follow up your order with the supplier through to delivery."
       }
     ],
     "brandsTitle": "Are you a brand?",
@@ -174,10 +174,10 @@
     "title": "About",
     "h1": "ALIOM TRADING: high standards in our customers’ service",
     "lead": "An international trading company and brand agent, based at 2-4, rue Abou Dhabi, Oasis, Casablanca.",
-    "seoDescription": "ALIOM TRADING, a company founded in 2021 in Casablanca: international trading, import, export, sourcing and brand representation.",
+    "seoDescription": "ALIOM TRADING, a company founded in 2021 in Casablanca: international trading, import, export, sourcing, brand distribution and representation.",
     "story": [
       "ALIOM TRADING grew out of long experience in distribution, as an agent for world-renowned brands.",
-      "As an international trading company, it now puts its network at the service of businesses looking for suppliers or new markets, in Morocco and abroad."
+      "As an international trading company, it continues this distribution business and now puts its network at the service of businesses looking for suppliers or new markets, in Morocco and abroad."
     ],
     "engagementTitle": "Our commitment",
     "engagement": "Quality is the source of our success: we meet HACCP, IFS and BRC requirements. This quality has been built over decades of expertise and through the full commitment and dedication of our team.",
@@ -192,7 +192,7 @@
       },
       {
         "title": "Product quality",
-        "text": "We are always looking for the best products, through a demanding, expert selection of our suppliers and sources. We guarantee our customers product availability and reliable logistics."
+        "text": "We are always looking for the best products, through a demanding, expert selection of our suppliers and sources. We guarantee our customers product availability and close follow-up of every order."
       },
       {
         "title": "Technical support",
@@ -449,6 +449,8 @@
     "lead": "Our business is not limited to a single category of goods, and it works both ways: from Morocco to foreign markets, and from foreign suppliers to Morocco. Our established ranges are in the catalogue; for other sectors, we find the right supplier for each request.",
     "established": "Established range",
     "onRequest": "Sourcing on request",
+    "heritage": "Our original business",
+    "discover": "Learn more",
     "seeRange": "See the range",
     "ask": "Ask us",
     "note": "Your product fits none of these sectors? Describe it: we review every request and tell you frankly whether we can handle it.",

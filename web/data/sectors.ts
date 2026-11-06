@@ -18,12 +18,24 @@ export interface Sector {
   flows: Flow[];
   name: L;
   text: L;
+  /** The company's original business (brand distribution): links to the Services page. */
+  heritage?: boolean;
   /** Established range: links to the catalogue. Absent: sourcing on request. */
   group?: GroupKey;
   category?: CategoryKey;
 }
 
 export const SECTORS: Sector[] = [
+  {
+    key: 'distribution',
+    flows: ['import'],
+    name: t('Distribution et représentation de marques', 'Brand distribution and representation'),
+    text: t(
+      'Notre métier d’origine : agent et distributeur de marques internationales au Maroc, de la prospection au suivi des ventes.',
+      'Our original business: agent and distributor for international brands in Morocco, from prospecting to sales follow-up.'
+    ),
+    heritage: true,
+  },
   {
     key: 'food',
     flows: ['export', 'import'],
