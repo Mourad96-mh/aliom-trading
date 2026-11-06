@@ -61,8 +61,8 @@ export const SECTORS: Sector[] = [
     flows: ['export', 'import'],
     name: t('Matières premières et produits semi-finis', 'Raw materials and semi-finished goods'),
     text: t(
-      'Intrants pour l’industrie et la transformation, recherchés auprès de producteurs au Maroc et à l’étranger.',
-      'Inputs for manufacturing and processing, sourced from producers in Morocco and abroad.'
+      'Produits agricoles et miniers, intrants pour l’industrie et la transformation, recherchés auprès de producteurs au Maroc et à l’étranger.',
+      'Agricultural and mineral products, inputs for manufacturing and processing, sourced from producers in Morocco and abroad.'
     ),
   },
   {
