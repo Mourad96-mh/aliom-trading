@@ -1,5 +1,5 @@
 {
-  "categories/frozen-fish.webp": "File:Fish at the Market (Unsplash).jpg",
+  "categories/frozen-fish.webp": "File:Fish on ice. (15490845981).jpg",
   "categories/seafood.webp": "File:Seafood Market in Japan (Unsplash).jpg",
   "categories/vegetable-oils.webp": {
     "title": "File:Fresh Salad (Unsplash).jpg",
@@ -30,7 +30,13 @@
   },
   "categories/imported-oils.webp": "File:Impressive sunflowers (Unsplash).jpg",
   "categories/imported-canned.webp": {
-    "title": "File:Canned Beans on Grocery Shelf.jpg",
-    "quality": 32
-  }
+    "title": "File:Can of peaches.jpg",
+    "crop": {
+      "left": 0.15,
+      "top": 0.2,
+      "width": 0.65,
+      "height": 0.58
+    }
+  },
+  "categories/canned-food.webp": "File:1732Foods Fruits Baliuag Bulacan Mega Sardines 27.jpg"
 }
