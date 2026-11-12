@@ -51,7 +51,7 @@ export const ARTICLES: Article[] = [
           { h: 'BRCGS : le standard britannique devenu mondial' },
           'Le BRCGS Food Safety, né à l’initiative des distributeurs britanniques, est aujourd’hui reconnu dans le monde entier. Comme l’IFS, il est reconnu par la GFSI (Global Food Safety Initiative). Il existe aussi un référentiel BRCGS pour les agents et les négociants, qui encadre la sélection et le suivi des fournisseurs.',
           { h: 'Ce que cela change pour vous' },
-          'Travailler avec des usines qui respectent ces exigences, c’est réduire le risque de non-conformité à l’arrivée, de rappel produit et de blocage en douane. Chez ALIOM TRADING, la qualité est la source de notre succès : nous sélectionnons des fournisseurs qui respectent les exigences HACCP, IFS et BRC, et nous vous transmettons leurs certificats avec chaque offre.',
+          'Travailler avec des usines qui respectent ces exigences, c’est réduire le risque de non-conformité à l’arrivée, de rappel produit et de blocage en douane. Chez ALIOM TRADING, la qualité est la source de notre succès : nous privilégions des fournisseurs et partenaires industriels répondant aux exigences de qualité et de sécurité alimentaire applicables à leurs activités, notamment HACCP, IFS et BRC selon les produits et les sites de production.',
         ],
       },
       en: {
@@ -67,7 +67,7 @@ export const ARTICLES: Article[] = [
           { h: 'BRCGS: the British standard that went global' },
           'BRCGS Food Safety, started by British retailers, is now recognised worldwide. Like IFS, it is benchmarked by the GFSI (Global Food Safety Initiative). There is also a BRCGS standard for agents and brokers, covering how they select and monitor their suppliers.',
           { h: 'What it means for you' },
-          'Working with plants that meet these requirements lowers the risk of non-compliance on arrival, product recalls and customs holds. At ALIOM TRADING, quality is the source of our success: we select suppliers that meet HACCP, IFS and BRC requirements and send you their certificates with every offer.',
+          'Working with plants that meet these requirements lowers the risk of non-compliance on arrival, product recalls and customs holds. At ALIOM TRADING, quality is the source of our success: we favour suppliers and industrial partners that meet the quality and food-safety requirements applicable to their activities, including HACCP, IFS and BRC depending on the products and production sites.',
         ],
       },
     },

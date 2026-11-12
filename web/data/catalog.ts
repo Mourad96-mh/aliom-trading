@@ -119,7 +119,7 @@ export const CATEGORIES: Category[] = [
           'Fournisseur de poisson congelé au Maroc : sardine, maquereau, chinchard, sardinelle, sabre, rouget, sole. Entier, IQF ou en blocs, livré en conteneur frigorifique.',
         lead: 'Pélagiques et poissons blancs de l’Atlantique marocain, congelés à bord ou à terre, conditionnés à votre cahier des charges.',
         intro: [
-          'La façade atlantique du Maroc est l’une des zones de pêche pélagique les plus riches au monde. ALIOM TRADING sélectionne pour vous des unités de congélation qui travaillent dans le respect des exigences HACCP, IFS et BRC, et suit chaque lot du chargement à la livraison.',
+          'La façade atlantique du Maroc est l’une des zones de pêche pélagique les plus riches au monde. ALIOM TRADING privilégie des unités de congélation répondant aux exigences de qualité et de sécurité alimentaire applicables, notamment HACCP, IFS et BRC selon les sites, et suit chaque lot du chargement à la livraison.',
           'Sardine, maquereau, chinchard ou sardinelle pour la transformation et l’appât, poissons nobles comme le denti, le rouget ou la sole pour la distribution : dites-nous le calibre, le format et le marché visé, nous revenons vers vous avec une offre adaptée.',
         ],
         facts: [
@@ -151,7 +151,7 @@ export const CATEGORIES: Category[] = [
           'Frozen fish supplier in Morocco: sardines, mackerel, horse mackerel, sardinella, red mullet, sole. Whole, IQF or block-frozen, shipped in reefer containers.',
         lead: 'Pelagic and white fish from Morocco’s Atlantic coast, frozen at sea or on shore and packed to your specification.',
         intro: [
-          'Morocco’s Atlantic coast is one of the richest pelagic fishing grounds in the world. ALIOM TRADING selects freezing plants that work to HACCP, IFS and BRC requirements, and follows each lot from loading to delivery.',
+          'Morocco’s Atlantic coast is one of the richest pelagic fishing grounds in the world. ALIOM TRADING favours freezing plants that meet the applicable quality and food-safety requirements, including HACCP, IFS and BRC depending on the site, and follows each lot from loading to delivery.',
           'Sardines, mackerel, horse mackerel or sardinella for processing and bait, premium species such as dentex, red mullet or sole for distribution: tell us the size, format and target market, and we come back with a matching offer.',
         ],
         facts: [
@@ -265,7 +265,7 @@ export const CATEGORIES: Category[] = [
           'Conserves du Maroc en gros : sardines, maquereaux et thon à l’huile ou à la tomate, olives vertes et noires, câpres. Marque blanche, export.',
         lead: 'Sardines, maquereaux et thon en boîte, olives de table et câpres : les conserves marocaines les plus demandées, à la marque du fabricant ou à la vôtre.',
         intro: [
-          'Le Maroc est le premier exportateur mondial de conserves de sardines, et compte parmi les grands exportateurs d’olives de table et de câpres. ALIOM TRADING travaille avec des conserveries qui respectent les exigences HACCP, IFS et BRC pour fournir importateurs, distributeurs et centrales d’achat.',
+          'Le Maroc est le premier exportateur mondial de conserves de sardines, et compte parmi les grands exportateurs d’olives de table et de câpres. ALIOM TRADING privilégie des conserveries répondant aux exigences de qualité et de sécurité alimentaire applicables, notamment HACCP, IFS et BRC selon les produits et les sites, pour fournir importateurs, distributeurs et centrales d’achat.',
           'Poisson à l’huile d’olive, à l’huile végétale ou à la tomate, olives entières, dénoyautées ou farcies, en boîtes, en bocaux ou en fûts : choisissez la recette, le format et l’étiquette, nous assurons le suivi de la production jusqu’à l’expédition.',
         ],
         facts: [
@@ -297,7 +297,7 @@ export const CATEGORIES: Category[] = [
           'Wholesale canned food from Morocco: sardines, mackerel and tuna in oil or tomato, green and black olives, capers. Private label and export.',
         lead: 'Canned sardines, mackerel and tuna, table olives and capers: Morocco’s most sought-after preserves, under the manufacturer’s brand or your own.',
         intro: [
-          'Morocco is the world’s leading exporter of canned sardines, and one of the major exporters of table olives and capers. ALIOM TRADING works with canneries that meet HACCP, IFS and BRC requirements to supply importers, distributors and buying groups.',
+          'Morocco is the world’s leading exporter of canned sardines, and one of the major exporters of table olives and capers. ALIOM TRADING favours canneries that meet the applicable quality and food-safety requirements, including HACCP, IFS and BRC depending on the products and sites, to supply importers, distributors and buying groups.',
           'Fish in olive oil, vegetable oil or tomato, olives whole, pitted or stuffed, in cans, jars or drums: choose the recipe, format and label, and we follow up production through to shipment.',
         ],
         facts: [
