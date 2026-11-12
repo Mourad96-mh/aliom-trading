@@ -43,6 +43,26 @@
   transform: scale(1.04);
 }
 
+/* Families without a photo: the accent-tinted panel carries a line icon instead. */
+.iconMedia {
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  background:
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--accent) 14%, transparent) 0 28%, transparent 29%),
+    color-mix(in srgb, var(--accent) 7%, var(--paper-2));
+}
+
+.icon {
+  width: clamp(5rem, 36%, 8rem);
+  height: auto;
+  transition: transform 0.6s var(--ease);
+}
+
+.card:hover .icon {
+  transform: scale(1.06);
+}
+
 .body {
   display: flex;
   flex: 1;
@@ -112,7 +132,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .card:hover,
-  .card:hover .img {
+  .card:hover .img,
+  .card:hover .icon {
     transform: none;
   }
 }

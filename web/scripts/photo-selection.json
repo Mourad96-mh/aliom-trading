@@ -1,14 +1,11 @@
 {
   "categories/frozen-fish.webp": "File:Fish on ice. (15490845981).jpg",
-  "categories/seafood.webp": "File:Seafood Market in Japan (Unsplash).jpg",
   "categories/vegetable-oils.webp": {
     "title": "File:Fresh Salad (Unsplash).jpg",
     "position": "west"
   },
-  "categories/precooked-fish.webp": "File:Fishfinger classic frozen 1.jpg",
   "categories/fruits.webp": "File:Orange Fruit (Unsplash).jpg",
   "categories/vegetables.webp": "File:Fresh Vegetable Produce (Unsplash).jpg",
-  "categories/animal-feed.webp": "File:Shad fishing.jpg",
   "scenes/sea.webp": "File:Fishing boats, morning, Beach, Rincon de la Victoria, Andalusia, Spain.jpg",
   "scenes/land.webp": "File:Tyler Shaw 2016 (Unsplash).jpg",
   "blog/cephalopods.webp": "File:Frozen squid head.jpg",
@@ -37,6 +34,5 @@
       "width": 0.65,
       "height": 0.58
     }
-  },
-  "categories/canned-food.webp": "File:1732Foods Fruits Baliuag Bulacan Mega Sardines 27.jpg"
+  }
 }

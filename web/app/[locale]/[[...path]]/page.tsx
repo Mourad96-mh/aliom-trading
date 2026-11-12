@@ -46,7 +46,7 @@ function seoFor(route: Route, locale: Locale): Seo {
     case 'category': {
       const category = getCategory(route.params.category!)!;
       const copy = category.copy[locale];
-      return { title: copy.seoTitle, description: copy.description, image: category.image };
+      return { title: copy.seoTitle, description: copy.description, image: category.image ?? '/media/og.jpg' };
     }
     case 'services':
       return { title: t.services.h1, description: t.services.seoDescription, image: '/media/scenes/services.webp' };

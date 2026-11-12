@@ -88,7 +88,11 @@ export interface Category {
   group: GroupKey;
   slugs: L;
   accent: string;
-  image: string;
+  /**
+   * Photo for the card and the page banner. Families without one show their icon
+   * instead (client's request of 2026-11-12, after the image-rights report).
+   */
+  image?: string;
   copy: Record<Locale, CategoryCopy>;
 }
 
@@ -182,7 +186,6 @@ export const CATEGORIES: Category[] = [
     group: 'export',
     slugs: t('fruits-de-mer', 'seafood'),
     accent: 'var(--cat-sea)',
-    image: img('seafood'),
     copy: {
       fr: {
         name: 'Fruits de mer',
@@ -255,7 +258,6 @@ export const CATEGORIES: Category[] = [
     group: 'export',
     slugs: t('conserves-alimentaires', 'canned-food'),
     accent: 'var(--cat-sea)',
-    image: img('canned-food'),
     copy: {
       fr: {
         name: 'Conserves alimentaires',
@@ -328,7 +330,6 @@ export const CATEGORIES: Category[] = [
     group: 'export',
     slugs: t('poisson-precuit', 'precooked-fish'),
     accent: 'var(--cat-sea)',
-    image: img('precooked-fish'),
     copy: {
       fr: {
         name: 'Poisson précuit',
@@ -620,7 +621,6 @@ export const CATEGORIES: Category[] = [
     group: 'export',
     slugs: t('alimentation-animale', 'animal-feed'),
     accent: 'var(--cat-sea)',
-    image: img('animal-feed'),
     copy: {
       fr: {
         name: 'Alimentation animale',

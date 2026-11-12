@@ -19,7 +19,7 @@ export default function QuoteView({ locale }: { locale: Locale }) {
           <QuoteForm
             locale={locale}
             products={PRODUCTS}
-            images={Object.fromEntries(CATEGORIES.map((c) => [c.key, c.image]))}
+            images={Object.fromEntries(CATEGORIES.flatMap((c) => (c.image ? [[c.key, c.image]] : [])))}
             productsHref={href(locale, 'products')}
             privacyHref={href(locale, 'legal')}
             email={CONTACT.email}

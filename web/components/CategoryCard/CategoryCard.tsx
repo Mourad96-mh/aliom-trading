@@ -6,6 +6,7 @@ import { getDictionary } from '@/i18n/dictionary';
 import { productsIn, type Category } from '@/data/catalog';
 import { categoryHref } from '@/data/routes';
 import { LiveCount } from '@/components/ProductItem/ProductItem';
+import CategoryIcon from '@/components/CategoryIcon/CategoryIcon';
 import s from './CategoryCard.module.css';
 
 /** A product family as a photo card — the products hub and "in the same division". */
@@ -23,16 +24,20 @@ export default function CategoryCard({
 
   return (
     <article className={s.card} style={{ '--accent': category.accent } as React.CSSProperties}>
-      <div className={s.media}>
-        <Image
-          src={category.image}
-          alt=""
-          width={1200}
-          height={800}
-          sizes="(min-width: 1100px) 400px, (min-width: 640px) 50vw, 100vw"
-          className={s.img}
-          priority={priority}
-        />
+      <div className={`${s.media} ${category.image ? '' : s.iconMedia}`}>
+        {category.image ? (
+          <Image
+            src={category.image}
+            alt=""
+            width={1200}
+            height={800}
+            sizes="(min-width: 1100px) 400px, (min-width: 640px) 50vw, 100vw"
+            className={s.img}
+            priority={priority}
+          />
+        ) : (
+          <CategoryIcon category={category.key} className={s.icon} />
+        )}
       </div>
       <div className={s.body}>
         <p className={s.count}>
